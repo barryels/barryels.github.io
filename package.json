@@ -4,6 +4,9 @@
   "description": "A simple portfolio site",
   "main": "index.js",
   "scripts": {
+    "skills_build_html": "pug --pretty --obj src/skills/index.json src/skills/index.pug --out skills",
+    "skills_build_html:watch": "n-run -w src/skills 'npm run skills_build_html'",
+    "start": "npm run skills_build_html:watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/barryels/barryels.github.io/issues"
   },
-  "homepage": "https://github.com/barryels/barryels.github.io#README"
+  "homepage": "https://github.com/barryels/barryels.github.io#README",
+  "devDependencies": {
+    "npm-build-tools": "^2.2.5",
+    "pug-cli": "^1.0.0-alpha6"
+  }
 }
