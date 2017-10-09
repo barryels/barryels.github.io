@@ -2,15 +2,9 @@
 
 <head>
 	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-
-		/* adding a black bg to the body to make foreground characters more visible */
-
 		body {
-			background: #000;
+			margin: 0;
+			overflow: hidden;
 		}
 
 		canvas {
@@ -21,74 +15,188 @@
 </head>
 
 <body>
-	<canvas id="c"></canvas>
+	<canvas id="canvasNode"></canvas>
 
 	<script>
-		var c = document.getElementById("c");
-		var ctx = c.getContext("2d");
+		var _store = {
+			font_size: 30,
+			font_family: 'Monaco',
+			_drops: [],
+			characters: "あのイーハトーヴォのすきとおった風夏でも底に冷たさをもつ青いそらうつくしい森で飾られたモーリオ市郊外のぎらぎらひかる草の波",
+			// characters: "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑",
+			// characters: "故智者不終朝而會愚者可浹旬而學",
+			// characters: "[](){}-_+=\\/",
+			background_colour: '000000',
+			opacity_step: 0.3,
+			_background_colour: '',
+			character_colour: '1ec503',
+			_character_colour: '#',
+			character_spacing_horizontal: 0,
+			character_spacing_vertical: 0,
+			column_spacing_horizontal: 0,
+			fps: 30,
+		};
 
-		//making the canvas full screen
-		c.height = window.innerHeight;
-		c.width = window.innerWidth;
+		var stop = false;
+		var frameCount = 0;
+		var fpsInterval, startTime, now, then, elapsed;
 
-		//chinese characters - taken from the unicode charset
-		// var characters = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
-		//var characters = "あのイーハトーヴォのすきとおった風夏でも底に冷たさをもつ青いそらうつくしい森で飾られたモーリオ市郊外のぎらぎらひかる草の波";
-		//var characters = "故智者不終朝而會，愚者可浹旬而學";
-		//var characters = "[](){}-_+=\\/";
-		var characters = "01";
-		// var characters = "Digital Path";
-		//converting the string into an array of single characters
-		characters = characters.split("");
 
-		var font_size = 30;
-		var columns = c.width / font_size; //number of columns for the rain
-		//an array of drops - one per column
-		var drops = [];
-		//x below is the x coordinate
-		//1 = y co-ordinate of the drop(same for every drop initially)
-		for (var x = 0; x < columns; x++)
-			drops[x] = 1;
+		function updateStateFromURLParams(state) {
+			state.font_size = findGetParameter('fs') || state.font_size;
+			state.font_family = findGetParameter('ff') || state.font_family;
+			state.characters = findGetParameter('c') || state.characters;
+			state.background_colour = findGetParameter('bc') || state.background_colour;
+			state._background_colour = utils_hexToRGB(state.background_colour);
+			state.character_colour = findGetParameter('cc') || state.character_colour;
+			state._character_colour = '#' + state.character_colour;
+			state.opacity_step = findGetParameter('os') || state.opacity_step;
+			state.fps = findGetParameter('fps') || state.fps;
 
-		//drawing the characters
-		function draw() {
-			// Black BG for the canvas
-			// translucent BG to show trail
-			ctx.fillStyle = "rgba(0, 0, 0, 0.25)";//"rgba(170,204,0,0.2)";
-			ctx.fillRect(0, 0, c.width, c.height);
+			state._fpsInterval = 1000 / state.fps;
+			state._then = Date.now();
+			state._startTime = state._then;
+		}
 
-			// 	ctx.fillStyle = "#8fc443"; // Digital Path green
-			// 	ctx.fillStyle = "#000";
-			// 	ctx.fillStyle = "#c00";
-			ctx.fillStyle = "#009CFF";
-			ctx.font = font_size + "px Monaco";
-			//looping over drops
-			for (var i = 0; i < drops.length; i++) {
-				//a random characters character to print
-				var text = characters[Math.floor(Math.random() * characters.length)];
-				//x = i*font_size, y = value of drops[i]*font_size
-				ctx.fillText(text, i * font_size, drops[i] * font_size);
 
-				//sending the drop back to the top randomly after it has crossed the screen
-				//adding a randomness to the reset to make the drops scattered on the Y axis
-				if (drops[i] * font_size > c.height && Math.random() > 0.975)
-					drops[i] = 0;
+		function findGetParameter(parameterName) {
+			var result = null,
+				tmp = [];
 
-				//incrementing Y coordinate
-				drops[i]++;
+			if (!window.location.search) {
+				return null;
+			}
+
+			window.location.search
+				.substr(1)
+				.split("&")
+				.forEach(function (item) {
+					tmp = item.split("=");
+					if (tmp[0] === parameterName) {
+						result = decodeURIComponent(tmp[1])
+					};
+				});
+
+			return result;
+		}
+
+
+		function getCanvasDOMNode() {
+			window.canvasDOMNode = window.canvasDOMNode ? window.canvasDOMNode : document.getElementById("canvasNode");
+			return window.canvasDOMNode;
+		}
+
+
+		function getCanvasContext() {
+			window.canvasContext = window.canvasContext ? window.canvasContext : getCanvasDOMNode().getContext("2d");
+			return window.canvasContext;
+		}
+
+
+		function updateHeadCSS(state) {
+			var sheet = document.createElement('style')
+			sheet.innerHTML = 'body {background-color: #' + state.background_colour + ';}';
+			document.body.appendChild(sheet);
+		}
+
+
+		function setupCanvas(state) {
+			var c = getCanvasDOMNode();
+			var ctx = getCanvasContext();
+			var columns = 1;
+
+			c.height = window.innerHeight;
+			c.width = window.innerWidth;
+
+			state._characters = state.characters.split("");
+
+			columns = c.width / state.font_size;
+
+			// an array of drops - one per column
+			state._drops = [];
+
+			// x below is the x coordinate
+			// 1 = y co-ordinate of the drop(same for every drop initially)
+			for (var x = 0; x < columns; x++) {
+				state._drops[x] = 1;
 			}
 		}
 
-		// window.setInterval(draw, 10);
 
-		function redraw() {
-			window.requestAnimationFrame(function () {
-				draw();
-				window.requestAnimationFrame(redraw);
-			});
+		function utils_hexToRGB(hex) {
+			var _hex = parseInt(hex, 16);
+			var r = _hex >> 16;
+			var g = _hex >> 8 & 0xFF;
+			var b = _hex & 0xFF;
+			return [r, g, b];
 		}
 
-		redraw();
+
+		function draw(state) {
+			var c = getCanvasDOMNode();
+			var ctx = getCanvasContext();
+			var character = '';
+
+			// Black BG for the canvas
+			// translucent BG to show trail
+			ctx.fillStyle = 'rgba(' + state._background_colour[0] + ', ' + state._background_colour[1] + ', ' + state._background_colour[2] + ', ' + state.opacity_step + ')';
+			ctx.fillRect(0, 0, c.width, c.height);
+
+			ctx.fillStyle = state._character_colour;
+			ctx.font = state.font_size + "px " + state.font_family;
+
+			for (var i = 0; i < state._drops.length; i++) {
+
+				// a random character to print
+				character = state._characters[Math.floor(Math.random() * state._characters.length)];
+				// x = i*font_size, y = value of state._drops[i]*font_size
+				ctx.fillText(character, i * state.font_size, state._drops[i] * state.font_size);
+
+				// sending the drop back to the top randomly after it has crossed the screen
+				// adding a randomness to the reset to make the drops scattered on the Y axis
+				if (state._drops[i] * state.font_size > c.height && Math.random() > 0.975) {
+					state._drops[i] = 0;
+				}
+
+				// Incrementing Y coordinate
+				state._drops[i] += 1;
+			}
+		}
+
+
+		function animate(state) {
+			window.requestAnimationFrame(function () {
+				animate(state);
+			});
+
+			state._now = Date.now();
+			state._elapsed = state._now - state._then;
+
+			if (state._elapsed > state._fpsInterval) {
+				// Get ready for next frame by setting then=now, but also adjust for your
+				// specified fpsInterval not being a multiple of RAF's interval (16.7ms)
+				state._then = state._now - (state._elapsed % state._fpsInterval);
+				draw(state);
+			}
+		}
+
+
+		function init(state) {
+			updateStateFromURLParams(state);
+			updateHeadCSS(state);
+			setupCanvas(state);
+
+			window.addEventListener('resize', function () {
+				setupCanvas(state);
+			}, false);
+
+			console.log(state);
+
+			animate(state);
+		}
+
+
+		init(_store);
 
 
 	</script>
