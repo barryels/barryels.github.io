@@ -4,9 +4,14 @@
   "description": "A simple portfolio site",
   "main": "index.js",
   "scripts": {
-    "skills_build_html": "pug --pretty --obj src/skills/index.json src/skills/index.pug --out skills",
-    "skills_build_html:watch": "n-run -w src/skills 'npm run skills_build_html'",
-    "start": "npm run skills_build_html:watch",
+    "build:html": "pug --obj src/index.js src/index.pug --out ./",
+    "build:html:watch": "npm run build:html -- -w --pretty",
+    "build:css": "node-sass src/index.scss style.css",
+    "build:css:compressed": "npm run build:css -- --output-style compressed",
+    "build:css:watch": "npm run build:css -- -w",
+    "dev": "PORT=8888 node server.js & npm run build:html:watch & npm run build:css:watch",
+    "build": "npm run build:html && npm run build:css",
+    "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +25,8 @@
   },
   "homepage": "https://github.com/barryels/barryels.github.io#README",
   "devDependencies": {
-    "npm-build-tools": "^2.2.5",
+    "express": "^4.17.1",
+    "node-sass": "^4.12.0",
     "pug-cli": "^1.0.0-alpha6"
   }
 }

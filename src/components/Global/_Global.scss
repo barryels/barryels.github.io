@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: color-palette(body-background);
+  color: color-palette(body-foreground);
+  font-family: 'Roboto Mono', monospace;
+  font-size: font-size(16);
+  line-height: 1;
+}
+
+textarea {
+  font-size: font-size(16);
+  width: 100%;
+}
+
+
+a {
+  color: color-palette(body-foreground);
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    background: rgba(color-palette(brand-primary), .5);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: base-unit(-0.5);
+    padding: 0 base-unit(0.5);
+    position: absolute;
+    transform: scaleY(0.25);
+    transform-origin: bottom;
+    transition: transform 150ms ease-out;
+    width: 100%;
+  }
+
+  &:hover {
+    &::after {
+      transform: scaleY(1);
+    }
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+
+.site-header {
+
+}
+
+
+.site-main {
+  padding-bottom: 100px;
+}
+
+
+.site-footer {
+
+}
+

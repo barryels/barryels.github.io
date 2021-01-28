@@ -1,0 +1,77 @@
+.ChatBubble {
+  $chat-bubble: &;
+  position: relative;
+
+  &__Content {
+    background: color-palette(chat-bubble-background);
+    border-radius: border-radius-unit(2) border-radius-unit(2) 0 0;
+    color: color-palette(chat-bubble-foreground);
+    max-width: 80%;
+    padding: base-unit(2);
+    position: relative;
+  }
+
+  &--user {
+    #{$chat-bubble}__Content {
+      background: color-palette(chat-bubble-user-background);
+      color: color-palette(chat-bubble-user-foreground);
+      left: 20%;
+    }
+  }
+
+  &--input {
+    #{$chat-bubble}__Content {
+      padding: 0;
+
+      textarea {
+        background: transparent;
+        border: 0;
+        padding: base-unit(2);
+      }
+    }
+  }
+}
+
+
+.ChatBot {
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 0 0 base-unit(2) 0;
+  position: relative;
+
+  &__Content {
+    height: auto;
+    left: 50%;
+    max-width: 640px;
+    min-width: 320px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .ChatBubble {
+    margin-top: base-unit(2);
+  }
+
+  .ChatBubble--agent + .ChatBubble--agent {
+    margin-top: 0;
+
+    .ChatBubble__Content {
+      border-radius: 0 0 border-radius-unit(2) border-radius-unit(2);
+      border-top: 1px dashed color-palette(body-background);
+    }
+  }
+
+  .ChatBubble--agent + .ChatBubble--user {
+    .ChatBubble__Content {
+      border-radius: border-radius-unit(2);
+    }
+  }
+
+  .ChatBubble:last-child {
+    .ChatBubble__Content {
+      border-radius: border-radius-unit(2);
+    }
+  }
+}
