@@ -4,9 +4,9 @@
   "description": "A simple portfolio site",
   "main": "index.js",
   "scripts": {
-    "build:html": "pug --obj src/index.js src/index.pug --out ./",
+    "build:html": "pug --obj src/index.js src/index.pug --out ./docs",
     "build:html:watch": "npm run build:html -- -w --pretty",
-    "build:css": "node-sass src/index.scss style.css",
+    "build:css": "node-sass src/index.scss docs/style.css",
     "build:css:compressed": "npm run build:css -- --output-style compressed",
     "build:css:watch": "npm run build:css -- -w",
     "dev": "PORT=8888 node server.js & npm run build:html:watch & npm run build:css:watch",
