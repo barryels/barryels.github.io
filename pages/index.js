@@ -9,6 +9,14 @@ export default function Home() {
           name="description"
           content="Barry Els is one of several Technical Architects at Platform 45. He joined the team in July 2018 after spending 20 years as an engineer, and later as a Technical Architect, across multiple domains and a diverse range of clients, from multinational corporate clients to small businesses and start-ups."
         />
+        <meta
+          name="keywords"
+          content="barry els, programmer, creative technologist, technical architect"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
