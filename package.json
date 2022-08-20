@@ -3,19 +3,31 @@
   "version": "1.0.0",
   "description": "A simple portfolio site",
   "main": "index.js",
-  "scripts": {
-    "dev": "npx http-server ./docs -p 8082",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "private": true,
+  "author": "Barry Els <barryels@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://barryels@github.com/barryels/barryels.github.io.git"
   },
-  "author": "Barry Els <barryels@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/barryels/barryels.github.io/issues"
   },
   "homepage": "https://github.com/barryels/barryels.github.io#README",
-  "devDependencies": {}
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build-and-export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5"
+  }
 }
