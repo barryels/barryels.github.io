@@ -1,8 +1,9 @@
 import Head from "next/head";
+import data from "./../global/data.json";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Barry Els // Technical Architect @ Platform45</title>
         <meta
@@ -62,6 +63,6 @@ export default function Home() {
       </main>
 
       <footer className="site-footer"></footer>
-    </div>
+    </>
   );
 }
