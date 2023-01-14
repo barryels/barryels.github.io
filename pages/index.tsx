@@ -1,19 +1,15 @@
 import Head from "next/head";
-import data from "./../global/data.json";
+import { data } from "../global/dataStore";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Barry Els // Technical Architect @ Platform45</title>
-        <meta
-          name="description"
-          content="Barry Els is one of several Technical Architects at Platform 45. He joined the team in July 2018 after spending 20 years as an engineer, and later as a Technical Architect, across multiple domains and a diverse range of clients, from multinational corporate clients to small businesses and start-ups."
-        />
-        <meta
-          name="keywords"
-          content="barry els, programmer, creative technologist, technical architect"
-        />
+        <title>
+          {`${data.fullName} // ${data.currentPosition} @ ${data.currentCompanyName}`}
+        </title>
+        <meta name="description" content={data.about} />
+        <meta name="keywords" content={data.metaKeywords.join(", ")} />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
@@ -25,40 +21,18 @@ export default function Home() {
 
       <main>
         <section id="home">
-          <h1>Barry Els</h1>
+          <h1>{data.fullName}</h1>
         </section>
 
         <section id="about">
-          <p>
-            Barry Els is one of several Technical Architects at Platform 45. He
-            joined the team in July 2018 after spending 20 years as an engineer,
-            and later as a Technical Architect, across multiple domains and a
-            diverse range of clients, from multinational corporate clients to
-            small businesses and start-ups.
-          </p>
+          <p>{data.about}</p>
 
           <h2>Career highlights include:</h2>
           <ul>
-            <li>
-              Leading a team of engineers in the development of a bespoke
-              Content Management and Delivery micro-platform for rich digital
-              experiences within the retail space.
-            </li>
-            <li>
-              Architecting and leading a team of engineers in the development of
-              a white-labelled Hybrid mobile application platform to rapidly
-              deploy custom mobile applications for insurance companies.
-            </li>
+            {data.careerHighlights.map((careerHighlight, index) => {
+              return <li key={index}>{careerHighlight.description}</li>;
+            })}
           </ul>
-          <p>
-            Barry is passionate about building a better web for end users, and
-            consequently the businesses that utilise this amazing platform.
-            Whether through technical innovation, solid user experience or
-            process engineering, his focus is always on making small, consistent
-            improvements over time. Barry has had the good fortune to experience
-            many years building solutions using a wide range of technologies
-            within a multitude of business domains.
-          </p>
         </section>
       </main>
 
