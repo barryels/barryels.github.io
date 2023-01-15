@@ -12,6 +12,11 @@ export default function RoleAtCompanyUpdated({ event }: Props) {
         {event.data.position} @ {event.data.companyName}
       </h3>
       <strong>{event.data.dateFormatted}</strong>
+      <ul>
+        {event.data.skills.map((skillName, index) => {
+          return <li key={index}>{skillName}</li>;
+        })}
+      </ul>
     </article>
   );
 }

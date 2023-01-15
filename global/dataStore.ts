@@ -40,7 +40,7 @@ export const eventLog: EventLog = [
       dateFormatted: "2001-08-01 - 2003-10-01",
       description:
         "The design and development of multimedia presentations, interactive e-learning projects (for SAP) and corporate identity. These courses were used as a platform for delivering up-to-date information around the “mySAP.com” line-up of business software solutions.",
-      skills: "Flash Animation, User Interface Design, ActionScript",
+      skills: ["Flash Animation", "User Interface Design", "ActionScript"],
     },
   },
   {
@@ -89,8 +89,13 @@ export const eventLog: EventLog = [
       dateFormatted: "2004-07-01 - 2006-11-01",
       description:
         "Responsibilities included developing and presenting graphic design, web design and programming courses, the management of e-mail accounts and general software-related support. The design and updating of corporate identity: Advertisements, Brochures, Newsletters, Certificates and Website.Responsibilities included developing and presenting graphic design, web design and programming courses, the management of e-mail accounts and general software-related support. The design and updating of corporate identity: Advertisements, Brochures, Newsletters, Certificates and Website.",
-      skills:
-        "Teaching, Corporate Identity, Web Design, Technical Support, Web Development",
+      skills: [
+        "Teaching",
+        "Corporate Identity",
+        "Web Design",
+        "Technical Support",
+        "Web Development",
+      ],
     },
   },
   {
@@ -120,7 +125,7 @@ export const eventLog: EventLog = [
       dateFormatted: "2006-12-01 - 2007-05-01",
       description:
         "Designing websites, from initial client requirements through to layout, HTML and CSS. Projects included the implementation of designs with respect to content management systems (NetSuite, Textor, etc.). Development tasks included using necessary technologies (PHP, JavaScript and Flash) to create functional, maintainable websites.Designing websites, from initial client requirements through to layout, HTML and CSS. Projects included the implementation of designs with respect to content management systems (NetSuite, Textor, etc.). Development tasks included using necessary technologies (PHP, JavaScript and Flash) to create functional, maintainable websites.",
-      skills: "ActionScript, PHP, Content Management Systems (CMS)",
+      skills: ["ActionScript", "PHP", "Content Management Systems (CMS)"],
     },
   },
   {
@@ -150,7 +155,7 @@ export const eventLog: EventLog = [
       dateFormatted: "2007-05-01 - 2010-08-01",
       description:
         "Architecting, developing and deploying interactive flash-based web and touchscreen interfaces, as well as Rich Media banners.Architecting, developing and deploying interactive flash-based web and touchscreen interfaces, as well as Rich Media banners.",
-      skills: "User Experience (UX), ActionScript, Touch Screens",
+      skills: ["User Experience (UX)", "ActionScript", "Touch Screens"],
     },
   },
   {
@@ -179,7 +184,7 @@ export const eventLog: EventLog = [
       date: "Aug 2010 - Dec 2011",
       dateFormatted: "2010-08-01 - 2011-12-01",
       description: "No description",
-      skills: "Flash Animation, Web Development, ActionScript",
+      skills: ["Flash Animation", "Web Development", "ActionScript"],
     },
   },
   {
@@ -192,7 +197,7 @@ export const eventLog: EventLog = [
       date: "Jan 2011 - Dec 2012",
       dateFormatted: "2011-01-01 - 2012-12-01",
       description: "No description",
-      skills: "Web Development",
+      skills: ["Web Development"],
     },
   },
   {
@@ -206,7 +211,7 @@ export const eventLog: EventLog = [
       dateFormatted: "2013-01-01 - 2014-01-01",
       description:
         "As Head of Development, I spent a large portion of my working day researching and implementing technologies that support current and future projects and improve the flow of work between Design, Development and Operations. I was responsible for managing a team of developers, whose solutions included responsive websites, custom CMSs and social media API integrations.As Head of Development, I spent a large portion of my working day researching and implementing technologies that support current and future projects and improve the flow of work between Design, Development and Operations. I was responsible for managing a team of developers, whose solutions included responsive websites, custom CMSs and social media API integrations.",
-      skills: "Team Leadership, Web Development, ActionScript, Groovy",
+      skills: ["Team Leadership", "Web Development", "ActionScript", "Groovy"],
     },
   },
   {
@@ -236,7 +241,7 @@ export const eventLog: EventLog = [
       dateFormatted: "2014-02-01 - 2014-06-01",
       description:
         "Architecting, developing and deploying interactive websites, with a strong focus on user experience design, semantic markup and rock-solid back-ends.Architecting, developing and deploying interactive websites, with a strong focus on user experience design, semantic markup and rock-solid back-ends.",
-      skills: "Web Development, JavaScript, Groovy",
+      skills: ["Web Development", "JavaScript", "Groovy"],
     },
   },
   {
@@ -258,7 +263,7 @@ export const eventLog: EventLog = [
       dateFormatted: "2014-06-01 - 2015-07-01",
       description:
         "Working with a diverse set of clients such as SARS, King Price & Standard Bank has given me the opportunity to delve deeper into TDD and source control management workflows. I’ve also had the good fortune of being able to learn and use different programming languages and design patterns in the development of bespoke single page web applications.Working with a diverse set of clients such as SARS, King Price & Standard Bank has given me the opportunity to delve deeper into TDD and source control management workflows. I’ve also had the good fortune of being able to learn and use different programming languages and design patterns in the development of bespoke single page web applications.",
-      skills: "Software Architecture, AngularJS, REST APIs, JavaScript",
+      skills: ["Software Architecture", "AngularJS", "REST APIs", "JavaScript"],
     },
   },
   {
@@ -288,7 +293,7 @@ export const eventLog: EventLog = [
       dateFormatted: "2015-08-01 - 2016-06-01",
       description:
         "Architecting and developing websites and web-based applications. Some of the projects I architected and built the foundational back-end and front-end components for, include:<br/>- A dynamic dashboard to display data pulled from Crimson Hexagon and Google spreadsheets.<br/>- A bespoke WordPress theme for http://capetown.travel with custom post types, Timber templates and support for using an external data source for blog posts.<br/>- A household energy consumption calculator, back-end and REST API written in PHP, front-end in MithrilJS.",
-      skills: "Software Architecture, Team Leadership, JavaScript, PHP",
+      skills: ["Software Architecture", "Team Leadership", "JavaScript", "PHP"],
     },
   },
   {
@@ -318,8 +323,12 @@ export const eventLog: EventLog = [
       dateFormatted: "2016-07-01 - 2017-09-01",
       description:
         "Amongst other projects, I’ve built a white label solution to dynamically generate 40+ mobile applications for insurance companies. I’ve also designed & implemented a project management process to ensure feature requirements can be gathered effectively, so as to give other developers a clear vision of what to tackle next.Amongst other projects, I’ve built a white label solution to dynamically generate 40+ mobile applications for insurance companies. I’ve also designed & implemented a project management process to ensure feature requirements can be gathered effectively, so as to give other developers a clear vision of what to tackle next.",
-      skills:
-        "Software Architecture, AngularJS, Single Page Applications, Web Development",
+      skills: [
+        "Software Architecture",
+        "AngularJS",
+        "Single Page Applications",
+        "Web Development",
+      ],
     },
   },
   {
@@ -348,7 +357,7 @@ export const eventLog: EventLog = [
       date: "Oct 2017 - Jun 2018",
       dateFormatted: "2017-10-01 - 2018-06-01",
       description: "No description",
-      skills: "REST APIs, React.js",
+      skills: ["REST APIs", "React.js"],
     },
   },
   {
@@ -377,8 +386,12 @@ export const eventLog: EventLog = [
       date: "Jun 2018 - Jul 2021",
       dateFormatted: "2018-06-01 - 2021-07-01",
       description: "No description",
-      skills:
-        "Ruby on Rails, Cascading Style Sheets (CSS), Team Leadership, JavaScript",
+      skills: [
+        "Ruby on Rails",
+        "Cascading Style Sheets (CSS)",
+        "Team Leadership",
+        "JavaScript",
+      ],
     },
   },
   {
@@ -391,8 +404,13 @@ export const eventLog: EventLog = [
       date: "Aug 2021 - Present",
       dateFormatted: "2021-08-01 - Present",
       description: "No description",
-      skills:
-        "Team Leadership, Technical Architecture, Web Application Development, Amazon Web Services (AWS), React.js",
+      skills: [
+        "Team Leadership",
+        "Technical Architecture",
+        "Web Application Development",
+        "Amazon Web Services (AWS)",
+        "React.js",
+      ],
     },
   },
 ];
