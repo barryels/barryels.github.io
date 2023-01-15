@@ -11,11 +11,6 @@ export default function Home() {
         </title>
         <meta name="description" content={data.about} />
         <meta name="keywords" content={data.metaKeywords.join(", ")} />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
-        />
-        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <header className="site-header"></header>
