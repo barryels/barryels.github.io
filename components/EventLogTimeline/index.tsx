@@ -3,6 +3,7 @@ import {
   getEventLogEntriesGroupedByYear,
 } from "../../global/dataStore";
 import styles from "./index.module.css";
+import RoleAtCompanyUpdated from "./RoleAtCompanyUpdated";
 
 export default function EventLogTimeline() {
   const eventLogEntriesGroupedByYear = getEventLogEntriesGroupedByYear();
@@ -16,17 +17,10 @@ export default function EventLogTimeline() {
             <h2 className={styles.yearGroupTitle}>{year}</h2>
             {item.events
               .filter((event: EventLogEntry) => {
-                return event.type === "JOINED_COMPANY";
+                return event.type === "ROLE_AT_COMPANY_UPDATED";
               })
               .map((event: EventLogEntry) => {
-                return (
-                  <article className={styles.joinedCompany} key={event.id}>
-                    <h3>
-                      {event.data.position} @ {event.data.companyName}
-                    </h3>
-                    <strong>{event.data.dateFormatted}</strong>
-                  </article>
-                );
+                return <RoleAtCompanyUpdated key={event.id} event={event} />;
               })}
           </section>
         );
