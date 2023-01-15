@@ -15,7 +15,7 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=optional"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=auto"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.png" />
