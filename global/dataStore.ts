@@ -480,6 +480,11 @@ export function getSiteInfo() {
   return {
     links: [
       {
+        name: "GitHub",
+        url: "https://github.com/barryels",
+      },
+      {
+        name: "LinkedIn",
         url: "https://www.linkedin.com/in/barryels/",
       },
     ],

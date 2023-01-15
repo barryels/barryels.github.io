@@ -1,3 +1,11 @@
 .root {
   padding: 1.6rem;
 }
+
+.title {
+  text-align: center;
+}
+
+.avatarContainer {
+  text-align: center;
+}
