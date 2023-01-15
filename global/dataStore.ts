@@ -415,8 +415,6 @@ export const eventLog: EventLog = [
   },
 ];
 
-console.log(eventLog.length);
-
 type JOINED_COMPANY_data = {
   companyName: string;
   position: string;
@@ -460,15 +458,6 @@ export function getEventLogEntriesGroupedByYear(): EventLogEntriesPerYear | {} {
 
   return result || {};
 }
-
-// console.log("getEventLogEntriesGroupedByYea()");
-// console.log(getEventLogEntriesGroupedByYear());
-
-// console.log("getProjectsGroupeByYear()");
-// console.log(getProjectsGroupeByYear());
-
-// console.log("getEventLogEntriesGroupedByYea() after");
-// console.log(getEventLogEntriesGroupedByYear());
 
 function getProjectsGroupeByYear(): EventLogEntriesPerYear | {} {
   const eventLogEntriesGroupedByYear = getEventLogEntriesGroupedByYear();
