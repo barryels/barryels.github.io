@@ -2,6 +2,7 @@ import {
   EventLogEntry,
   getEventLogEntriesGroupedByYear,
 } from "../../global/dataStore";
+import utilityStyles from "./../Global/index.module.css";
 import styles from "./index.module.css";
 import RoleAtCompanyUpdated from "./RoleAtCompanyUpdated";
 
@@ -13,7 +14,10 @@ export default function EventLogTimeline() {
       {Object.keys(eventLogEntriesGroupedByYear).map((year) => {
         const item = eventLogEntriesGroupedByYear[year];
         return (
-          <section key={year} className={styles.yearGroup}>
+          <section
+            key={year}
+            className={`${styles.yearGroup} ${utilityStyles.spaceVerticallyLarge}`}
+          >
             <h2 className={styles.yearGroupTitle}>{year}</h2>
             {item.events
               .filter((event: EventLogEntry) => {
