@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { data } from "../global/dataStore";
+import EventLogTimeline from "../components/EventLogTimeline";
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
             })}
           </ul>
         </section>
+
+        <EventLogTimeline />
       </main>
 
       <footer className="site-footer"></footer>

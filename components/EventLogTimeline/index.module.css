@@ -1,0 +1,23 @@
+.root {
+}
+
+.root > * + * {
+  margin-top: 2.4rem;
+}
+
+.yearGroup {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2.4rem;
+}
+.yearGroup > * + * {
+  margin-top: 2.4rem;
+}
+
+.yearGroupTitle {
+  text-align: center;
+}
+
+.joinedCompany {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 2.4rem;
+}
