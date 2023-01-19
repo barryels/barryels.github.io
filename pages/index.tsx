@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <SiteIntro />
 
-        <EventLogTimeline />
+        <EventLogTimeline isReverseChrononogicalOrder={true} />
       </main>
 
       <SiteFooter />

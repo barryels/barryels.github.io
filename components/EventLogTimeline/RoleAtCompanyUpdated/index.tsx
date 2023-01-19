@@ -1,24 +1,27 @@
-import { EventLogEntry } from "../../../global/dataStore";
+import { EventLogEntry } from "../../../global/types";
 import utilityStyles from "./../../Global/index.module.css";
 import styles from "./index.module.css";
 
 type Props = {
-  event: EventLogEntry;
+  eventLogEntry: EventLogEntry;
 };
 
-export default function RoleAtCompanyUpdated({ event }: Props) {
+export default function RoleAtCompanyUpdated({ eventLogEntry }: Props) {
   return (
     <article
       className={`${styles.root} ${utilityStyles.spaceVerticallySmall}`}
-      key={event.id}
+      key={eventLogEntry.id}
     >
-      <h3>{event.data.position}</h3>
-      <h4>{event.data.companyName}</h4>
+      <h3>{eventLogEntry.data.position}</h3>
+      <h4>{eventLogEntry.data.companyName}</h4>
       <p>
-        <strong>{event.data.dateFormatted}</strong>
+        <strong>
+          {new Date(eventLogEntry.data.startDate).toDateString()} -{" "}
+          {new Date(eventLogEntry.data.endDate || -1).toDateString()}
+        </strong>
       </p>
       <ul>
-        {event.data.skills.map((skillName, index) => {
+        {eventLogEntry.data.skills.map((skillName, index) => {
           return <li key={index}>{skillName}</li>;
         })}
       </ul>
