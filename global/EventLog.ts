@@ -4,7 +4,7 @@ export const eventLog: EventLog = [
   {
     id: "af77fd59-a08d-45e6-acb2-561823292370",
     type: "EDUCATION_CHANGED",
-    dateTime: "2001-05-01T00:00:01",
+    occurredAt: "2001-05-01T00:00:01Z",
     data: {
       institution: "CTU Training Solutions",
       achievement: "Web Design & Development Diploma",
@@ -13,7 +13,7 @@ export const eventLog: EventLog = [
   {
     id: "f4d6162e-59bf-40c3-afea-ae2b683defc3",
     type: "SKILL_LEVEL_CHANGED",
-    dateTime: "2001-05-01T00:00:01",
+    occurredAt: "2001-05-01T00:00:01Z",
     data: {
       name: "HTML",
       level: 1,
@@ -22,7 +22,7 @@ export const eventLog: EventLog = [
   {
     id: "df77c0f4-07f3-4380-a68b-0868f71b5d95",
     type: "SKILL_LEVEL_CHANGED",
-    dateTime: "2001-05-01T00:00:01",
+    occurredAt: "2001-05-01T00:00:01Z",
     data: {
       name: "CSS",
       level: 1,
@@ -31,7 +31,7 @@ export const eventLog: EventLog = [
   {
     id: "61137066-7c30-4e7e-b001-34387c533301",
     type: "SKILL_LEVEL_CHANGED",
-    dateTime: "2001-05-01T00:00:01",
+    occurredAt: "2001-05-01T00:00:01Z",
     data: {
       name: "JavaScript",
       level: 1,
@@ -40,7 +40,7 @@ export const eventLog: EventLog = [
   {
     id: "52c180e7-f2d0-4e9f-8f52-0c1cd8d3bd8f",
     type: "SKILL_LEVEL_CHANGED",
-    dateTime: "2001-05-01T00:00:01",
+    occurredAt: "2001-05-01T00:00:01Z",
     data: {
       name: "PHP",
       level: 1,
@@ -49,7 +49,7 @@ export const eventLog: EventLog = [
   {
     id: "7920e339-beae-4abc-841b-fd6977c1f206",
     type: "SKILL_LEVEL_CHANGED",
-    dateTime: "2001-05-01T00:00:01",
+    occurredAt: "2001-05-01T00:00:01Z",
     data: {
       name: "MySQL",
       level: 1,
@@ -58,7 +58,7 @@ export const eventLog: EventLog = [
   {
     id: "0e08527b-e7fd-49f6-9140-6f824dd15793",
     type: "JOINED_COMPANY",
-    dateTime: "2001-08-01T00:00:01",
+    occurredAt: "2001-08-01T00:00:01Z",
     data: {
       companyName: "Shareware Systems",
     },
@@ -66,7 +66,7 @@ export const eventLog: EventLog = [
   {
     id: "c5fa51d8-51dd-4292-bae7-14844eed4cd3",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2001-08-01T00:00:01",
+    occurredAt: "2001-08-01T00:00:01Z",
     data: {
       companyName: "Shareware Systems",
       position: "Multimedia Developer",
@@ -81,7 +81,7 @@ export const eventLog: EventLog = [
   {
     id: "301bb0ca-ddff-4953-9da5-108c82b30bbe",
     type: "PROJECT_COMPLETED",
-    dateTime: "2001-10-01T00:00:01",
+    occurredAt: "2001-10-01T00:00:01Z",
     data: {
       name: "Shareware Systems Website",
       url: "TODO",
@@ -92,7 +92,7 @@ export const eventLog: EventLog = [
   {
     id: "40fccd29-7097-4be7-936e-0c2a6b8dcfc0",
     type: "HAD_EPIPHONY",
-    dateTime: "2002-01-01T00:00:01",
+    occurredAt: "2002-01-01T00:00:01Z",
     data: {
       realisation: "Programming is hard",
     },
@@ -100,7 +100,7 @@ export const eventLog: EventLog = [
   {
     id: "5525d7cc-8851-4356-a605-2e5aa117baa4",
     type: "LEFT_COMPANY",
-    dateTime: "2003-10-30T23:59:59",
+    occurredAt: "2003-10-30T23:59:59Z",
     data: {
       companyName: "Shareware Systems",
     },
@@ -108,7 +108,7 @@ export const eventLog: EventLog = [
   {
     id: "22f3e450-bbfc-4391-b024-e28008c8c4f5",
     type: "JOINED_COMPANY",
-    dateTime: "2004-07-01T00:00:01",
+    occurredAt: "2004-07-01T00:00:01Z",
     data: {
       companyName: "Commonwealth Academy",
     },
@@ -116,7 +116,7 @@ export const eventLog: EventLog = [
   {
     id: "9e79cd5c-9e18-4766-862b-9f3700226ded",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2004-07-01T00:00:01",
+    occurredAt: "2004-07-01T00:00:01Z",
     data: {
       companyName: "Commonwealth Academy",
       position: "IT Tutor & Network Engineer",
@@ -137,7 +137,7 @@ export const eventLog: EventLog = [
   {
     id: "c80087a4-d090-47a7-9c22-57d22ef065b3",
     type: "LEFT_COMPANY",
-    dateTime: "2006-11-30T23:59:59",
+    occurredAt: "2006-11-30T23:59:59Z",
     data: {
       companyName: "Commonwealth Academy",
     },
@@ -145,7 +145,7 @@ export const eventLog: EventLog = [
   {
     id: "f373b666-3cfc-4b5e-a605-91a42708b381",
     type: "JOINED_COMPANY",
-    dateTime: "2006-12-01T00:00:01",
+    occurredAt: "2006-12-01T00:00:01Z",
     data: {
       companyName: "iDiversity Studios",
     },
@@ -153,7 +153,7 @@ export const eventLog: EventLog = [
   {
     id: "4514e6aa-90f8-46b1-a88b-a0e900b15783",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2006-12-01T00:00:01",
+    occurredAt: "2006-12-01T00:00:01Z",
     data: {
       companyName: "iDiversity Studios",
       position: "Intermediate Web Designer",
@@ -168,7 +168,7 @@ export const eventLog: EventLog = [
   {
     id: "82ea5522-95c3-483b-b0af-b90265075a15",
     type: "LEFT_COMPANY",
-    dateTime: "2007-04-30T23:59:59",
+    occurredAt: "2007-04-30T23:59:59Z",
     data: {
       companyName: "iDiversity Studios",
     },
@@ -176,7 +176,7 @@ export const eventLog: EventLog = [
   {
     id: "f6267a81-230c-47ca-bfa2-c720f6fb20e8",
     type: "JOINED_COMPANY",
-    dateTime: "2007-05-01T00:00:01",
+    occurredAt: "2007-05-01T00:00:01Z",
     data: {
       companyName: "Aqua Online",
     },
@@ -184,7 +184,7 @@ export const eventLog: EventLog = [
   {
     id: "b73e6c55-22d7-4e09-94bc-ddb1928a0aa7",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2007-05-01T00:00:01",
+    occurredAt: "2007-05-01T00:00:01Z",
     data: {
       companyName: "Aqua Online",
       position: "Flash Developer",
@@ -199,7 +199,7 @@ export const eventLog: EventLog = [
   {
     id: "345fc980-bb30-41ed-9f1e-76c3f85a96fb",
     type: "LEFT_COMPANY",
-    dateTime: "2010-07-31T23:59:59",
+    occurredAt: "2010-07-31T23:59:59Z",
     data: {
       companyName: "Aqua Online",
     },
@@ -207,7 +207,7 @@ export const eventLog: EventLog = [
   {
     id: "3e86186d-98b9-4d3a-9714-68a4a0409aef",
     type: "JOINED_COMPANY",
-    dateTime: "2010-08-01T00:00:01",
+    occurredAt: "2010-08-01T00:00:01Z",
     data: {
       companyName: "Quirk",
     },
@@ -215,7 +215,7 @@ export const eventLog: EventLog = [
   {
     id: "87d1b3c0-1c50-4bd3-8b1d-629169646ded",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2010-08-01T00:00:01",
+    occurredAt: "2010-08-01T00:00:01Z",
     data: {
       companyName: "Quirk",
       position: "Flash Developer",
@@ -229,7 +229,7 @@ export const eventLog: EventLog = [
   {
     id: "2989718c-652c-4b01-95af-f9c58367ce5c",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2011-01-01T00:00:01",
+    occurredAt: "2011-01-01T00:00:01Z",
     data: {
       companyName: "Quirk",
       position: "Senior Software Developer",
@@ -243,7 +243,7 @@ export const eventLog: EventLog = [
   {
     id: "9c65b090-c40a-4ba7-a1f0-ba4b1f004cb7",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2013-01-01T00:00:01",
+    occurredAt: "2013-01-01T00:00:01Z",
     data: {
       companyName: "Quirk",
       position: "Head of Development",
@@ -258,7 +258,7 @@ export const eventLog: EventLog = [
   {
     id: "dc877166-a74c-43d9-a53a-ce96a5befa62",
     type: "LEFT_COMPANY",
-    dateTime: "2014-01-31T23:59:59",
+    occurredAt: "2014-01-31T23:59:59Z",
     data: {
       companyName: "Quirk",
     },
@@ -266,7 +266,7 @@ export const eventLog: EventLog = [
   {
     id: "16a380e8-a099-4355-b6cf-474c2ea331d9",
     type: "JOINED_COMPANY",
-    dateTime: "2014-02-01T00:00:01",
+    occurredAt: "2014-02-01T00:00:01Z",
     data: {
       companyName: "Freelance",
     },
@@ -274,7 +274,7 @@ export const eventLog: EventLog = [
   {
     id: "d4e357c4-ea19-4ab3-9dfe-b92220480290",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2014-02-01T00:00:01",
+    occurredAt: "2014-02-01T00:00:01Z",
     data: {
       companyName: "Freelance",
       position: "Freelance Creative Developer and UI Designer",
@@ -289,7 +289,7 @@ export const eventLog: EventLog = [
   {
     id: "34284ab6-aa14-4d17-88fc-c3c13c8fb046",
     type: "JOINED_COMPANY",
-    dateTime: "2014-06-01T00:00:01",
+    occurredAt: "2014-06-01T00:00:01Z",
     data: {
       companyName: "BBD",
     },
@@ -297,7 +297,7 @@ export const eventLog: EventLog = [
   {
     id: "b9c5c29a-ae5a-44ac-9e35-a41ea30dcf38",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2014-06-01T00:00:01",
+    occurredAt: "2014-06-01T00:00:01Z",
     data: {
       companyName: "BBD",
       position: "Software Developer",
@@ -312,7 +312,7 @@ export const eventLog: EventLog = [
   {
     id: "45f5cb75-2049-4b28-bbc1-f4458f2ed436",
     type: "LEFT_COMPANY",
-    dateTime: "2015-07-31T23:59:59",
+    occurredAt: "2015-07-31T23:59:59Z",
     data: {
       companyName: "BBD",
     },
@@ -320,7 +320,7 @@ export const eventLog: EventLog = [
   {
     id: "eb9c2d97-4753-45ef-bb0d-6cde9f3f7f1a",
     type: "JOINED_COMPANY",
-    dateTime: "2015-08-01T00:00:01",
+    occurredAt: "2015-08-01T00:00:01Z",
     data: {
       companyName: "Fogg Experiential Design",
     },
@@ -328,7 +328,7 @@ export const eventLog: EventLog = [
   {
     id: "15a78c5e-b839-4364-8fb1-c9a04a97247e",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2015-08-01T00:00:01",
+    occurredAt: "2015-08-01T00:00:01Z",
     data: {
       companyName: "Fogg Experiential Design",
       position: "Senior Developer",
@@ -343,7 +343,7 @@ export const eventLog: EventLog = [
   {
     id: "d37450f9-4eaf-47a4-954f-c9e04e5792fb",
     type: "LEFT_COMPANY",
-    dateTime: "2016-06-30T23:59:59",
+    occurredAt: "2016-06-30T23:59:59Z",
     data: {
       companyName: "Fogg Experiential Design",
     },
@@ -351,7 +351,7 @@ export const eventLog: EventLog = [
   {
     id: "532b04bc-bb4b-4f2f-ab6f-24f7999e7088",
     type: "JOINED_COMPANY",
-    dateTime: "2016-07-01T00:00:01",
+    occurredAt: "2016-07-01T00:00:01Z",
     data: {
       companyName: "Digital Path",
     },
@@ -359,7 +359,7 @@ export const eventLog: EventLog = [
   {
     id: "a4ce0f04-8a5d-413c-aaad-a59467075f4f",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2016-07-01T00:00:01",
+    occurredAt: "2016-07-01T00:00:01Z",
     data: {
       companyName: "Digital Path",
       position: "Front-end Developer and Team Lead",
@@ -379,7 +379,7 @@ export const eventLog: EventLog = [
   {
     id: "e32bb271-fdde-41db-9d90-eb5568d4c80e",
     type: "LEFT_COMPANY",
-    dateTime: "2017-09-30T23:59:59",
+    occurredAt: "2017-09-30T23:59:59Z",
     data: {
       companyName: "Digital Path",
     },
@@ -387,7 +387,7 @@ export const eventLog: EventLog = [
   {
     id: "ad540b0e-7d7a-4c52-a34d-a0c99da89362",
     type: "JOINED_COMPANY",
-    dateTime: "2017-10-01T00:00:01",
+    occurredAt: "2017-10-01T00:00:01Z",
     data: {
       companyName: "Qualica Technologies",
     },
@@ -395,7 +395,7 @@ export const eventLog: EventLog = [
   {
     id: "9a33ed5a-925f-41c9-9d46-023a850bf7d4",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2017-10-01T00:00:01",
+    occurredAt: "2017-10-01T00:00:01Z",
     data: {
       companyName: "Qualica Technologies",
       position: "Web Developer",
@@ -409,7 +409,7 @@ export const eventLog: EventLog = [
   {
     id: "f9585812-9e5e-4a78-98ae-6edbcc3aeadf",
     type: "LEFT_COMPANY",
-    dateTime: "2018-05-31T23:59:59",
+    occurredAt: "2018-05-31T23:59:59Z",
     data: {
       companyName: "Qualica Technologies",
     },
@@ -417,7 +417,7 @@ export const eventLog: EventLog = [
   {
     id: "b744f206-b907-4a00-a208-719bf75001b4",
     type: "JOINED_COMPANY",
-    dateTime: "2018-06-01T00:00:01",
+    occurredAt: "2018-06-01T00:00:01Z",
     data: {
       companyName: "Platform45",
     },
@@ -425,7 +425,7 @@ export const eventLog: EventLog = [
   {
     id: "d77a7ba7-abd9-490b-9bfd-c1f9a1ab2bb4",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2018-06-01T00:00:01",
+    occurredAt: "2018-06-01T00:00:01Z",
     data: {
       companyName: "Platform45",
       position: "Software Engineer",
@@ -444,7 +444,7 @@ export const eventLog: EventLog = [
   {
     id: "5ce08aec-4c24-4d27-ab90-1c7accac4141",
     type: "ROLE_AT_COMPANY_UPDATED",
-    dateTime: "2021-08-01T00:00:01",
+    occurredAt: "2021-08-01T00:00:01Z",
     data: {
       companyName: "Platform45",
       position: "Technical Architect",

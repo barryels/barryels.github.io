@@ -25,7 +25,7 @@ export function getEventLogEntriesGroupedByYear():
   | EventLogEntriesPerYear[]
   | [] {
   const result = eventLog.reduce((accumulator, eventLogEntry) => {
-    const year = getYearFromDateTimeString(eventLogEntry.dateTime);
+    const year = getYearFromDateTimeString(eventLogEntry.occurredAt);
     const existingYearItemInAccumulator = accumulator.find((yearItem) => {
       return yearItem.year === year;
     });

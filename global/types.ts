@@ -9,13 +9,17 @@ const eventTypes = [
   "EDUCATION_CHANGED",
   "SKILL_LEVEL_CHANGED",
 ] as const;
-
 export type EventType = typeof eventTypes[number];
+
+type TwoDigitString = `${number}${number}`;
+type FourDigitString = `${number}${number}${number}${number}`;
+export type SimpleDateTime =
+  `${FourDigitString}-${TwoDigitString}-${TwoDigitString}T${TwoDigitString}:${TwoDigitString}:${TwoDigitString}Z`;
 
 export type EventLogEntry = {
   id: string;
   type: EventType;
-  dateTime: string;
+  occurredAt: SimpleDateTime;
   data?: any;
 };
 
