@@ -56,6 +56,24 @@ export const eventLog: EventLog = [
     },
   },
   {
+    id: "0eeffb68-55e3-46d2-ac6e-56b4cd81c537",
+    type: "SKILL_LEVEL_CHANGED",
+    occurredAt: "2001-05-01T00:00:01Z",
+    data: {
+      name: "Graphic Design",
+      level: 1,
+    },
+  },
+  {
+    id: "b776be23-8a54-43db-8862-3da66b9ab5de",
+    type: "SKILL_LEVEL_CHANGED",
+    occurredAt: "2001-05-01T00:00:01Z",
+    data: {
+      name: "Actionscript",
+      level: 1,
+    },
+  },
+  {
     id: "0e08527b-e7fd-49f6-9140-6f824dd15793",
     type: "JOINED_COMPANY",
     occurredAt: "2001-08-01T00:00:01Z",
@@ -76,6 +94,15 @@ export const eventLog: EventLog = [
       description:
         "The design and development of multimedia presentations, interactive e-learning projects (for SAP) and corporate identity. These courses were used as a platform for delivering up-to-date information around the “mySAP.com” line-up of business software solutions.",
       skills: ["Flash Animation", "User Interface Design", "ActionScript"],
+    },
+  },
+  {
+    id: "bc46766a-a800-48c5-bd82-9bd8ab04b0b7",
+    type: "SKILL_LEVEL_CHANGED",
+    occurredAt: "2001-11-01T00:00:01Z",
+    data: {
+      name: "SCORM",
+      level: 1,
     },
   },
   {
@@ -458,6 +485,18 @@ export const eventLog: EventLog = [
         "Amazon Web Services (AWS)",
         "React.js",
       ],
+    },
+  },
+  {
+    id: "554b3de3-84e3-4839-9603-2acee86fa709",
+    type: "SKILL_LEVEL_CHANGED",
+    occurredAt: "2023-01-18T14:00:00Z",
+    data: {
+      name: "Experience API",
+      level: 1,
+      url: "https://xapi.com",
+      description:
+        "The Experience API (or xAPI) is a new specification for learning technology that makes it possible to collect data about the wide range of experiences a person has (online and offline). This API captures data in a consistent format about a person or group’s activities from many technologies. Very different systems are able to securely communicate by capturing and sharing this stream of activities using xAPI’s simple vocabulary.",
     },
   },
 ];

@@ -12,7 +12,7 @@ export type EventType = typeof eventTypes[number];
 
 type TwoDigitString = `${number}${number}`;
 type FourDigitString = `${number}${number}${number}${number}`;
-export type SimpleDateTime =
+type SimpleDateTime =
   `${FourDigitString}-${TwoDigitString}-${TwoDigitString}T${TwoDigitString}:${TwoDigitString}:${TwoDigitString}Z`;
 
 export type EventLogEntry = {
