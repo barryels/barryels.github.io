@@ -1,13 +1,13 @@
-import { EventLogEntry, JOINED_COMPANY_data } from "./types";
+import { EventLogEntry, CurrentEmployment } from "./types";
 import { eventLog } from "./EventLog";
 
-function getCurrentCompany(): JOINED_COMPANY_data | null {
+function getCurrentCompany(): CurrentEmployment | null {
   return (
     eventLog
       .slice()
       .reverse()
       .find((eventLogEntry) => {
-        return eventLogEntry.type === "JOINED_COMPANY";
+        return eventLogEntry.type === "ROLE_AT_COMPANY_UPDATED";
       }).data || null
   );
 }
