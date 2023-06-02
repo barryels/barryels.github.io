@@ -7,6 +7,12 @@ type Props = {
 };
 
 export default function RoleAtCompanyUpdated({ eventLogEntry }: Props) {
+  const startDate = new Date(eventLogEntry.data.startDate).toDateString();
+  const endDate = eventLogEntry.data.endDate
+    ? new Date(eventLogEntry.data.endDate).toDateString()
+    : "Present";
+  const formattedDuration = `${startDate} - ${endDate}`;
+
   return (
     <article
       className={`${styles.root} ${utilityStyles.spaceVerticallySmall}`}
@@ -15,10 +21,7 @@ export default function RoleAtCompanyUpdated({ eventLogEntry }: Props) {
       <h3>{eventLogEntry.data.position}</h3>
       <h4>{eventLogEntry.data.companyName}</h4>
       <p>
-        <strong>
-          {new Date(eventLogEntry.data.startDate).toDateString()} -{" "}
-          {new Date(eventLogEntry.data.endDate || -1).toDateString()}
-        </strong>
+        <strong>{formattedDuration}</strong>
       </p>
       <ul>
         {eventLogEntry.data.skills.map((skillName, index) => {
