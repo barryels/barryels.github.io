@@ -66,7 +66,7 @@ export function getSiteInfo() {
     currentCompanyName: getCurrentCompany().companyName || "",
     currentPosition: getCurrentCompany().position || "",
     about:
-      "I am passionate about building a better web for end users, and consequently the businesses that utilise this amazing platform. Whether through technical innovation, solid user experience or process engineering. My focus is always on making small, consistent improvements over time. I have been fortunate to experience many years building solutions using a wide range of technologies within a multitude of business domains.",
+      "I am passionate about building a better web for end users, and consequently the businesses that utilise this amazing platform. Whether through technical innovation, solid user experience or process engineering. My focus is always on making small, consistent improvements over time. I have been fortunate enough to experience 20+ years of building solutions using a wide range of technologies within a multitude of business domains.",
     careerHighlights: [
       {
         description:
