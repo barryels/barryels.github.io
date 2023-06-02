@@ -11,7 +11,11 @@ type Props = {
   isReverseChrononogicalOrder?: boolean;
 };
 
-function mapSupportedEventLogEntryToComponent(eventLogEntry: EventLogEntry) {
+type EventLogEntryComponent = JSX.Element | null;
+
+function mapSupportedEventLogEntryToComponent(
+  eventLogEntry: EventLogEntry
+): EventLogEntryComponent {
   switch (eventLogEntry.type) {
     case "ROLE_AT_COMPANY_UPDATED":
       return (
@@ -43,17 +47,23 @@ export default function EventLogTimeline({
   return (
     <div className={styles.root}>
       {eventLogEntriesGroupedByYear.map((item: EventLogEntriesPerYear) => {
-        return (
+        const eventLogEntryComponentList: EventLogEntryComponent[] = item.events
+          .map((eventLogEntry: EventLogEntry) => {
+            return mapSupportedEventLogEntryToComponent(eventLogEntry);
+          })
+          .filter((eventLogEntryComponent: EventLogEntryComponent) => {
+            return eventLogEntryComponent !== null;
+          });
+
+        return eventLogEntryComponentList.length > 0 ? (
           <section
             key={item.year}
             className={`${styles.yearGroup} ${utilityStyles.spaceVerticallyLarge}`}
           >
             <h2 className={styles.yearGroupTitle}>{item.year}</h2>
-            {item.events.map((eventLogEntry: EventLogEntry) => {
-              return mapSupportedEventLogEntryToComponent(eventLogEntry);
-            })}
+            {eventLogEntryComponentList}
           </section>
-        );
+        ) : null;
       })}
     </div>
   );
