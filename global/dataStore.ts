@@ -44,6 +44,23 @@ export function getEventLogEntriesGroupedByYear():
   return result || [];
 }
 
+export type Skill = {
+  name: string;
+  level: number;
+};
+
+export function getCurrentSkills(): Skill[] | [] {
+  return eventLog
+    .slice()
+    .reverse()
+    .filter((eventLogEntry) => {
+      return eventLogEntry.type === "SKILL_LEVEL_CHANGED";
+    })
+    .map((skillEvent) => {
+      return skillEvent.data;
+    });
+}
+
 export function getSiteInfo() {
   return {
     links: [
@@ -65,6 +82,7 @@ export function getSiteInfo() {
     ],
     currentCompanyName: getCurrentCompany().companyName || "",
     currentPosition: getCurrentCompany().position || "",
+    headline: "Father, Husband, cat-herder",
     about:
       "I am passionate about building a better web for end users, and consequently the businesses that utilise this amazing platform. Whether through technical innovation, solid user experience or process engineering. My focus is always on making small, consistent improvements over time. I have been fortunate enough to experience 20+ years of building solutions using a wide range of technologies within a multitude of business domains.",
     careerHighlights: [

@@ -9,3 +9,22 @@
 .spaceVerticallyLarge > * + * {
   margin-top: 2.4rem;
 }
+
+.spaceHorizontally > * + * {
+  margin-left: 1.6rem;
+}
+
+.spaceHorizontallySmall > * + * {
+  margin-left: 0.8rem;
+}
+
+.spaceHorizontallyLarge > * + * {
+  margin-left: 2.4rem;
+}
+
+.resetListStyles,
+.resetListStyles li,
+.resetListStyles ul li {
+  list-style: none;
+  text-indent: 0;
+}

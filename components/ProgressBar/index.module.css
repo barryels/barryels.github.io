@@ -1,0 +1,18 @@
+.root {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  height: 0.8rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.root[value]::-webkit-progress-bar {
+  background-color: #ccc;
+  border-radius: 0;
+}
+
+.root[value]::-webkit-progress-value {
+  background-color: #000;
+}

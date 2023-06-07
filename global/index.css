@@ -1,3 +1,10 @@
+:root {
+  --spacing-unit-sm: 0.4rem;
+  --spacing-unit: 0.8rem;
+  --spacing-unit-md: 1.6rem;
+  --spacing-unit-lg: 2.4rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

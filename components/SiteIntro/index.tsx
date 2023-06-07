@@ -1,7 +1,7 @@
 import { getSiteInfo } from "../../global/dataStore";
-import Image from "next/image";
 import utilityStyles from "./../Global/index.module.css";
 import styles from "./index.module.css";
+import PersonAvatar from "../PersonAvatar";
 
 export default function SiteIntro() {
   const siteInfo = getSiteInfo();
@@ -10,14 +10,8 @@ export default function SiteIntro() {
     <div className={`${styles.root} ${utilityStyles.spaceVertically}`}>
       <h1 className={styles.title}>{siteInfo.fullName}</h1>
 
-      <div className={styles.avatarContainer}>
-        <Image
-          className={styles.avatar}
-          src="/me.png"
-          alt={siteInfo.fullName}
-          width={128}
-          height={128}
-        />
+      <div style={{ textAlign: "center" }}>
+        <PersonAvatar fullName={siteInfo.fullName} />
       </div>
 
       <section className={utilityStyles.spaceVertically}>
