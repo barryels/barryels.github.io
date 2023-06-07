@@ -16,13 +16,6 @@ export default function SiteIntro() {
 
       <section className={utilityStyles.spaceVertically}>
         <p>{siteInfo.about}</p>
-
-        <h2>Career Highlights</h2>
-        <ul>
-          {siteInfo.careerHighlights.map((careerHighlight, index) => {
-            return <li key={index}>{careerHighlight.description}</li>;
-          })}
-        </ul>
       </section>
     </div>
   );

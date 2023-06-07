@@ -2,7 +2,6 @@ import Head from "next/head";
 import { getSiteInfo } from "../global/dataStore";
 import SiteIntro from "../components/SiteIntro";
 import SiteFooter from "../components/SiteFooter";
-import EventLogTimeline from "../components/EventLogTimeline";
 
 export default function Home() {
   const siteInfo = getSiteInfo();
@@ -18,8 +17,6 @@ export default function Home() {
 
       <main>
         <SiteIntro />
-
-        <EventLogTimeline isReverseChrononogicalOrder={true} />
       </main>
 
       <SiteFooter />
