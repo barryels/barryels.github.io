@@ -1,5 +1,4 @@
 .root {
-  background: #fafafa;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1.6rem;
+  padding: var(--spacing-unit-md);
 }

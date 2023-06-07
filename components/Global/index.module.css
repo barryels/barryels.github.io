@@ -1,30 +1,32 @@
 .spaceVertically > * + * {
-  margin-top: 1.6rem;
+  margin-top: var(--spacing-unit-md);
 }
 
 .spaceVerticallySmall > * + * {
-  margin-top: 0.8rem;
+  margin-top: var(--spacing-unit);
 }
 
 .spaceVerticallyLarge > * + * {
-  margin-top: 2.4rem;
+  margin-top: var(--spacing-unit-lg);
 }
 
 .spaceHorizontally > * + * {
-  margin-left: 1.6rem;
+  margin-left: var(--spacing-unit-md);
 }
 
 .spaceHorizontallySmall > * + * {
-  margin-left: 0.8rem;
+  margin-left: var(--spacing-unit);
 }
 
 .spaceHorizontallyLarge > * + * {
-  margin-left: 2.4rem;
+  margin-left: var(--spacing-unit-lg);
 }
 
 .resetListStyles,
 .resetListStyles li,
 .resetListStyles ul li {
   list-style: none;
+  margin: 0;
+  padding: 0;
   text-indent: 0;
 }

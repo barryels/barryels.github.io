@@ -7,8 +7,7 @@ export default function SiteFooter() {
 
   return (
     <footer className={`${styles.root} ${utilityStyles.spaceVertically}`}>
-      <h3>Links</h3>
-      <ul>
+      <ul className={`${utilityStyles.resetListStyles}`}>
         {siteInfo.links.map((link, index) => {
           return (
             <li key={index}>
