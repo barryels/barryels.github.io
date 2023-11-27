@@ -154,7 +154,9 @@
         box-shadow: none;
       }
       .panel--dark {
-        background: #e5e4e2;
+        background: transparent;
+        border: 1px solid #ddd;
+        color: #555;
       }
 
       .tag-list {
@@ -175,20 +177,24 @@
         line-height: 1;
         padding: 0.4rem 0.8rem;
       }
-      .tag--type-healthcare {
+      .tag--domain-healthcare {
         background: #c3f5c8;
       }
-      .tag--type-event-management {
+      .tag--domain-event-management {
         background: #c0bddb;
       }
-      .tag--type-education {
+      .tag--domain-education {
         background: #c8e6e2;
       }
-      .tag--type-insurance {
+      .tag--domain-insurance {
         background: #f2d9b9;
       }
-      .tag--type-e-commerce {
+      .tag--domain-e-commerce {
         background: #87cfb8;
+      }
+
+      .tag--tech-generic {
+        background: #e5e5e2;
       }
 
       .avatar {
@@ -296,6 +302,13 @@
         gap: 1.6rem;
       }
 
+      .panel--content-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
       @media (min-width: 600px) {
         .panels {
           grid-template-columns: 1fr 1fr 1fr;
@@ -305,7 +318,6 @@
         }
         .panel--content-contact {
           grid-column: 3 / 4;
-          height: auto;
         }
       }
 
@@ -325,7 +337,7 @@
 
       .contact-list {
         display: flex;
-        gap: 0.8rem;
+        gap: 1.6rem;
         list-style: none;
         padding: 0;
         justify-content: center;
@@ -338,8 +350,8 @@
         transition: all 0.25s ease-out;
       }
       .contact-list__item a svg {
-        height: 4.8rem;
-        width: 4.8rem;
+        height: 4rem;
+        width: 4rem;
       }
       .contact-list__item a:hover {
         opacity: 1;
@@ -399,24 +411,32 @@
           class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-about"
         >
           <p>
-            Hi, I'm <span class="h3">Barry</span>, a creative technologist,
+            Hi, I'm <span class="h3">Barry</span>, a creative technologist
             dedicated to enhancing user experiences and assisting businesses in
             reaching their objectives. With over 20 years of experience in
             various domains such as
-            <span class="tag tag--inline tag--type-healthcare">healthcare</span
+            <span class="tag tag--inline tag--domain-healthcare"
+              >healthcare</span
             >,
-            <span class="tag tag--inline tag--type-event-management"
+            <span class="tag tag--inline tag--domain-event-management"
               >event management</span
             >,
-            <span class="tag tag--inline tag--type-education">education</span>,
-            <span class="tag tag--inline tag--type-insurance">insurance</span>
+            <span class="tag tag--inline tag--domain-education">education</span
+            >,
+            <span class="tag tag--inline tag--domain-insurance">insurance</span>
             and
-            <span class="tag tag--inline tag--type-e-commerce">e-commerce</span
+            <span class="tag tag--inline tag--domain-e-commerce"
+              >e-commerce</span
             >, I've employed technologies like
-            <span class="tag tag--inline">React</span>,
-            <span class="tag tag--inline">PHP</span> and
-            <span class="tag tag--inline">AWS</span>. My focus is on continuous
-            learning, technical innovation, and consistent improvement.
+            <span class="tag tag--inline tag--tech-generic">React</span>,
+            <span class="tag tag--inline tag--tech-generic">Rails</span>,
+            <span class="tag tag--inline tag--tech-generic">Node.js</span>,
+            <span class="tag tag--inline tag--tech-generic">PHP</span>,
+            <span class="tag tag--inline tag--tech-generic">AWS</span> and
+            <span class="tag tag--inline tag--tech-generic"
+              >many other frameworks / tools</span
+            >. My focus is on continuous learning, technical innovation, and
+            consistent improvement.
           </p>
         </section>
 
@@ -424,7 +444,7 @@
           id="contact"
           class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-contact"
         >
-          <h3>You can find me here...</h3>
+          <p>You can find me here...</p>
           <ul class="contact-list">
             <li class="contact-list__item">
               <a
