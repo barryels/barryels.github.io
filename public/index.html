@@ -131,8 +131,6 @@
         max-width: 80rem;
       }
 
-      .stack--vertical {
-      }
       .stack.stack--spacing-2x > * + * {
         margin-left: 1.6rem;
       }
@@ -329,28 +327,6 @@
         opacity: 1;
       }
     </style>
-
-    <script type="text/javascript" defer>
-      document.addEventListener("DOMContentLoaded", function () {
-        init();
-      });
-
-      function initMainNavigation() {
-        const mainNavigation = document.querySelector(".main-navigation");
-        const mainNavigationTrigger = document.querySelector(
-          ".main-navigation-trigger"
-        );
-
-        mainNavigationTrigger.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.body.classList.toggle("hide-main-navigation-menu");
-        });
-      }
-
-      function init() {
-        initMainNavigation();
-      }
-    </script>
   </head>
   <body>
     <div class="character-container">
