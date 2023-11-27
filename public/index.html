@@ -279,7 +279,6 @@
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
-        padding: 2.4rem;
       }
 
       @media (min-width: 600px) {
@@ -292,6 +291,7 @@
         animation-name: slideDown, fadeIn;
         animation-duration: 0.5s, 1s;
         overflow-x: hidden;
+        padding: 2.4rem 2.4rem 4.8rem;
         position: relative;
         z-index: 1;
       }
@@ -303,12 +303,12 @@
 
       .site-footer {
         border-top: 1px solid #ddd;
-        padding: 2.4rem;
+        padding: 4.8rem 2.4rem 2.4rem;
       }
       .site-footer__menu {
         align-items: center;
         display: flex;
-        gap: 1.6rem;
+        gap: 2.4rem;
         list-style: none;
         justify-content: center;
       }
@@ -316,7 +316,7 @@
         align-items: center;
         display: flex;
         gap: 0.4rem;
-        opacity: 0.5;
+        opacity: 0.75;
         transition: all 0.25s ease-out;
       }
       .site-footer__menu-item a svg {
@@ -338,7 +338,13 @@
     <header class="site-header u-max-width">
       <nav class="main-navigation">
         <a class="main-navigation-trigger" href="#">
-          <img class="avatar" src="./me.png" alt="Barry Els" />
+          <img
+            class="avatar"
+            src="./me.png"
+            alt="Barry Els"
+            height="4rem"
+            width="4rem"
+          />
 
           <svg
             class="menu-icon"
@@ -368,7 +374,7 @@
           class="stack stack--vertical stack--spacing-2x panel inset--2x panel-1"
         >
           <h1>Barry Els</h1>
-          <h3 class="h3">20+ years XP turning ideas into implementations</h3>
+          <h2 class="h3">20+ years XP turning ideas into implementations</h2>
           <p>
             I am passionate about building better experiences for end users, and
             consequently helping businesses achieve their goals. Whether through
