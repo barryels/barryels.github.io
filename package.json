@@ -1,6 +1,6 @@
 {
   "name": "barryels.github.io",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A simple portfolio site",
   "main": "index.js",
   "private": true,
@@ -14,21 +14,7 @@
     "url": "https://github.com/barryels/barryels.github.io/issues"
   },
   "homepage": "https://github.com/barryels/barryels.github.io#README",
-  "scripts": {
-    "dev": "next dev -p 3001",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "13.5.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.26",
-    "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5"
-  }
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
 }
