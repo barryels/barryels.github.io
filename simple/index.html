@@ -128,10 +128,6 @@
 
       .u-max-width {
         margin: 0 auto;
-        max-width: 60rem;
-      }
-      .u-max-width--2x {
-        margin: 0 auto;
         max-width: 80rem;
       }
 
@@ -323,6 +319,7 @@
         display: flex;
         gap: 0.4rem;
         opacity: 0.5;
+        transition: all 0.25s ease-out;
       }
       .site-footer__menu-item a svg {
         height: 2.4rem;
@@ -362,7 +359,7 @@
 
     <div id="about"></div>
 
-    <header class="site-header">
+    <header class="site-header u-max-width">
       <nav class="main-navigation">
         <a class="main-navigation-trigger" href="#">
           <img class="avatar" src="./me.png" alt="Barry Els" />
@@ -383,9 +380,6 @@
           ></li>
           <li class="main-navigation__menu-item"><a href="#about">About</a></li>
           <li class="main-navigation__menu-item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="main-navigation__menu-item">
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -393,38 +387,36 @@
     </header>
 
     <main class="site-main">
-      <div class="u-max-width--2x">
-        <div class="panels">
-          <section
-            class="stack stack--vertical stack--spacing-2x panel inset--2x panel-1"
-          >
-            <h1>Barry Els</h1>
-            <h3 class="h3">20+ years XP turning ideas into implementations</h3>
-            <p>
-              I am passionate about building better experiences for end users,
-              and consequently helping businesses achieve their goals. Whether
-              through technical innovation, solid user experience or internal
-              process re-engineering, my focus is on continuous learning and
-              consistent improvement over time. I have been fortunate enough to
-              experience 20+ years of building solutions using a wide range of
-              technologies within a multitude of business domains, most notably:
-              healthcare, event management, education and insurance.
-            </p>
-          </section>
+      <div class="panels u-max-width">
+        <section
+          class="stack stack--vertical stack--spacing-2x panel inset--2x panel-1"
+        >
+          <h1>Barry Els</h1>
+          <h3 class="h3">20+ years XP turning ideas into implementations</h3>
+          <p>
+            I am passionate about building better experiences for end users, and
+            consequently helping businesses achieve their goals. Whether through
+            technical innovation, solid user experience or internal process
+            re-engineering, my focus is on continuous learning and consistent
+            improvement over time. I have been fortunate enough to experience
+            20+ years of building solutions using a wide range of technologies
+            within a multitude of business domains, most notably: healthcare,
+            event management, education and insurance.
+          </p>
+        </section>
 
-          <section
-            class="stack stack--vertical stack--spacing-2x panel inset--2x panel-2"
-          >
-            <h3>Industries I've worked in</h3>
-            <ul class="tag-list">
-              <li class="tag tag--healthcare">Healthcare</li>
-              <li class="tag tag--event-management">Event Management</li>
-              <li class="tag tag--education">Education</li>
-              <li class="tag tag--insurance">Insurance</li>
-              <li class="tag tag--e-commerce">E-commerce</li>
-            </ul>
-          </section>
-        </div>
+        <section
+          class="stack stack--vertical stack--spacing-2x panel inset--2x panel-2"
+        >
+          <h3>Industries I've worked in</h3>
+          <ul class="tag-list">
+            <li class="tag tag--healthcare">Healthcare</li>
+            <li class="tag tag--event-management">Event Management</li>
+            <li class="tag tag--education">Education</li>
+            <li class="tag tag--insurance">Insurance</li>
+            <li class="tag tag--e-commerce">E-commerce</li>
+          </ul>
+        </section>
       </div>
     </main>
 
