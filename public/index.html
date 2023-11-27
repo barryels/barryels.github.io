@@ -52,10 +52,7 @@
       }
 
       html {
-        background: #fcfcfc;
-        background: #efefef;
-        background: #f3f3f5;
-        background: #f0efec;
+        background: #fff;
         color: #333;
         font-size: 62.5%;
         scroll-behavior: smooth;
@@ -145,20 +142,6 @@
         margin-top: 1.6rem;
       }
 
-      .panel {
-        background: #fff;
-        border-radius: 1.6rem;
-        box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.1);
-      }
-      .panel--no-shadow {
-        box-shadow: none;
-      }
-      .panel--dark {
-        background: transparent;
-        border: 1px solid #ddd;
-        color: #555;
-      }
-
       .tag-list {
         display: inline-flex;
         flex-wrap: wrap;
@@ -224,8 +207,8 @@
 
       .main-navigation {
         background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 4.8rem;
-        box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.1);
         display: inline-flex;
         margin: 0 auto;
         overflow: hidden;
@@ -302,6 +285,12 @@
         gap: 1.6rem;
       }
 
+      .panel {
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 1.6rem;
+      }
+
       .panel--content-contact {
         display: flex;
         flex-direction: column;
@@ -358,11 +347,19 @@
       }
 
       .site-footer {
+        animation-name: fadeIn;
+        animation-duration: 1s;
         padding: 2.4rem;
       }
       .site-footer .legal {
+        color: #555;
         display: block;
         text-align: center;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .site-footer {
+          animation: none;
+        }
       }
     </style>
   </head>
@@ -390,9 +387,6 @@
             </svg>
           </a>
           <ul class="main-navigation__menu">
-            <li
-              class="main-navigation__menu-item main-navigation__menu-item--avatar"
-            ></li>
             <li class="main-navigation__menu-item">
               <a href="#about">About</a>
             </li>
@@ -479,7 +473,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="u-max-width inset--4x panel panel--no-shadow panel--dark">
+      <div class="u-max-width inset--4x panel">
         <span class="legal">&copy; 2023 All rights reserved.</span>
       </div>
     </footer>
