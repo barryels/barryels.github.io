@@ -52,6 +52,9 @@
       }
 
       html {
+        background: #fcfcfc;
+        background: #efefef;
+        background: #f3f3f5;
         background: #f0efec;
         color: #333;
         font-size: 62.5%;
@@ -125,6 +128,9 @@
       .inset--2x {
         padding: 1.6rem;
       }
+      .inset--4x {
+        padding: 3.2rem;
+      }
 
       .u-max-width {
         margin: 0 auto;
@@ -142,7 +148,13 @@
       .panel {
         background: #fff;
         border-radius: 1.6rem;
-        box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.1);
+      }
+      .panel--no-shadow {
+        box-shadow: none;
+      }
+      .panel--dark {
+        background: #e5e4e2;
       }
 
       .tag-list {
@@ -156,22 +168,26 @@
       .tag {
         background: #eee;
         display: inline-block;
-        padding: 0.4rem 1.6rem;
+        padding: 0.2rem 0.8rem;
         border-radius: 4rem;
       }
-      .tag--healthcare {
+      .tag--inline {
+        line-height: 1;
+        padding: 0.4rem 0.8rem;
+      }
+      .tag--type-healthcare {
         background: #c3f5c8;
       }
-      .tag--event-management {
+      .tag--type-event-management {
         background: #c0bddb;
       }
-      .tag--education {
+      .tag--type-education {
         background: #c8e6e2;
       }
-      .tag--insurance {
+      .tag--type-insurance {
         background: #f2d9b9;
       }
-      .tag--e-commerce {
+      .tag--type-e-commerce {
         background: #87cfb8;
       }
 
@@ -236,7 +252,7 @@
         justify-content: center;
         margin: 0;
         overflow: hidden;
-        padding: 0.4rem;
+        padding: 0.4rem 0.4rem 0.4rem 0;
         position: relative;
         transition: all 0.25s ease-out;
         width: auto;
@@ -276,14 +292,20 @@
       }
 
       .panels {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         gap: 1.6rem;
       }
 
       @media (min-width: 600px) {
         .panels {
-          flex-direction: row;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .panel--content-about {
+          grid-column: 1 / 3;
+        }
+        .panel--content-contact {
+          grid-column: 3 / 4;
+          height: auto;
         }
       }
 
@@ -301,137 +323,146 @@
         }
       }
 
-      .site-footer {
-        border-top: 1px solid #ddd;
-        padding: 4.8rem 2.4rem 2.4rem;
-      }
-      .site-footer__menu {
-        align-items: center;
+      .contact-list {
         display: flex;
-        gap: 2.4rem;
+        gap: 0.8rem;
         list-style: none;
+        padding: 0;
         justify-content: center;
       }
-      .site-footer__menu-item a {
+      .contact-list__item a {
         align-items: center;
         display: flex;
         gap: 0.4rem;
         opacity: 0.75;
         transition: all 0.25s ease-out;
       }
-      .site-footer__menu-item a svg {
-        height: 2.4rem;
-        width: 2.4rem;
+      .contact-list__item a svg {
+        height: 4.8rem;
+        width: 4.8rem;
       }
-      .site-footer__menu-item a:hover {
+      .contact-list__item a:hover {
         opacity: 1;
+      }
+
+      .site-footer {
+        padding: 2.4rem;
+      }
+      .site-footer .legal {
+        display: block;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="character-container">
-      <div class="character"></div>
-    </div>
-
-    <div id="about"></div>
-
-    <header class="site-header u-max-width">
-      <nav class="main-navigation">
-        <a class="main-navigation-trigger" href="#">
-          <img
-            class="avatar"
-            src="./me.png"
-            alt="Barry Els"
-            height="4rem"
-            width="4rem"
-          />
-
-          <svg
-            class="menu-icon"
-            viewbox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21 17.9995V19.9995H3V17.9995H21ZM17.4038 3.90332L22 8.49951L17.4038 13.0957L15.9896 11.6815L19.1716 8.49951L15.9896 5.31753L17.4038 3.90332ZM12 10.9995V12.9995H3V10.9995H12ZM12 3.99951V5.99951H3V3.99951H12Z"
+    <header class="site-header">
+      <div class="u-max-width">
+        <nav class="main-navigation">
+          <a class="main-navigation-trigger" href="#">
+            <img
+              class="avatar"
+              src="./me.png"
+              alt="Barry Els"
+              height="4rem"
+              width="4rem"
             />
-          </svg>
-        </a>
-        <ul class="main-navigation__menu">
-          <li
-            class="main-navigation__menu-item main-navigation__menu-item--avatar"
-          ></li>
-          <li class="main-navigation__menu-item"><a href="#about">About</a></li>
-          <li class="main-navigation__menu-item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+
+            <svg
+              class="menu-icon"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 17.9995V19.9995H3V17.9995H21ZM17.4038 3.90332L22 8.49951L17.4038 13.0957L15.9896 11.6815L19.1716 8.49951L15.9896 5.31753L17.4038 3.90332ZM12 10.9995V12.9995H3V10.9995H12ZM12 3.99951V5.99951H3V3.99951H12Z"
+              />
+            </svg>
+          </a>
+          <ul class="main-navigation__menu">
+            <li
+              class="main-navigation__menu-item main-navigation__menu-item--avatar"
+            ></li>
+            <li class="main-navigation__menu-item">
+              <a href="#about">About</a>
+            </li>
+            <li class="main-navigation__menu-item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="site-main">
       <div class="panels u-max-width">
         <section
-          class="stack stack--vertical stack--spacing-2x panel inset--2x panel-1"
+          id="about"
+          class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-about"
         >
           <h1>Barry Els</h1>
           <h2 class="h3">20+ years XP turning ideas into implementations</h2>
           <p>
-            I am passionate about building better experiences for end users, and
-            consequently helping businesses achieve their goals. Whether through
-            technical innovation, solid user experience or internal process
-            re-engineering, my focus is on continuous learning and consistent
-            improvement over time. I have been fortunate enough to experience
-            20+ years of building solutions using a wide range of technologies
-            within a multitude of business domains, most notably: healthcare,
-            event management, education and insurance.
+            I'm dedicated to enhancing user experiences and assisting businesses
+            in reaching their objectives. With over 20 years of experience in
+            various domains such as
+            <span class="tag tag--inline tag--type-healthcare">healthcare</span
+            >,
+            <span class="tag tag--inline tag--type-event-management"
+              >event management</span
+            >,
+            <span class="tag tag--inline tag--type-education">education</span>,
+            <span class="tag tag--inline tag--type-insurance">insurance</span>
+            and
+            <span class="tag tag--inline tag--type-e-commerce">e-commerce</span
+            >, I've employed technologies like
+            <span class="tag tag--inline">React</span>,
+            <span class="tag tag--inline">PHP</span> and
+            <span class="tag tag--inline">AWS</span>. My focus is on continuous
+            learning, technical innovation, and consistent improvement.
           </p>
         </section>
 
         <section
-          class="stack stack--vertical stack--spacing-2x panel inset--2x panel-2"
+          id="contact"
+          class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-contact"
         >
-          <h3>Industries I've worked in</h3>
-          <ul class="tag-list">
-            <li class="tag tag--healthcare">Healthcare</li>
-            <li class="tag tag--event-management">Event Management</li>
-            <li class="tag tag--education">Education</li>
-            <li class="tag tag--insurance">Insurance</li>
-            <li class="tag tag--e-commerce">E-commerce</li>
+          <h3>You can find me here...</h3>
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <a
+                href="https://www.linkedin.com/in/barryels/"
+                rel="noreferrer"
+                target="_blank"
+                title="LinkedIn profile"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="contact-list__item">
+              <a
+                href="https://github.com/barryels"
+                rel="noreferrer"
+                target="_blank"
+                title="GitHub profile"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
           </ul>
         </section>
       </div>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <ul class="site-footer__menu">
-        <li class="site-footer__menu-item">
-          <a
-            href="https://www.linkedin.com/in/barryels/"
-            rel="noreferrer"
-            target="_blank"
-            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
-              ></path>
-            </svg>
-            <span>LinkedIn</span></a
-          >
-        </li>
-        <li class="site-footer__menu-item">
-          <a
-            href="https://github.com/barryels"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
-              ></path>
-            </svg>
-            <span>GitHub</span></a
-          >
-        </li>
-      </ul>
+    <footer class="site-footer">
+      <div class="u-max-width inset--4x panel panel--no-shadow panel--dark">
+        <span class="legal">&copy; 2023 All rights reserved.</span>
+      </div>
     </footer>
   </body>
 </html>
