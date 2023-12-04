@@ -76,6 +76,7 @@
       }
       * {
         margin: 0;
+        padding: 0;
       }
 
       html {
@@ -367,6 +368,25 @@
         text-align: center;
       }
 
+      .interests-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-unit-2x);
+        list-style: none;
+      }
+
+      .interests-list__item {
+        text-align: center;
+      }
+
+      .interests-list__item a {
+        background: #f5f5f5;
+        border-radius: 0.4rem;
+        display: inline-block;
+        padding: var(--spacing-unit);
+        text-decoration: none;
+      }
+
       @media (min-width: 600px) {
         .panels {
           grid-template-columns: 1fr 1fr 1fr;
@@ -374,8 +394,11 @@
         .panel--content-about {
           grid-column: 1 / 3;
         }
-        .panel--content-contact {
+        .panel--content-interests {
           grid-column: 3 / 4;
+        }
+        .panel--content-contact {
+          grid-column: 1 / 4;
         }
       }
 
@@ -397,7 +420,6 @@
         display: flex;
         gap: 1.6rem;
         list-style: none;
-        padding: 0;
         justify-content: center;
       }
       .contact-list__item a {
@@ -504,6 +526,40 @@
           </section>
 
           <section
+            class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-interests"
+          >
+            <h2 class="h3">Interests</h2>
+            <p>Things I'm currently learning about or interested in:</p>
+            <ul class="interests-list">
+              <li class="interests-list__item">
+                <a
+                  href="https://www.aglx.com/no-way-out"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="No Way Out podcast"
+                >
+                  <img
+                    src="./content/AGLX-No-Way-Out-podcast-cover-v4-scaled.webp"
+                    alt="No Way Out podcast cover image"
+                    width="100%"
+                    height="auto"
+                  />
+                  No Way Out podcast
+                </a>
+              </li>
+              <li class="interests-list__item">
+                <a
+                  href="https://en.wikipedia.org/wiki/OODA_loop"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="OODA (Observe, Orient, Decide, Act) loop"
+                  >OODA loop</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section
             id="contact"
             class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-contact"
           >
@@ -544,7 +600,7 @@
       </main>
 
       <footer class="site-footer">
-        <div class="u-max-width inset--4x panel">
+        <div class="u-max-width inset--4x">
           <span class="legal">&copy; 2023 All rights reserved.</span>
         </div>
       </footer>
