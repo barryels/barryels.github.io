@@ -22,6 +22,40 @@
         --spacing-unit-3x: 2.4rem;
         --spacing-unit-4x: 3.2rem;
         --spacing-unit-8x: 6.4rem;
+        --domain-healthcare: #c3f5c8;
+        --domain-event-management: #c0bddb;
+        --domain-education: #c8e6e2;
+        --domain-insurance: #f2d9b9;
+        --domain-e-commerce: #87cfb8;
+        --domain-tech: #e5e5e2;
+        --html-light-background: #fff;
+        --html-light-color: #333;
+        --html-dark-background: #222;
+        --html-dark-color: #eee;
+        --link-light-foreground: #333;
+        --link-dark-foreground: #eee;
+        --tag-light-background: #eee;
+        --tag-light-foreground: #333;
+        --tag-dark-background: #eee;
+        --tag-dark-foreground: #333;
+        --interests-list-item-light-background: #eee;
+        --interests-list-item-light-foreground: #333;
+        --interests-list-item-dark-background: #444;
+        --interests-list-item-dark-foreground: #eee;
+        --legal-light-foreground: #555;
+        --legal-dark-foreground: #aaa;
+        --panel-light-background: #f5f5f5;
+        --panel-light-foreground: #333;
+        --panel-dark-background: #292929;
+        --panel-dark-foreground: #f5f5f5;
+        --main-navigation-light-link-background: transparent;
+        --main-navigation-light-link-foreground: #333;
+        --main-navigation-light-link-hover-background: #ddd;
+        --main-navigation-light-link-hover-foreground: #333;
+        --main-navigation-dark-link-background: transparent;
+        --main-navigation-dark-link-foreground: #f5f5f5;
+        --main-navigation-dark-link-hover-background: #555;
+        --main-navigation-dark-link-hover-foreground: #f5f5f5;
       }
 
       @font-face {
@@ -80,8 +114,8 @@
       }
 
       html {
-        background: #fff;
-        color: #333;
+        background: var(--html-light-background);
+        color: var(--html-light-foreground);
         font-size: 62.5%;
         scroll-behavior: smooth;
       }
@@ -92,8 +126,8 @@
       }
       @media (prefers-color-scheme: dark) {
         html {
-          background: #222;
-          color: #eee;
+          background: var(--html-dark-background);
+          color: var(--html-dark-foreground);
         }
       }
 
@@ -104,11 +138,11 @@
       }
 
       a {
-        color: #333;
+        color: var(--link-light-foreground);
       }
       @media (prefers-color-scheme: dark) {
         a {
-          color: #eee;
+          color: var(--link-dark-foreground);
         }
       }
 
@@ -193,8 +227,8 @@
       }
 
       .tag {
-        background: #eee;
-        color: #333;
+        background: var(--tag-light-background);
+        color: var(--tag-light-foreground);
         display: inline-block;
         padding: 0.2rem var(--spacing-unit);
         border-radius: 4rem;
@@ -204,23 +238,22 @@
         padding: 0.2rem var(--spacing-unit);
       }
       .tag--domain-healthcare {
-        background: #c3f5c8;
+        background: var(--domain-healthcare);
       }
       .tag--domain-event-management {
-        background: #c0bddb;
+        background: var(--domain-event-management);
       }
       .tag--domain-education {
-        background: #c8e6e2;
+        background: var(--domain-education);
       }
       .tag--domain-insurance {
-        background: #f2d9b9;
+        background: var(--domain-insurance);
       }
       .tag--domain-e-commerce {
-        background: #87cfb8;
+        background: var(--domain-e-commerce);
       }
-
-      .tag--tech-generic {
-        background: #e5e5e2;
+      .tag--tech {
+        background: var(--domain-tech);
       }
 
       .avatar {
@@ -239,7 +272,7 @@
         animation-duration: 0.25s, 0.5s;
         padding: 0 var(--spacing-unit-3x);
         position: sticky;
-        top: 0;
+        top: var(--spacing-unit-4x);
         z-index: 3;
       }
       @media (prefers-reduced-motion: reduce) {
@@ -249,29 +282,26 @@
       }
 
       .main-navigation {
-        background: #fff;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: var(--panel-light-background);
+        border: 10px solid rgba(0, 0, 0, 0.1);
         border-image: url("themes/handdrawn/main-navigation-border.svg") 10 10
           10 10 stretch stretch;
-        border-style: solid;
-        border-width: 10px 10px 10px 10px;
-        border-color: rgba(0, 0, 0, 0.1);
         border-radius: 4.8rem;
         display: inline-flex;
         gap: 0.4rem;
         margin: 0 auto;
         overflow: hidden;
-
         justify-content: center;
         transition: width 0.2s ease-out;
         width: auto;
       }
       @media (prefers-color-scheme: dark) {
         .main-navigation {
-          background: transparent;
+          background: var(--panel-dark-background);
           border-image: url("themes/handdrawn/main-navigation-border--light.svg")
             10 10 10 10 stretch stretch;
-          color: #eee;
+          border-color: rgba(255, 255, 255, 0.1);
+          color: var(--panel-dark-foreground);
         }
       }
 
@@ -305,6 +335,8 @@
         list-style: none;
       }
       .main-navigation__menu-item a {
+        background: var(--main-navigation-light-link-background);
+        color: var(--main-navigation-light-link-foreground);
         border-radius: 2.4rem;
         display: block;
         padding: var(--spacing-unit) 1.2rem;
@@ -320,13 +352,17 @@
       }
 
       .main-navigation__menu-item a:hover {
-        background: #f5f5f5;
-        color: #333;
+        background: var(--main-navigation-light-link-hover-background);
+        color: var(--main-navigation-light-link-hover-foreground);
       }
       @media (prefers-color-scheme: dark) {
+        .main-navigation__menu-item a {
+          background: var(--main-navigation-dark-link-background);
+          color: var(--main-navigation-dark-link-foreground);
+        }
         .main-navigation__menu-item a:hover {
-          background: #555;
-          color: #f5f5f5;
+          background: var(--main-navigation-dark-link-hover-background);
+          color: var(--main-navigation-dark-link-hover-foreground);
         }
       }
 
@@ -342,22 +378,20 @@
       }
 
       .panel {
-        background: #fff;
-        color: #333;
+        background: var(--panel-light-background);
+        color: var(--panel-light-foreground);
         border-radius: 1.6rem;
+        border: 10px solid rgba(0, 0, 0, 0.15);
         border-image: url("themes/handdrawn/panel-border.svg") 10 10 10 10
           stretch stretch;
-        border-style: solid;
-        border-width: 10px 10px 10px 10px;
-        border-color: rgba(0, 0, 0, 0.15);
       }
       @media (prefers-color-scheme: dark) {
         .panel {
-          background: transparent;
-          border-color: rgba(255, 255, 255, 0.15);
+          background: var(--panel-dark-background);
           border-image: url("themes/handdrawn/panel-border--light.svg") 10 10 10
             10 stretch stretch;
-          color: #fff;
+          border-width: 10px;
+          color: var(--panel-dark-foreground);
         }
       }
 
@@ -378,7 +412,8 @@
         text-align: center;
       }
       .interests-list__item a {
-        background: #f5f5f5;
+        background: var(--interests-list-item-light-background);
+        color: var(--interests-list-item-light-foreground);
         border-radius: 0.4rem;
         display: inline-block;
         padding: var(--spacing-unit) var(--spacing-unit-2x);
@@ -386,8 +421,8 @@
       }
       @media (prefers-color-scheme: dark) {
         .interests-list__item a {
-          background: #444;
-          color: #eee;
+          background: var(--interests-list-item-dark-background);
+          color: var(--interests-list-item-dark-foreground);
         }
       }
 
@@ -453,13 +488,13 @@
       }
 
       .site-footer .legal {
-        color: #555;
+        color: var(--legal-light-foreground);
         display: block;
         text-align: center;
       }
       @media (prefers-color-scheme: dark) {
         .site-footer .legal {
-          color: #aaa;
+          color: var(--legal-dark-foreground);
         }
       }
     </style>
@@ -517,12 +552,12 @@
               <span class="tag tag--inline tag--domain-e-commerce"
                 >e-commerce</span
               >, I've employed technologies like
-              <span class="tag tag--inline tag--tech-generic">React</span>,
-              <span class="tag tag--inline tag--tech-generic">Rails</span>,
-              <span class="tag tag--inline tag--tech-generic">Node.js</span>,
-              <span class="tag tag--inline tag--tech-generic">PHP</span>,
-              <span class="tag tag--inline tag--tech-generic">AWS</span> and
-              <span class="tag tag--inline tag--tech-generic"
+              <span class="tag tag--inline tag--tech">React</span>,
+              <span class="tag tag--inline tag--tech">Rails</span>,
+              <span class="tag tag--inline tag--tech">Node.js</span>,
+              <span class="tag tag--inline tag--tech">PHP</span>,
+              <span class="tag tag--inline tag--tech">AWS</span> and
+              <span class="tag tag--inline tag--tech"
                 >many other frameworks / tools</span
               >. I strive to focus on perpetual learning, technical innovation
               and continuous improvement.
