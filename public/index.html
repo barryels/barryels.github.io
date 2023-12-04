@@ -372,36 +372,6 @@
         width: 0;
       }
 
-      .panels {
-        display: grid;
-        gap: var(--spacing-unit-4x);
-      }
-
-      .panel {
-        background: var(--panel-light-background);
-        color: var(--panel-light-foreground);
-        border-radius: 1.6rem;
-        border: 10px solid rgba(0, 0, 0, 0.15);
-        border-image: url("themes/handdrawn/panel-border.svg") 10 10 10 10
-          stretch stretch;
-      }
-      @media (prefers-color-scheme: dark) {
-        .panel {
-          background: var(--panel-dark-background);
-          border-image: url("themes/handdrawn/panel-border--light.svg") 10 10 10
-            10 stretch stretch;
-          border-width: 10px;
-          color: var(--panel-dark-foreground);
-        }
-      }
-
-      .panel--content-contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-      }
-
       .interests-list {
         display: flex;
         flex-direction: column;
@@ -424,6 +394,35 @@
           background: var(--interests-list-item-dark-background);
           color: var(--interests-list-item-dark-foreground);
         }
+      }
+
+      .panels {
+        display: grid;
+        gap: var(--spacing-unit-4x);
+      }
+
+      .panel {
+        background: var(--panel-light-background);
+        color: var(--panel-light-foreground);
+        border-radius: 1.6rem;
+        border: 10px solid rgba(0, 0, 0, 0.15);
+        border-image: 10 10 10 10 stretch stretch;
+        border-image-source: url("themes/handdrawn/panel-border.svg");
+        overflow: hidden;
+      }
+      @media (prefers-color-scheme: dark) {
+        .panel {
+          background: var(--panel-dark-background);
+          border-image-source: url("themes/handdrawn/panel-border--light.svg");
+          color: var(--panel-dark-foreground);
+        }
+      }
+
+      .panel--content-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
       }
 
       @media (min-width: 600px) {
