@@ -374,19 +374,18 @@
 
       .interests-list {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: var(--spacing-unit-2x);
         list-style: none;
-      }
-      .interests-list__item {
-        text-align: center;
       }
       .interests-list__item a {
         background: var(--interests-list-item-light-background);
         color: var(--interests-list-item-light-foreground);
-        border-radius: 0.4rem;
+        border-radius: 2.4rem;
         display: inline-block;
         padding: var(--spacing-unit) var(--spacing-unit-2x);
+        text-align: center;
         text-decoration: none;
       }
       @media (prefers-color-scheme: dark) {
@@ -394,6 +393,28 @@
           background: var(--interests-list-item-dark-background);
           color: var(--interests-list-item-dark-foreground);
         }
+      }
+
+      .podcasts-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+      }
+      .podcasts-list__item {
+        flex: 1 1 auto;
+        max-height: 24rem;
+        max-width: 24rem;
+        min-height: 16rem;
+        min-width: 16rem;
+        overflow: hidden;
+        text-align: center;
+      }
+      .podcasts-list__item img {
+        display: block;
+        height: 100%;
+        margin: 0 auto;
+        width: auto;
       }
 
       .panels {
@@ -434,6 +455,9 @@
         }
         .panel--content-interests {
           grid-column: 3 / 4;
+        }
+        .panel--content-podcasts {
+          grid-column: 1 / 4;
         }
         .panel--content-contact {
           grid-column: 1 / 4;
@@ -566,25 +590,9 @@
           <section
             class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-interests"
           >
-            <h2 class="h3">Interests</h2>
+            <h2 class="h4">Interests</h2>
             <p>Things I'm currently learning about or interested in:</p>
             <ul class="interests-list">
-              <li class="interests-list__item">
-                <a
-                  href="https://www.aglx.com/no-way-out"
-                  rel="noreferrer"
-                  target="_blank"
-                  title="No Way Out podcast"
-                >
-                  <img
-                    src="./content/AGLX-No-Way-Out-podcast-cover-v4-scaled.webp"
-                    alt="No Way Out podcast cover image"
-                    width="100%"
-                    height="auto"
-                  />
-                  No Way Out podcast
-                </a>
-              </li>
               <li class="interests-list__item">
                 <a
                   href="https://en.wikipedia.org/wiki/OODA_loop"
@@ -593,6 +601,175 @@
                   title="OODA (Observe, Orient, Decide, Act) loop"
                   >OODA loop</a
                 >
+              </li>
+              <li class="interests-list__item">
+                <a
+                  href="https://en.wikipedia.org/wiki/Johari_window"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Johari window"
+                  >Johari window</a
+                >
+              </li>
+              <li class="interests-list__item">
+                <a
+                  href="https://en.wikipedia.org/wiki/Event_storming"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Event storming"
+                  >Event storming</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="stack stack--vertical stack--spacing-2x panel inset--2x panel--content-podcasts"
+          >
+            <h2 class="h4">Currently listening to...</h2>
+            <ul class="podcasts-list">
+              <li class="podcasts-list__item">
+                <a
+                  href="https://www.aglx.com/no-way-out"
+                  title="No Way Out podcast"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="https://storage.buzzsprout.com/variants/oljmy2wnw6cyltvrpmibnwca433c/5cfec01b44f3e29fae1fb88ade93fc4aecd05b192fbfbc2c2f1daa412b7c1921.jpg"
+                    alt="No Way Out podcast cover image"
+                  />
+                </a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="https://youtube.com/c/beyondcoding"
+                  title="Beyond Coding"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/15286211/15286211-1621356643603-5e57606af0752.jpg"
+                    alt="Beyond Coding podcast cover image"
+                /></a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="https://www.thoughtworks.com/insights/podcasts/technology-podcasts"
+                  title="Thoughtworks Technology Podcast"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://static.libsyn.com/p/assets/a/1/7/1/a171dd11ef408014e55e3c100dce7605/TWTP_icon_2021.jpg"
+                    alt="Thoughtworks Technology Podcast podcast cover image"
+                /></a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="http://www.mrmatera.com"
+                  title="Well PlayED"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://i1.sndcdn.com/avatars-QyiFI2tETGQqmC3y-shMtjw-original.jpg"
+                    alt="Well PlayED podcast cover image"
+                /></a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="http://www.developertea.com"
+                  title="Developer Tea"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://image.simplecastcdn.com/images/c44db111-b60d-436e-ab63-38c7c3402406/367d2e94-5d6b-4efe-bde6-a14687250e56/3000x3000/1471485029-artwork.jpg"
+                    alt="Developer Tea podcast cover image"
+                /></a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="https://startalkmedia.com/"
+                  title="StarTalk Radio"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="https://image.simplecastcdn.com/images/8b62332a-56b8-4d25-b175-1e588b078323/832ccedd-f592-4297-90c4-bb2eee3c5a24/3000x3000/image.jpg"
+                    alt="StarTalk Radio cover image"
+                  />
+                </a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="https://badass.dev/podcast"
+                  title="Badass Courses"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://image.simplecastcdn.com/images/fad89604-f02d-47b0-b03e-b3d8ab0fed2b/5b8d41cf-a617-44ef-9a68-3d97b8f92e90/3000x3000/badassskull.jpg"
+                    alt="Badass Courses podcast cover image"
+                /></a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="https://redhat.com/en/compiler-podcast"
+                  title="Compiler"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://image.simplecastcdn.com/images/e6686c37-f71b-4414-bb54-c1988eb21789/7edf093d-922f-4157-b141-a595d4bf5503/3000x3000/compiler-thumbnail-final-01.jpg"
+                    alt="Compiler podcast cover image"
+                /></a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="https://softskills.audio"
+                  title="Soft Skills Engineering"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://download.softskills.audio/sse-cover-art.png"
+                    alt="Soft Skills Engineering podcast cover image"
+                /></a>
+              </li>
+              <li class="podcasts-list__item">
+                <a
+                  href="http://brighterthinkingpod.libsyn.com/website"
+                  title="Brighter Thinking Pod"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    src="https://static.libsyn.com/p/assets/4/4/1/f/441f5c29c897a049/Brighter_Thinking_Pod_logo_v2.png"
+                    alt="Brighter Thinking Pod podcast cover image"
+                /></a>
+              </li>
+
+              <li class="podcasts-list__item">
+                <a
+                  href="https://engineering-founders.simplecast.com"
+                  title="Engineering Founders"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="https://image.simplecastcdn.com/images/680c6af5-128e-43b5-ba76-69958a47e058/af3355f2-ca86-4cdb-ba1b-5a67888cd5ee/3000x3000/engineering-founders-podcast-cover.jpg"
+                    alt="Engineering Founders podcast cover image"
+                  />
+                </a>
+              </li>
+
+              <li class="podcasts-list__item">
+                <a
+                  href="https://distributed.blog"
+                  title="Distributed, with Matt Mullenweg"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="https://i0.wp.com/distributed.blog/wp-content/uploads/2019/05/distributed_cover.jpg?fit=512,512"
+                    alt="Distributed, with Matt Mullenweg podcast cover image"
+                  />
+                  />
+                </a>
               </li>
             </ul>
           </section>
