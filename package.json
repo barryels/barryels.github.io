@@ -14,7 +14,11 @@
     "url": "https://github.com/barryels/barryels.github.io/issues"
   },
   "homepage": "https://github.com/barryels/barryels.github.io#README",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {}
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "NODE_ENV=production npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }
