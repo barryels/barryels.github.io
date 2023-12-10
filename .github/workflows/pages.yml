@@ -27,6 +27,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
+      - name: Install dependencies
+        uses: actions/setup-node@v4
+        with:
+          cache: "npm"
+
       - name: Build
         run: npm run build
 
