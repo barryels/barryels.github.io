@@ -1,3 +1,17 @@
+const { rimraf } = require("rimraf");
+
+const config = {
+  dir: {
+    input: "src",
+    includes: "_includes",
+    output: "build",
+  },
+};
+
+const dirToClean = config.dir.output;
+console.warn(`🚫 Deleting files in "${dirToClean}"`);
+rimraf.sync(dirToClean);
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     "html",
@@ -13,11 +27,5 @@ module.exports = function (eleventyConfig) {
   ]);
   eleventyConfig.addPassthroughCopy({ public: "/" });
 
-  return {
-    dir: {
-      input: "src",
-      includes: "_includes",
-      output: "build",
-    },
-  };
+  return config;
 };

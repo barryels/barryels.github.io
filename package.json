@@ -19,6 +19,7 @@
     "build": "NODE_ENV=production npx @11ty/eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "rimraf": "^5.0.5"
   }
 }
