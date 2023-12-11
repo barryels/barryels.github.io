@@ -10,24 +10,6 @@ module.exports = function () {
       },
     },
     {
-      title: "Beyond Coding",
-      type: "PODCAST",
-      url: "https://youtube.com/c/beyondcoding",
-      image: {
-        url: "https://i.scdn.co/image/ab67656300005f1fd6bd6378810a7340d947f82d",
-        alt: "Beyond Coding podcast cover image",
-      },
-    },
-    {
-      title: "Thoughtworks Technology Podcast",
-      type: "PODCAST",
-      url: "https://www.thoughtworks.com/insights/podcasts/technology-podcasts",
-      image: {
-        url: "https://www.thoughtworks.com/content/dam/thoughtworks/images/photography/side-by-side/insights/podcasts/pod_side_by_side_technology_podcasts.jpg",
-        alt: "Thoughtworks Technology Podcast podcast cover image",
-      },
-    },
-    {
       title: "Well PlayED",
       type: "PODCAST",
       url: "http://www.mrmatera.com",
@@ -55,24 +37,6 @@ module.exports = function () {
       },
     },
     {
-      title: "Badass Courses",
-      type: "PODCAST",
-      url: "https://badass.dev/podcast",
-      image: {
-        url: "https://image.simplecastcdn.com/images/fad89604-f02d-47b0-b03e-b3d8ab0fed2b/5b8d41cf-a617-44ef-9a68-3d97b8f92e90/1400x1400/badassskull.jpg",
-        alt: "Badass Courses podcast cover image",
-      },
-    },
-    {
-      title: "Compiler",
-      type: "PODCAST",
-      url: "https://redhat.com/en/compiler-podcast",
-      image: {
-        url: "https://image.simplecastcdn.com/images/e6686c37-f71b-4414-bb54-c1988eb21789/7edf093d-922f-4157-b141-a595d4bf5503/1400x1400/compiler-thumbnail-final-01.jpg",
-        alt: "Compiler podcast cover image",
-      },
-    },
-    {
       title: "Soft Skills Engineering",
       type: "PODCAST",
       url: "https://softskills.audio",
@@ -88,24 +52,6 @@ module.exports = function () {
       image: {
         url: "https://static.libsyn.com/p/assets/4/4/1/f/441f5c29c897a049/Brighter_Thinking_Pod_logo_v2.png",
         alt: "Brighter Thinking Pod podcast cover image",
-      },
-    },
-    {
-      title: "Engineering Founders",
-      type: "PODCAST",
-      url: "https://engineering-founders.simplecast.com",
-      image: {
-        url: "https://image.simplecastcdn.com/images/680c6af5-128e-43b5-ba76-69958a47e058/af3355f2-ca86-4cdb-ba1b-5a67888cd5ee/1400x1400/engineering-founders-podcast-cover.jpg",
-        alt: "Engineering Founders podcast cover image",
-      },
-    },
-    {
-      title: "Distributed, with Matt Mullenweg",
-      type: "PODCAST",
-      url: "https://distributed.blog",
-      image: {
-        url: "https://i0.wp.com/distributed.blog/wp-content/uploads/2019/05/distributed_cover.jpg?fit=256,256",
-        alt: "Distributed, with Matt Mullenweg podcast cover image",
       },
     },
   ];
