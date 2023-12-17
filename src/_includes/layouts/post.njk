@@ -2,8 +2,21 @@
 layout: layouts/base.njk
 ---
 
-<div class="u-max-width">
-  <h1>{{ title }}</h1>
+<section class="u-max-width">
+  <div class="stack stack--vertical stack--spacing-2x">
+    <h1>{{ title }}</h1>
 
-  {{ content | safe }}
-</div>
+    <div>
+      {{ content | safe }}
+    </div>
+
+    <footer class="panel inset--2x">
+      <p>Other posts:</p>
+      <ul>
+        {%- for post in collections.post -%}
+          <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </footer>
+  </div>
+</section>
