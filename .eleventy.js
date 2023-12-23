@@ -1,6 +1,9 @@
 const { rimraf } = require("rimraf");
 
 const config = {
+  dataTemplateEngine: "njk",
+  htmlTemplateEngine: "njk",
+  markdownTemplateEngine: "njk",
   dir: {
     input: "src",
     includes: "_includes",
@@ -25,7 +28,17 @@ module.exports = function (eleventyConfig) {
     "woff",
     "woff2",
   ]);
+
   eleventyConfig.addPassthroughCopy({ public: "/" });
+
+  eleventyConfig.addFilter(
+    "allPostsExceptCurrent",
+    function allPostsExceptCurrent(posts = []) {
+      return posts.filter((post) => {
+        return post.url !== this.page.url;
+      });
+    }
+  );
 
   return config;
 };
