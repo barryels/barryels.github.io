@@ -1,4 +1,4 @@
-<ul>
+<ul class="u-unstyled-list">
   {% for item in collections.post | allPostsExceptCurrent %}
     <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
   {% else %}

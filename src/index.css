@@ -187,25 +187,29 @@ h6,
   padding-top: var(--spacing-unit-4x);
 }
 
+.u-unstyled-list {
+  list-style: none;
+}
+
 .u-max-width {
   margin: 0 auto;
   max-width: 80rem;
 }
 
 .stack.stack--spacing-2x > * + * {
-  margin-left: var(--spacing-unit-2x);
-}
-.stack.stack--vertical.stack--spacing-2x > * + * {
-  margin-left: 0;
   margin-top: var(--spacing-unit-2x);
+}
+.stack.stack--horizontal.stack--spacing-2x > * + * {
+  margin-left: var(--spacing-unit-2x);
+  margin-top: 0;
 }
 
 .stack.stack--spacing-4x > * + * {
-  margin-left: var(--spacing-unit-4x);
-}
-.stack.stack--vertical.stack--spacing-4x > * + * {
-  margin-left: 0;
   margin-top: var(--spacing-unit-4x);
+}
+.stack.stack--horizontal.stack--spacing-4x > * + * {
+  margin-left: var(--spacing-unit-4x);
+  margin-top: 0;
 }
 
 .tag {
