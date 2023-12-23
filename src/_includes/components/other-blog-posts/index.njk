@@ -1,0 +1,7 @@
+<ul>
+  {% for item in collections.post | allPostsExceptCurrent %}
+    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+  {% else %}
+    <li>No other posts were found</li>
+  {% endfor %}
+</ul>

@@ -5,9 +5,5 @@ description: "I am passionate about building better experiences for end users, a
 ---
 
 <section class="u-max-width">
-  <ul>
-    {%- for post in collections.post -%}
-      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-    {%- endfor -%}
-  </ul>
+  {% include "components/other-blog-posts/index.njk" %}
 </section>
