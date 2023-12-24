@@ -28,8 +28,8 @@ Models are constructed based on assumptions, simplifications, and a finite set o
 
 While perfection may not be unattainable, models still provide a huge amount of value. Models are powerful tools for understanding, prediction and decision making. The key lies in their ability to approximate reality well enough for the intended purpose. Rather than viewing imperfections as failures, they become opportunities for refinement and enhancement. Through iterative adjustments, models can better align with the ever-evolving understanding of a system. Adapting models based on real-world feedback and new data ensures their ongoing relevance and effectiveness.
 
-## So... Nihilism is the answer, right? Maybe First-Principles-All-the-Things, right?
+## So... First-Principles-All-the-Things, right?
 
-Maybe. Context will dictate the level of detail required. There are some fundamental truths that can be relied upon that don't need to be re-thought or re-calculated at every iteration. Knowing at which layer to stop is the trick.
+Maybe. Context will dictate the level of detail required. There are some fundamental truths that can be relied on that don't need to be re-thought or re-calculated at every iteration. Knowing which layer to stop at is the trick.
 
 </div>
