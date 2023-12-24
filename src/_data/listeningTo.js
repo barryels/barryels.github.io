@@ -1,56 +1,62 @@
 module.exports = function () {
   return [
     {
+      id: "35af0ad8-2ca9-4f24-ac87-dcb6afbddb5a",
       title: "No Way Out podcast",
       type: "PODCAST",
       url: "https://www.aglx.com/no-way-out",
       image: {
-        url: "https://www.aglx.com/hs-fs/hubfs/AGLX-No-Way-Out-podcast-cover-v4-scaled.webp?width=256&height=256",
+        url: "/content/podcasts/35af0ad8-2ca9-4f24-ac87-dcb6afbddb5a/cover.jpg",
         alt: "No Way Out podcast cover image",
       },
     },
     {
+      id: "836ec6d7-2b1f-4e5b-a670-f20b83265843",
       title: "Well PlayED",
       type: "PODCAST",
-      url: "http://www.mrmatera.com",
+      url: "https://mrmatera.com/",
       image: {
-        url: "https://i1.sndcdn.com/avatars-QyiFI2tETGQqmC3y-shMtjw-original.jpg",
+        url: "/content/podcasts/836ec6d7-2b1f-4e5b-a670-f20b83265843/cover.jpg",
         alt: "Well PlayED podcast cover image",
       },
     },
     {
+      id: "437ae4a0-c905-42e5-9be1-6d7c18c5570c",
       title: "Developer Tea",
       type: "PODCAST",
-      url: "http://www.developertea.com",
+      url: "https://www.developertea.com",
       image: {
-        url: "https://image.simplecastcdn.com/images/c44db111-b60d-436e-ab63-38c7c3402406/367d2e94-5d6b-4efe-bde6-a14687250e56/1400x1400/1471485029-artwork.jpg",
+        url: "/content/podcasts/437ae4a0-c905-42e5-9be1-6d7c18c5570c/cover.jpg",
         alt: "Developer Tea podcast cover image",
       },
     },
     {
+      id: "3b44b9c1-b9da-41d4-96b1-e85ae15049af",
       title: "StarTalk Radio",
       type: "PODCAST",
       url: "https://startalkmedia.com/category/startalk-radio",
       image: {
-        url: "https://i.scdn.co/image/ab67656300005f1ffc317d71b93a660025f43afe",
+        url: "/content/podcasts/3b44b9c1-b9da-41d4-96b1-e85ae15049af/cover.jpg",
         alt: "StarTalk Radio cover image",
       },
     },
     {
+      id: "03bc0e35-bf0a-4b60-bc1f-cf2950c0b30d",
       title: "Soft Skills Engineering",
       type: "PODCAST",
       url: "https://softskills.audio",
       image: {
-        url: "https://download.softskills.audio/sse-cover-art.png",
+        url: "/content/podcasts/03bc0e35-bf0a-4b60-bc1f-cf2950c0b30d/cover.jpg",
         alt: "Soft Skills Engineering podcast cover image",
       },
     },
     {
+      id: "b96767a9-e372-4c61-8f92-bb68ee388a82",
       title: "Brighter Thinking Pod",
       type: "PODCAST",
-      url: "http://brighterthinkingpod.libsyn.com/website",
+      url: "https://brighterthinkingpod.libsyn.com/website",
       image: {
-        url: "https://static.libsyn.com/p/assets/4/4/1/f/441f5c29c897a049/Brighter_Thinking_Pod_logo_v2.png",
+        url: "/content/podcasts/b96767a9-e372-4c61-8f92-bb68ee388a82/cover.jpg",
         alt: "Brighter Thinking Pod podcast cover image",
       },
     },
