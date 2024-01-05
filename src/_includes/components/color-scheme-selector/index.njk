@@ -1,0 +1,58 @@
+<form class="panel color-scheme-selector" data-component="color-scheme-selector" action="" method="GET">
+  <label>
+    <input type="radio" name="color-scheme-override" value="DARK" />
+    <span>Dark</span>
+  </label>
+  <label>
+    <input type="radio" name="color-scheme-override" value="AUTO" />
+    <span>Auto</span>
+  </label>
+  <label>
+    <input type="radio" name="color-scheme-override" value="LIGHT" />
+    <span>Light</span>
+  </label>
+
+  <button type="submit">Update color scheme</button>
+</form>
+
+<script type="text/javascript">
+  (function colorSchemeSelector() {
+    const component = document.querySelector('[data-component="color-scheme-selector"]');
+    if (component && window.matchMedia) {
+      component.classList.add("is-enabled");
+
+      const currentColorSchemeOverrideValueFromHTML = document.documentElement.getAttribute("data-color-scheme-override");
+      const currentColorSchemeOverrideValueFromLocalStorage = localStorage.getItem("color-scheme-override");
+      const currentColorSchemeOverrideValue = currentColorSchemeOverrideValueFromHTML || currentColorSchemeOverrideValueFromLocalStorage || "AUTO";
+
+      updateUI(component, currentColorSchemeOverrideValue);
+
+      component.addEventListener("submit", function (event) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        submitForm(component);
+      });
+
+      component.addEventListener("change", function (event) {
+        if (event.target.name === "color-scheme-override") {
+          submitForm(component);
+        }
+      });
+    }
+
+    function submitForm(component) {
+        updateColorSchemeOverride(component, component.querySelector("[name='color-scheme-override']:checked").value);
+    }
+
+    function updateUI(component, value) {
+      component.querySelector("[name='color-scheme-override'][value='" + value + "']").checked = true;
+      document.documentElement.setAttribute("data-color-scheme-override", value);
+    }
+
+    function updateColorSchemeOverride(component, value) {
+      localStorage.setItem("color-scheme-override", value);
+      updateUI(component, value);
+    }
+  })()
+</script>

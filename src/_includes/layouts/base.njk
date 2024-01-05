@@ -20,11 +20,7 @@
 
   <body>
     <div class="stack stack--spacing-4x inset--top-4x">
-      <header class="site-header">
-        <div class="u-max-width">
-          {% include "components/main-navigation/index.njk" %}
-        </div>
-      </header>
+      {% include "components/site-header/index.njk" %}
 
       <main class="site-main">
         {{ content | safe }}
