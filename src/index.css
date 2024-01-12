@@ -230,16 +230,23 @@ h6,
   max-width: 80rem;
 }
 
+.stack > * + * {
+  margin-top: var(--spacing-unit);
+}
 .stack.stack--spacing-2x > * + * {
   margin-top: var(--spacing-unit-2x);
+}
+.stack.stack--spacing-4x > * + * {
+  margin-top: var(--spacing-unit-4x);
+}
+
+.stack.stack--horizontal > * + * {
+  margin-left: var(--spacing-unit);
+  margin-top: 0;
 }
 .stack.stack--horizontal.stack--spacing-2x > * + * {
   margin-left: var(--spacing-unit-2x);
   margin-top: 0;
-}
-
-.stack.stack--spacing-4x > * + * {
-  margin-top: var(--spacing-unit-4x);
 }
 .stack.stack--horizontal.stack--spacing-4x > * + * {
   margin-left: var(--spacing-unit-4x);

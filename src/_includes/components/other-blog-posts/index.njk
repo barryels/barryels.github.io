@@ -1,7 +1,15 @@
 <ul class="u-unstyled-list">
-  {% for item in collections.post | allPostsExceptCurrent %}
-    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
-  {% else %}
-    <li>No other posts were found</li>
-  {% endfor %}
+  {%- for blogPost in blogPosts -%}
+    <li class="stack">
+      <a
+        href="{{ blogPost.url }}"
+        title="{{ blogPost.title }}"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <h4>{{ blogPost.title }}</h4>
+      </a>
+      <p>{{ blogPost.description }}</p>
+    </li>
+  {%- endfor -%}
 </ul>
