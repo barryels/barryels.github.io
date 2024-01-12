@@ -8,7 +8,7 @@ description: "I am passionate about building better experiences for end users, a
 
 ## Why a blog?
 
-It's nearly 2024, where everyone and their pet has a blog, why would the world need yet another?
+It's 2024, where everyone and their pet has a blog, why would the world need yet another?
 
 Well, put simply, this blog is more for me than it is for you, dear reader. It's a way for me to use writing as a tool for thinking. If there's something valuable here for you, then that's awesome! If there isn't, then I hope I didn't add to the noise, nor waste too much of your time.
 

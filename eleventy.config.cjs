@@ -40,5 +40,7 @@ module.exports = function (eleventyConfig) {
     }
   );
 
+  eleventyConfig.addShortcode("currentYear", () => new Date().getFullYear());
+
   return config;
 };
