@@ -18,14 +18,7 @@
     <link rel="stylesheet" href="/index.css" />
   </head>
 
-  <body>
-    <div class="stack stack--spacing-4x inset--top-4x">
-      <header class="site-header">
-        <div class="u-max-width">
-          {% include "components/main-navigation/index.njk" %}
-        </div>
-      </header>
-
+  <body class="stack stack--spacing-4x inset--top-4x">
       <main class="site-main">
         {{ content | safe }}
       </main>
@@ -35,8 +28,5 @@
           <span class="legal">&copy; {% currentYear %} All rights reserved.</span>
         </div>
       </footer>
-
-    </div>
-
   </body>
 </html>
