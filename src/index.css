@@ -422,6 +422,10 @@ body.hide-main-navigation-menu .main-navigation__menu {
   }
 }
 
+.creation-list {
+  list-style: none;
+}
+
 .podcasts-list {
   display: flex;
   flex-wrap: wrap;
@@ -466,7 +470,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
   }
 }
 
-.panel--content-contact {
+.panel--contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -477,16 +481,16 @@ body.hide-main-navigation-menu .main-navigation__menu {
   .panels {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .panel--content-about {
+  .panel--about {
     grid-column: 1 / 3;
   }
-  .panel--content-interests {
-    grid-column: 3 / 4;
-  }
-  .panel--content-podcasts {
+  .panel--creation {
     grid-column: 1 / 4;
   }
-  .panel--content-contact {
+  .panel--podcasts {
+    grid-column: 1 / 4;
+  }
+  .panel--contact {
     grid-column: 1 / 4;
   }
 }
