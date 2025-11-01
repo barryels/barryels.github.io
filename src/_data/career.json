@@ -281,6 +281,14 @@
       }
     },
     {
+      "id": "d4518113-713a-4cc0-9a9b-87e159e5055b",
+      "type": "TASK_COMPLETED",
+      "timestamp": "2017-09-30T23:59:59Z",
+      "data": {
+        "task_id": "8d1ff3b8-b462-4630-996b-36734c4b1a9e"
+      }
+    },
+    {
       "id": "1f2a3b4c-5d6e-4789-6f0a-3b2c1d0e6f22",
       "type": "ROLE_ENDED",
       "timestamp": "2017-09-30T23:59:59Z",
