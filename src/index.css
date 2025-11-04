@@ -393,6 +393,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
   border-radius: var(--border-radius-unit-2x);
   border: 1px dotted rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  padding: var(--spacing-unit-4x);
 }
 @media (prefers-color-scheme: dark) {
   .panel {

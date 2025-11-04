@@ -7,7 +7,7 @@ description: "I am passionate about building better experiences for end users, a
 <div class="panels u-max-width">
   <section
     id="about"
-    class="stack stack--spacing-2x panel inset--2x panel--about"
+    class="stack stack--spacing-2x panel panel--about"
   >
     <p>
       Hi, I'm <span class="h3">Barry</span>, a creative technologist
@@ -37,7 +37,7 @@ description: "I am passionate about building better experiences for end users, a
   </section>
 
   <section
-    class="stack stack--spacing-2x panel inset--2x panel--interests"
+    class="stack stack--spacing-2x panel panel--interests"
   >
     <h2 class="h4">Interests</h2>
     <p>Things I'm currently learning about or interested in:</p>
@@ -73,7 +73,7 @@ description: "I am passionate about building better experiences for end users, a
   </section>
 
   <section
-    class="stack stack--spacing-2x panel inset--2x panel--creation"
+    class="stack stack--spacing-2x panel panel--creation"
   >
     <h2 class="h4">Currently creating...</h2>
     <ul class="creation-list">
@@ -91,7 +91,7 @@ description: "I am passionate about building better experiences for end users, a
   </section>
 
   <section
-    class="stack stack--spacing-2x panel inset--2x panel--podcasts"
+    class="stack stack--spacing-2x panel panel--podcasts"
   >
     <h2 class="h4">Currently listening to...</h2>
     <ul class="podcasts-list">
@@ -115,7 +115,7 @@ description: "I am passionate about building better experiences for end users, a
 
   <section
     id="contact"
-    class="stack stack--spacing-2x panel inset--2x panel--contact"
+    class="stack stack--spacing-2x panel panel--contact"
   >
     <p>You can find me here:</p>
     <ul class="contact-list">
