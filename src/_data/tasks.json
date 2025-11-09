@@ -51,7 +51,7 @@
       "description": ""
     }
   ],
-  "jobTitles": [
+  "roles": [
     {
       "id": "430ea9c4-c3a7-4073-b505-a60a8d8ee340",
       "title": "Senior Frontend Engineer"
@@ -275,9 +275,7 @@
       "id": "8d9d39d0-acf5-439a-928f-41bc22e118b7",
       "description": "Conduct a retrospective with the team",
       "tags": ["8121da8b-497c-429d-bb09-eca6eb0cf6ed"]
-    }
-  ],
-  "tasks2": [
+    },
     {
       "id": "3d8433c9-371c-47b0-90b9-84c8e5cf1a6e",
       "description": "Conduct a stakeholder interview to gather business requirements.",
