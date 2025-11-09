@@ -2,17 +2,17 @@
   "tags": [
     {
       "id": "487616f2-15f2-440a-8fa1-225ecf3de26e",
-      "title": "Driving Technical Vision and Strategy",
+      "title": "Technical Vision and Strategy",
       "description": "Establish and execute a cohesive technical strategy for frontend systems to align with business goals and enable scalable growth."
     },
     {
       "id": "c73b9d46-2a63-44e8-80c0-0367df60bc9b",
-      "title": "Enhancing User Experience and Accessibility",
+      "title": "User Experience and Accessibility",
       "description": "Create intuitive, accessible, and high-performing user interfaces to improve customer satisfaction and engagement."
     },
     {
       "id": "e0e2fb08-d31d-4b69-a918-d56bafe1aaab",
-      "title": "Delivering High-Quality Code and Scalable Systems",
+      "title": "Quality Code and Scalable Systems",
       "description": "Ensure code quality, maintainability, and scalability to meet current and future business needs."
     },
     {
@@ -27,18 +27,42 @@
     },
     {
       "id": "391a27b5-28b0-4cd8-893b-85833272bb3f",
-      "title": "Driving Innovation",
+      "title": "Innovation",
       "description": "Proactively identify opportunities to leverage new technologies and approaches that can enhance competitive advantage."
     },
     {
       "id": "bba34610-953b-4e00-b2fd-b85a7e632080",
-      "title": "Ensuring Security and Compliance",
+      "title": "Security and Compliance",
       "description": "Safeguard frontend systems against vulnerabilities and ensure compliance with organisational and regulatory standards."
     },
     {
       "id": "8121da8b-497c-429d-bb09-eca6eb0cf6ed",
-      "title": "Driving Metrics and Continuous Improvement",
+      "title": "Metrics and Continuous Improvement",
       "description": "Measure, analyse, and improve frontend systems to optimise business outcomes."
+    },
+    {
+      "id": "dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe",
+      "title": "Performance",
+      "description": ""
+    },
+    {
+      "id": "953405c4-f359-4ba6-9db2-2ab293b5e183",
+      "title": "Scalability",
+      "description": ""
+    }
+  ],
+  "jobTitles": [
+    {
+      "id": "430ea9c4-c3a7-4073-b505-a60a8d8ee340",
+      "title": "Senior Frontend Engineer"
+    },
+    {
+      "id": "900a1b99-37af-45cf-9017-d17a96400a3c",
+      "title": "Lead Frontend Engineer"
+    },
+    {
+      "id": "92e45be3-6f9d-4455-a5ab-262232100601",
+      "title": "Staff Frontend Engineer"
     }
   ],
   "tasks": [
@@ -241,6 +265,208 @@
       "id": "8d9d39d0-acf5-439a-928f-41bc22e118b7",
       "description": "Conduct retrospectives with the team after each sprint to identify and implement improvements in frontend processes",
       "tags": ["8121da8b-497c-429d-bb09-eca6eb0cf6ed"]
+    }
+  ],
+  "tasks2": [
+    {
+      "id": "",
+      "description": "Conduct stakeholder interviews to gather business requirements and align the frontend technical strategy by the end of Q1.",
+      "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
+    },
+    {
+      "id": "",
+      "description": "Define a frontend performance budget (e.g., page load must be under 2 seconds) by the end of the first sprint.",
+      "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
+    },
+    {
+      "id": "",
+      "description": "Develop a roadmap for implementing new frontend technologies with quarterly milestones to improve user experience.",
+      "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
+    },
+    {
+      "id": "",
+      "description": "Audit the current frontend architecture and document inefficiencies by the end of the current quarter.",
+      "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
+    },
+    {
+      "id": "",
+      "description": "Collaborate with product managers and backend teams to set quarterly OKRs focused on frontend deliverables.",
+      "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
+    },
+    {
+      "id": "",
+      "description": "Optimize core web vitals (e.g., Largest Contentful Paint under 2.5s, First Input Delay under 100ms) for all pages within the next 3 months.",
+      "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
+    },
+    {
+      "id": "",
+      "description": "Analyze and reduce JavaScript bundle size by 20% by refactoring code and implementing code-splitting techniques within 6 weeks.",
+      "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
+    },
+    {
+      "id": "",
+      "description": "Implement lazy loading for images and third-party scripts on all pages within the next sprint.",
+      "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
+    },
+    {
+      "id": "",
+      "description": "Migrate 80% of legacy CSS to a modern CSS framework (e.g., Tailwind or CSS-in-JS) within the next quarter.",
+      "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
+    },
+    {
+      "id": "",
+      "description": "Set up monitoring to track frontend performance metrics (e.g., TTI, TBT) on a monthly basis using tools like Lighthouse or New Relic.",
+      "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
+    },
+    {
+      "id": "",
+      "description": "Conduct usability testing with 10 users and deliver a report with actionable insights by the end of the quarter.",
+      "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
+    },
+    {
+      "id": "",
+      "description": "Implement dark mode functionality for the website or app within 2 sprints and measure user engagement metrics pre- and post-implementation.",
+      "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
+    },
+    {
+      "id": "",
+      "description": "Collaborate with the design team to implement a responsive design framework that works seamlessly across 5 device breakpoints by the next release cycle.",
+      "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
+    },
+    {
+      "id": "",
+      "description": "Perform accessibility audits using tools like Axe and Lighthouse and address 90% of high-priority issues in the next quarter.",
+      "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
+    },
+    {
+      "id": "",
+      "description": "Implement a feedback collection mechanism (e.g., survey tool or feedback button) to gather user input on new features by the end of the sprint.",
+      "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
+    },
+    {
+      "id": "",
+      "description": "Establish a code review process to ensure 100% of pull requests are reviewed within 2 business days.",
+      "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
+    },
+    {
+      "id": "",
+      "description": "Implement a style guide for consistent coding practices and ensure 90% adherence by the end of Q2.",
+      "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
+    },
+    {
+      "id": "",
+      "description": "Refactor 50% of the existing codebase to improve readability, remove redundancies, and reduce technical debt by the end of the quarter.",
+      "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
+    },
+    {
+      "id": "",
+      "description": "Set up automated linting and formatting tools to enforce code quality standards by the next sprint.",
+      "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
+    },
+    {
+      "id": "",
+      "description": "Conduct monthly knowledge-sharing sessions to ensure the team is up to date with the latest frontend best practices.",
+      "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
+    },
+    {
+      "id": "",
+      "description": "Onboard new team members and ensure they complete the onboarding plan within their first 30 days.",
+      "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
+    },
+    {
+      "id": "",
+      "description": "Mentor 2 junior developers on coding best practices and career development during biweekly one-on-one sessions for the next 6 months.",
+      "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
+    },
+    {
+      "id": "",
+      "description": "Conduct quarterly workshops to teach new frontend technologies or frameworks to the team.",
+      "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
+    },
+    {
+      "id": "",
+      "description": "Create and maintain documentation for key frontend systems, ensuring 100% team access and understanding by the end of the current quarter.",
+      "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
+    },
+    {
+      "id": "",
+      "description": "Lead 3 code pairing sessions per sprint to upskill team members and improve collaboration.",
+      "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
+    },
+    {
+      "id": "",
+      "description": "Develop and share frontend technical documentation with the backend and QA teams by the end of the current sprint.",
+      "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
+    },
+    {
+      "id": "",
+      "description": "Participate in biweekly cross-functional team meetings to align on development priorities and dependencies.",
+      "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
+    },
+    {
+      "id": "",
+      "description": "Set up and manage a shared design system in collaboration with the UX/UI team by the end of Q2.",
+      "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
+    },
+    {
+      "id": "",
+      "description": "Work with QA teams to ensure 100% of frontend features are tested using automated and manual testing frameworks.",
+      "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
+    },
+    {
+      "id": "",
+      "description": "Collaborate with product management to prioritize and deliver at least 90% of major features within agreed-upon deadlines.",
+      "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
+    },
+    {
+      "id": "",
+      "description": "Implement client-side caching for reusable API calls to reduce network requests by 30% within 2 sprints.",
+      "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
+    },
+    {
+      "id": "",
+      "description": "Set up server-side rendering (SSR) for key pages to improve SEO rankings and reduce time-to-first-byte (TTFB) by 25% in the next quarter.",
+      "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
+    },
+    {
+      "id": "",
+      "description": "Develop reusable components for 70% of commonly used UI elements (e.g., buttons, modals) within the next release cycle.",
+      "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
+    },
+    {
+      "id": "",
+      "description": "Implement a state management solution (e.g., Redux, Zustand) for 100% of complex state-dependent features by the end of Q3.",
+      "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
+    },
+    {
+      "id": "",
+      "description": "Set up a CI/CD pipeline for seamless deployment of frontend updates with a maximum downtime of 1% by the end of Q1.",
+      "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
+    },
+    {
+      "id": "",
+      "description": "Propose and implement 3 A/B tests per quarter to improve UI/UX design and measure conversion rates.",
+      "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
+    },
+    {
+      "id": "",
+      "description": "Research and prototype one new frontend technology or library per quarter to evaluate its potential for adoption.",
+      "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
+    },
+    {
+      "id": "",
+      "description": "Deploy feature flags for 100% of major features to allow for incremental rollouts and testing.",
+      "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
+    },
+    {
+      "id": "",
+      "description": "Collaborate with data analysts to analyze user behavior and generate actionable insights within 2 weeks of feature launches.",
+      "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
+    },
+    {
+      "id": "",
+      "description": "Partner with the product team to identify and prioritize 5 innovative features to experiment with by the end of the year.",
+      "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     }
   ]
 }
