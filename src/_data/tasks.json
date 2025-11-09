@@ -68,404 +68,414 @@
   "tasks": [
     {
       "id": "06829618-135f-43b9-83c4-5f1bbfc995f3",
-      "description": "Conduct stakeholder interviews to gather business requirements and align the frontend technical strategy",
+      "description": "Conduct stakeholder interview to gather business requirements",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
       "id": "68463b01-eecd-4352-aa2d-7bfbbc51dea4",
-      "description": "Define a performance budget for frontend applications, including metrics like load time and interaction speed, by analysing historical user data",
+      "description": "Define a performance budget for frontend application, including metrics like load time and interaction speed",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
       "id": "8d1ff3b8-b462-4630-996b-36734c4b1a9e",
-      "description": "Develop and document a frontend architecture roadmap that supports scalability and aligns with organisational goals",
+      "description": "Develop and document a frontend architecture",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
       "id": "096a7b90-b913-4e23-928c-62625af2bf82",
-      "description": "Evaluate emerging technologies quarterly for potential alignment with business needs and present findings during strategy meetings",
+      "description": "Evaluate and present emerging technologies",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
       "id": "0f1a641d-f2c0-4942-a370-8eda188b45ab",
-      "description": "Create a reusable component library and ensure its adoption across teams to reduce development time and maintain consistency",
+      "description": "Create a reusable component library",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
       "id": "7d68d4bf-7e06-4d20-90e6-d04478ece6ca",
-      "description": "Audit existing applications for accessibility compliance (e.g., WCAG 2.1 AA) and create an improvement plan",
+      "description": "Audit an existing application for accessibility compliance",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
       "id": "2904a056-fd40-4f10-a5a0-e92be506b49c",
-      "description": "Collaborate with UX designers to implement user feedback into the frontend designs",
+      "description": "Collaborate with a UX designer to implement user feedback",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
       "id": "ed1f583f-13f2-45a2-b129-e6e3398a1fef",
-      "description": "Develop and test responsive designs to ensure compatibility across devices and browsers",
+      "description": "Develop and test responsive designs",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
       "id": "7af96162-b692-4a07-9042-206bd5739116",
-      "description": "Perform usability testing sessions with cross-functional teams to identify and address pain points in user workflows",
+      "description": "Perform a usability testing session with cross-functional teams",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
       "id": "a496388d-684d-4fd3-8a89-6387e9910378",
-      "description": "Optimise frontend performance to meet the defined performance budget, reducing page load times by X%",
+      "description": "Optimise frontend performance to meet the defined performance budget",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
       "id": "2b4fb50c-65b9-479b-9a7f-f03e7d08d5dd",
-      "description": "Conduct code reviews for team members, ensuring adherence to coding standards and best practices",
+      "description": "Conduct a code review",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
       "id": "af145fe4-5ab1-4dcd-b74f-f37330615f25",
-      "description": "Write automated tests for 90% of new features, with a focus on unit, integration, and end-to-end tests",
+      "description": "Write automated tests",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
       "id": "3c1180a4-e275-46ff-82ed-4207fbebd144",
-      "description": "Refactor legacy code to align with modern best practices, prioritising systems that impact business-critical workflows",
+      "description": "Refactor legacy code",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
       "id": "a901b0dd-c2cf-49ae-bec1-1030bf9d790b",
-      "description": "Document technical decisions and coding guidelines in a shared repository to improve onboarding and development efficiency",
+      "description": "Document technical decisions",
+      "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
+    },
+    {
+      "id": "2945f896-ec9e-4776-bba3-0febd7874f5a",
+      "description": "Document coding guidelines",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
       "id": "4fb07981-bf94-45e3-921c-1e554d93b8f5",
-      "description": "Monitor application errors and bugs using tools like Sentry or New Relic, and resolve critical issues",
+      "description": "Monitor application errors using an APM",
+      "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
+    },
+    {
+      "id": "656263df-af91-44a2-a223-6eb614d56b82",
+      "description": "Resolve an application error",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
       "id": "34f032a6-2271-44ed-b0d3-85a517625e03",
-      "description": "Host bi-weekly technical workshops or code labs to upskill team members on new technologies or strategies",
+      "description": "Host a technical workshop",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
       "id": "17682a81-2b5f-4ace-8790-0ff1ca860a7c",
-      "description": "Provide structured feedback during performance reviews, identifying areas of growth and creating development plans for each team member",
+      "description": "Provide performance review feedback",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
       "id": "f452b53b-146b-4b82-b2ae-8fc93643acc6",
-      "description": "Pair program with junior developers twice per sprint to enhance their understanding of complex frontend concepts",
+      "description": "Pair program",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
       "id": "fea1bb62-b5e4-4731-97a9-444e457e6175",
-      "description": "Create documentation on best practices and distribute it to team members during onboarding sessions",
+      "description": "Contribute to team onboarding documentation",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
       "id": "c5fcfaed-39a9-430f-a70f-62e258f2ca28",
-      "description": "Identify training opportunities and recommend courses, conferences, or certifications to team members",
+      "description": "Suggest a training opportunity, conference, or certification",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
       "id": "b3ea8bba-0a1a-4074-b53c-25c39f0f8630",
-      "description": "Participate in sprint planning meetings to provide technical insights and effort estimates for frontend tasks",
+      "description": "Participate in a sprint planning meeting",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
       "id": "02752a0b-1ad5-4c0d-953f-d099650e7b06",
-      "description": "Work with backend engineers to define APIs and ensure data integration requirements are met for project deliverables",
+      "description": "Define an API with a backend engineer",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
       "id": "cca06e9c-bc18-42bd-a4d0-9880b6fb9707",
-      "description": "Provide technical feedback on design mockups and prototypes to ensure feasibility and alignment with frontend capabilities",
+      "description": "Provide feedback on a design mockup",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
       "id": "e713e9e4-6447-44a6-a9c9-9f30c037e6bc",
-      "description": "Document and share frontend dependencies and technical requirements with cross-functional teams before the start of development",
+      "description": "Document and share a frontend technical requirement",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
       "id": "c2f9d9f7-9915-4b0e-90e7-7ddb606908d1",
-      "description": "Host weekly sync meetings with product and design teams to address blockers and ensure alignment on project goals",
+      "description": "Host a sync meeting with product and design teams",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
       "id": "7191a8b6-f605-4019-a6e8-fe2a35681f77",
-      "description": "Research industry trends and produce a quarterly report on emerging frontend technologies with actionable recommendations",
+      "description": "Research an industry trend and produce a report",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
       "id": "822c79c0-7c66-4786-8f47-a8aff10a0910",
-      "description": "Develop proof-of-concept projects for innovative ideas and present outcomes to stakeholders",
+      "description": "Develop a proof-of-concept project and present the outcome",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
       "id": "074476a3-5afc-4bc8-b93d-7d4aac50f883",
-      "description": "Collaborate with analytics teams to identify user behavior insights and propose frontend changes to improve engagement metrics",
+      "description": "Collaborate with the analytics team on a user behavior insight",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
       "id": "76c127bd-3852-413a-81f4-027a1dc77b7c",
-      "description": "Create internal hackathons or innovation sessions to encourage experimentation and generate new ideas",
+      "description": "Host an innovation session",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
       "id": "2c7f4c8a-3637-4a99-bd5b-3cc89a927194",
-      "description": "Develop a plan for integrating AI/ML tools into frontend development processes where applicable (e.g., predictive UI)",
+      "description": "Develop a plan to integrate an AI/ML tool",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
       "id": "fc2169be-2a26-4130-8460-238fc5549da1",
-      "description": "Implement secure coding practices and train team members to follow OWASP guidelines during feature development",
+      "description": "Implement a secure coding practice",
       "tags": ["bba34610-953b-4e00-b2fd-b85a7e632080"]
     },
     {
       "id": "b6821087-3735-4fea-b48e-84129297a5af",
-      "description": "Perform quarterly security audits of frontend code to identify and mitigate vulnerabilities",
+      "description": "Perform a security audit of the frontend code",
       "tags": ["bba34610-953b-4e00-b2fd-b85a7e632080"]
     },
     {
       "id": "a9ee82ab-7c48-40c5-8140-501f415812da",
-      "description": "Collaborate with the security team to ensure frontend applications meet compliance standards (e.g., GDPR, HIPAA)",
+      "description": "Collaborate with the security team on compliance",
       "tags": ["bba34610-953b-4e00-b2fd-b85a7e632080"]
     },
     {
       "id": "e4e86cd3-c84d-41ea-b9a9-f61488a45ef5",
-      "description": "Utilise tools for dependency scanning (e.g., Snyk or GitHub Dependabot) and address critical security issues",
+      "description": "Use a dependency scanning tool to address an issue",
       "tags": ["bba34610-953b-4e00-b2fd-b85a7e632080"]
     },
     {
       "id": "dc1a7274-6c34-4355-bdcb-710c65d6453b",
-      "description": "Develop a disaster recovery plan for frontend systems to ensure business continuity during security incidents",
+      "description": "Develop a disaster recovery plan for a frontend system",
       "tags": ["bba34610-953b-4e00-b2fd-b85a7e632080"]
     },
     {
       "id": "8ebfd740-213f-4aa7-80b1-69be48863481",
-      "description": "Define KPIs and benchmarks for frontend performance in collaboration with stakeholders",
+      "description": "Define a KPI for frontend performance",
       "tags": ["8121da8b-497c-429d-bb09-eca6eb0cf6ed"]
     },
     {
       "id": "73ca6067-ef3b-4982-953c-1a28c7b237af",
-      "description": "Set up analytics tracking for frontend features to measure user engagement and feature adoption rates",
+      "description": "Set up analytics tracking for a frontend feature",
       "tags": ["8121da8b-497c-429d-bb09-eca6eb0cf6ed"]
     },
     {
       "id": "a90caf3d-9b6c-4da6-9f6d-4ae87dafba16",
-      "description": "Analyse A/B test results quarterly and provide actionable recommendations to improve conversion rates and user experience",
+      "description": "Analyze an A/B test result and provide a recommendation",
       "tags": ["8121da8b-497c-429d-bb09-eca6eb0cf6ed"]
     },
     {
       "id": "42fc92b5-e53b-4554-9828-e76a837bbf3a",
-      "description": "Monitor frontend performance metrics (e.g., page load times, interaction times) and implement optimisation strategies to meet goals",
+      "description": "Monitor a frontend performance metric and implement optimization",
       "tags": ["8121da8b-497c-429d-bb09-eca6eb0cf6ed"]
     },
     {
       "id": "8d9d39d0-acf5-439a-928f-41bc22e118b7",
-      "description": "Conduct retrospectives with the team after each sprint to identify and implement improvements in frontend processes",
+      "description": "Conduct a retrospective with the team",
       "tags": ["8121da8b-497c-429d-bb09-eca6eb0cf6ed"]
     }
   ],
   "tasks2": [
     {
-      "id": "",
-      "description": "Conduct stakeholder interviews to gather business requirements and align the frontend technical strategy by the end of Q1.",
+      "id": "3d8433c9-371c-47b0-90b9-84c8e5cf1a6e",
+      "description": "Conduct a stakeholder interview to gather business requirements.",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
-      "id": "",
-      "description": "Define a frontend performance budget (e.g., page load must be under 2 seconds) by the end of the first sprint.",
+      "id": "b30d12df-0561-4ca9-8249-1fde5c2405e6",
+      "description": "Define a frontend performance budget.",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
-      "id": "",
-      "description": "Develop a roadmap for implementing new frontend technologies with quarterly milestones to improve user experience.",
+      "id": "09ebc0ab-1dd6-4c25-875e-da9304c2ee03",
+      "description": "Develop a roadmap for implementing new frontend technologies.",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
-      "id": "",
-      "description": "Audit the current frontend architecture and document inefficiencies by the end of the current quarter.",
+      "id": "f818bc4a-9023-46e2-87bb-f6bc9459a724",
+      "description": "Audit the current frontend architecture.",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
-      "id": "",
-      "description": "Collaborate with product managers and backend teams to set quarterly OKRs focused on frontend deliverables.",
+      "id": "f9455b52-4be0-4d3c-b044-057004628e64",
+      "description": "Collaborate with a product manager to set an OKR for frontend deliverables.",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
-      "id": "",
-      "description": "Optimize core web vitals (e.g., Largest Contentful Paint under 2.5s, First Input Delay under 100ms) for all pages within the next 3 months.",
+      "id": "bdfb1212-0471-4a45-a6f0-855ec3a7e4d2",
+      "description": "Optimize a core web vital metric.",
       "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
     },
     {
-      "id": "",
-      "description": "Analyze and reduce JavaScript bundle size by 20% by refactoring code and implementing code-splitting techniques within 6 weeks.",
+      "id": "dc4c934b-5c2f-4b80-9f86-d8bd45d76f75",
+      "description": "Reduce JavaScript bundle size by refactoring code.",
       "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
     },
     {
-      "id": "",
-      "description": "Implement lazy loading for images and third-party scripts on all pages within the next sprint.",
+      "id": "d3e89f11-81a0-4405-824b-2275599b5516",
+      "description": "Implement lazy loading for images or third-party scripts.",
       "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
     },
     {
-      "id": "",
-      "description": "Migrate 80% of legacy CSS to a modern CSS framework (e.g., Tailwind or CSS-in-JS) within the next quarter.",
+      "id": "aad74dfd-90e7-432a-9ef7-9c5cfde7e531",
+      "description": "Migrate legacy CSS to a modern CSS framework.",
       "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
     },
     {
-      "id": "",
-      "description": "Set up monitoring to track frontend performance metrics (e.g., TTI, TBT) on a monthly basis using tools like Lighthouse or New Relic.",
+      "id": "dc599535-e3aa-4e92-8768-4822bfde9c35",
+      "description": "Set up monitoring for frontend performance metrics.",
       "tags": ["dadaa1a6-6ed5-4ed7-b6ea-fd21879013fe"]
     },
     {
-      "id": "",
-      "description": "Conduct usability testing with 10 users and deliver a report with actionable insights by the end of the quarter.",
+      "id": "8043bc68-5476-4a7f-85bd-a0be367e4496",
+      "description": "Conduct a usability testing session.",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
-      "id": "",
-      "description": "Implement dark mode functionality for the website or app within 2 sprints and measure user engagement metrics pre- and post-implementation.",
+      "id": "4dde96da-4562-4280-946b-7c76de45d8b5",
+      "description": "Implement dark mode functionality.",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
-      "id": "",
-      "description": "Collaborate with the design team to implement a responsive design framework that works seamlessly across 5 device breakpoints by the next release cycle.",
+      "id": "0087645d-453b-434e-993d-075c5fd6ddd6",
+      "description": "Collaborate with the design team to implement a responsive design framework.",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
-      "id": "",
-      "description": "Perform accessibility audits using tools like Axe and Lighthouse and address 90% of high-priority issues in the next quarter.",
+      "id": "b0965186-e55b-43b4-a886-58dc0ca80450",
+      "description": "Perform an accessibility audit using tools like Axe or Lighthouse.",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
-      "id": "",
-      "description": "Implement a feedback collection mechanism (e.g., survey tool or feedback button) to gather user input on new features by the end of the sprint.",
+      "id": "0bb32d36-a34f-4aa4-9dda-5af617cd98d7",
+      "description": "Implement a feedback collection mechanism.",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
-      "id": "",
-      "description": "Establish a code review process to ensure 100% of pull requests are reviewed within 2 business days.",
+      "id": "51a91c7e-2e13-4db6-890a-2acc488ea191",
+      "description": "Conduct a code review.",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
-      "id": "",
-      "description": "Implement a style guide for consistent coding practices and ensure 90% adherence by the end of Q2.",
+      "id": "ed123a53-36b0-43a0-8d96-1bf9b2a18677",
+      "description": "Implement a style guide for consistent coding practices.",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
-      "id": "",
-      "description": "Refactor 50% of the existing codebase to improve readability, remove redundancies, and reduce technical debt by the end of the quarter.",
+      "id": "5b6ea2bf-10b4-4583-9338-7fc1214ab55c",
+      "description": "Refactor a section of the codebase to improve readability.",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
-      "id": "",
-      "description": "Set up automated linting and formatting tools to enforce code quality standards by the next sprint.",
+      "id": "45ab1a58-71f1-4ed1-a467-c55d48f044cd",
+      "description": "Set up an automated linting or formatting tool.",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
-      "id": "",
-      "description": "Conduct monthly knowledge-sharing sessions to ensure the team is up to date with the latest frontend best practices.",
+      "id": "d0daa209-c687-47af-aff0-f90bf7979640",
+      "description": "Conduct a knowledge-sharing session with the team.",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
-      "id": "",
-      "description": "Onboard new team members and ensure they complete the onboarding plan within their first 30 days.",
+      "id": "41c4f84f-3d52-481b-8e44-266d19240018",
+      "description": "Onboard a new team member.",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
-      "id": "",
-      "description": "Mentor 2 junior developers on coding best practices and career development during biweekly one-on-one sessions for the next 6 months.",
+      "id": "c571390c-9fce-40b7-a3c1-3bc7c2e923bb",
+      "description": "Mentor a junior developer in coding best practices.",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
-      "id": "",
-      "description": "Conduct quarterly workshops to teach new frontend technologies or frameworks to the team.",
+      "id": "dcedb8f1-e62a-4889-86a1-5d1389e28330",
+      "description": "Conduct a workshop on a new frontend technology.",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
-      "id": "",
-      "description": "Create and maintain documentation for key frontend systems, ensuring 100% team access and understanding by the end of the current quarter.",
+      "id": "2c7be58c-c490-498b-a60c-9fd701ceb7ee",
+      "description": "Create documentation for a key frontend system.",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
-      "id": "",
-      "description": "Lead 3 code pairing sessions per sprint to upskill team members and improve collaboration.",
+      "id": "8c258ab0-e1f4-49f5-9a55-01a6d192ef51",
+      "description": "Lead a code pairing session with a team member.",
       "tags": ["08280eb5-08cf-41c6-990b-3db29fa32925"]
     },
     {
-      "id": "",
-      "description": "Develop and share frontend technical documentation with the backend and QA teams by the end of the current sprint.",
+      "id": "88c041a7-acdd-431f-b805-227780da9488",
+      "description": "Develop and share frontend technical documentation with a cross-functional team.",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
-      "id": "",
-      "description": "Participate in biweekly cross-functional team meetings to align on development priorities and dependencies.",
+      "id": "2140939f-266b-4f47-a9a3-b6beb24bc365",
+      "description": "Participate in a cross-functional team meeting.",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
-      "id": "",
-      "description": "Set up and manage a shared design system in collaboration with the UX/UI team by the end of Q2.",
+      "id": "8bea7949-1aef-4da1-a8bb-ff2441335f24",
+      "description": "Set up a shared design system with the UX/UI team.",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
-      "id": "",
-      "description": "Work with QA teams to ensure 100% of frontend features are tested using automated and manual testing frameworks.",
+      "id": "ae739aa7-d011-455d-bbce-54bf5a7d54da",
+      "description": "Work with QA teams to test a frontend feature.",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
-      "id": "",
-      "description": "Collaborate with product management to prioritize and deliver at least 90% of major features within agreed-upon deadlines.",
+      "id": "c1f76ca7-4724-409d-a4d9-c25e6ee8325e",
+      "description": "Collaborate with product management to prioritize a feature.",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
-      "id": "",
-      "description": "Implement client-side caching for reusable API calls to reduce network requests by 30% within 2 sprints.",
+      "id": "e21f8dab-35a7-42f8-9708-a7b7cd14de9c",
+      "description": "Implement client-side caching for an API call.",
       "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
     },
     {
-      "id": "",
-      "description": "Set up server-side rendering (SSR) for key pages to improve SEO rankings and reduce time-to-first-byte (TTFB) by 25% in the next quarter.",
+      "id": "a8a1a779-a4a5-46b7-8eae-cfddb293be79",
+      "description": "Set up server-side rendering (SSR) for a page.",
       "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
     },
     {
-      "id": "",
-      "description": "Develop reusable components for 70% of commonly used UI elements (e.g., buttons, modals) within the next release cycle.",
+      "id": "73a59bcd-70e3-4d5b-a056-ff6fbf088e55",
+      "description": "Develop a reusable UI component.",
       "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
     },
     {
-      "id": "",
-      "description": "Implement a state management solution (e.g., Redux, Zustand) for 100% of complex state-dependent features by the end of Q3.",
+      "id": "b83e4a80-c986-44b9-a200-881e7666cea0",
+      "description": "Implement a state management solution for a feature.",
       "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
     },
     {
-      "id": "",
-      "description": "Set up a CI/CD pipeline for seamless deployment of frontend updates with a maximum downtime of 1% by the end of Q1.",
+      "id": "a0f25202-f24d-4610-9d31-f6be3bed577d",
+      "description": "Set up a CI/CD pipeline for frontend updates.",
       "tags": ["953405c4-f359-4ba6-9db2-2ab293b5e183"]
     },
     {
-      "id": "",
-      "description": "Propose and implement 3 A/B tests per quarter to improve UI/UX design and measure conversion rates.",
+      "id": "f7d7124f-2d60-4524-89f2-258c8faa35cf",
+      "description": "Propose and implement an A/B test.",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
-      "id": "",
-      "description": "Research and prototype one new frontend technology or library per quarter to evaluate its potential for adoption.",
+      "id": "2aa3a770-4a97-40b7-87d3-b94bbe9871c9",
+      "description": "Research and prototype a new frontend technology.",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
-      "id": "",
-      "description": "Deploy feature flags for 100% of major features to allow for incremental rollouts and testing.",
+      "id": "ac5b52da-6ca6-4141-b963-e5edf44519d4",
+      "description": "Deploy a feature flag for a major feature.",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
-      "id": "",
-      "description": "Collaborate with data analysts to analyze user behavior and generate actionable insights within 2 weeks of feature launches.",
+      "id": "da257dac-1752-4d8d-8e41-895aaaa54b24",
+      "description": "Collaborate with a data analyst on user behavior analysis.",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
-      "id": "",
-      "description": "Partner with the product team to identify and prioritize 5 innovative features to experiment with by the end of the year.",
+      "id": "9c9a21f1-1753-467f-bccd-19fbcc180f05",
+      "description": "Identify and prioritize an innovative feature with the product team.",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     }
   ]
