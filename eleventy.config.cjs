@@ -31,6 +31,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ public: "/" });
 
+  eleventyConfig.addPassthroughCopy({
+    "src/_includes/components/": "components/",
+  });
+
   eleventyConfig.addFilter(
     "allPostsExceptCurrent",
     function allPostsExceptCurrent(posts = []) {

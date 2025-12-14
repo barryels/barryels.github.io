@@ -68,12 +68,12 @@
   "tasks": [
     {
       "id": "06829618-135f-43b9-83c4-5f1bbfc995f3",
-      "description": "Conduct stakeholder interview to gather business requirements",
+      "description": "Conduct a stakeholder interview to gather business requirements",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
       "id": "68463b01-eecd-4352-aa2d-7bfbbc51dea4",
-      "description": "Define a performance budget for frontend application, including metrics like load time and interaction speed",
+      "description": "Define a performance budget for a frontend application, including metrics like load time and interaction speed",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "id": "096a7b90-b913-4e23-928c-62625af2bf82",
-      "description": "Evaluate and present emerging technologies",
+      "description": "Evaluate and present an emerging technology",
       "tags": ["487616f2-15f2-440a-8fa1-225ecf3de26e"]
     },
     {
@@ -103,7 +103,7 @@
     },
     {
       "id": "ed1f583f-13f2-45a2-b129-e6e3398a1fef",
-      "description": "Develop and test responsive designs",
+      "description": "Develop and test a responsive web design",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "id": "a496388d-684d-4fd3-8a89-6387e9910378",
-      "description": "Optimise frontend performance to meet the defined performance budget",
+      "description": "Optimise frontend performance to meet a performance budget",
       "tags": ["c73b9d46-2a63-44e8-80c0-0367df60bc9b"]
     },
     {
@@ -123,7 +123,7 @@
     },
     {
       "id": "af145fe4-5ab1-4dcd-b74f-f37330615f25",
-      "description": "Write automated tests",
+      "description": "Write an automated test",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
@@ -133,12 +133,12 @@
     },
     {
       "id": "a901b0dd-c2cf-49ae-bec1-1030bf9d790b",
-      "description": "Document technical decisions",
+      "description": "Document a technical decision",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
       "id": "2945f896-ec9e-4776-bba3-0febd7874f5a",
-      "description": "Document coding guidelines",
+      "description": "Create a coding guideline",
       "tags": ["e0e2fb08-d31d-4b69-a918-d56bafe1aaab"]
     },
     {
@@ -188,7 +188,7 @@
     },
     {
       "id": "cca06e9c-bc18-42bd-a4d0-9880b6fb9707",
-      "description": "Provide feedback on a design mockup",
+      "description": "Provide feedback on a design mock-up",
       "tags": ["4ad58fc8-a847-4ac4-a487-9643ca673e29"]
     },
     {
@@ -203,7 +203,7 @@
     },
     {
       "id": "7191a8b6-f605-4019-a6e8-fe2a35681f77",
-      "description": "Research an industry trend and produce a report",
+      "description": "Create a research report on an industry trend",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
@@ -213,7 +213,7 @@
     },
     {
       "id": "074476a3-5afc-4bc8-b93d-7d4aac50f883",
-      "description": "Collaborate with the analytics team on a user behavior insight",
+      "description": "Collaborate with the analytics team on a user behaviour insight",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
@@ -223,17 +223,12 @@
     },
     {
       "id": "2c7f4c8a-3637-4a99-bd5b-3cc89a927194",
-      "description": "Develop a plan to integrate an AI/ML tool",
+      "description": "Develop a plan to integrate an AI tool",
       "tags": ["391a27b5-28b0-4cd8-893b-85833272bb3f"]
     },
     {
       "id": "fc2169be-2a26-4130-8460-238fc5549da1",
       "description": "Implement a secure coding practice",
-      "tags": ["bba34610-953b-4e00-b2fd-b85a7e632080"]
-    },
-    {
-      "id": "b6821087-3735-4fea-b48e-84129297a5af",
-      "description": "Perform a security audit of the frontend code",
       "tags": ["bba34610-953b-4e00-b2fd-b85a7e632080"]
     },
     {
