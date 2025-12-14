@@ -1,4 +1,4 @@
-const { rimraf } = require("rimraf");
+const fs = require("fs");
 
 const config = {
   dataTemplateEngine: "njk",
@@ -13,7 +13,7 @@ const config = {
 
 const dirToClean = config.dir.output;
 console.warn(`🚫 Deleting files in "${dirToClean}"`);
-rimraf.sync(dirToClean);
+fs.rmSync(dirToClean, { recursive: true, force: true });
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
