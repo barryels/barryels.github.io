@@ -14,13 +14,13 @@
   },
   "homepage": "https://github.com/barryels/barryels.github.io#README",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "dev": "npx @11ty/eleventy --serve",
     "build": "NODE_ENV=production npx @11ty/eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "fast-xml-parser": "^4.5.3",
-    "node-fetch": "^3.3.2",
-    "rimraf": "^5.0.10"
+    "@11ty/eleventy": "2.0.1",
+    "fast-xml-parser": "4.5.3",
+    "node-fetch": "3.3.2",
+    "rimraf": "5.0.10"
   }
 }
