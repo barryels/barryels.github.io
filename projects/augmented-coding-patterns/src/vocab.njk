@@ -1,0 +1,211 @@
+---
+layout: false
+permalink: vocab/index.html
+---
+<!DOCTYPE html>
+<html lang="en" prefix="rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# acp: {{ vocab.namespace }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACP Vocabulary - Augmented Coding Patterns</title>
+    <link rel="alternate" type="application/ld+json" href="../vocab.jsonld" title="JSON-LD">
+    <style>
+        :root {
+            --color-bg: #fafafa;
+            --color-text: #333;
+            --color-heading: #1a1a1a;
+            --color-link: #0066cc;
+            --color-border: #e0e0e0;
+            --color-code-bg: #f5f5f5;
+            --color-class: #2e7d32;
+            --color-property: #1565c0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg: #1a1a1a;
+                --color-text: #e0e0e0;
+                --color-heading: #fff;
+                --color-link: #66b3ff;
+                --color-border: #404040;
+                --color-code-bg: #2d2d2d;
+                --color-class: #81c784;
+                --color-property: #64b5f6;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--color-bg);
+            color: var(--color-text);
+        }
+        h1, h2, h3 { color: var(--color-heading); }
+        h1 { border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem; }
+        h2 { margin-top: 2.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.3rem; }
+        a { color: var(--color-link); }
+        code {
+            background: var(--color-code-bg);
+            padding: 0.15em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        pre {
+            background: var(--color-code-bg);
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        pre code { background: none; padding: 0; }
+        .term {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .term h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .term-type {
+            font-size: 0.75rem;
+            padding: 0.2em 0.5em;
+            border-radius: 4px;
+            font-weight: normal;
+        }
+        .term-type.class { background: var(--color-class); color: white; }
+        .term-type.property { background: var(--color-property); color: white; }
+        .term-uri { font-size: 0.85rem; color: var(--color-text); opacity: 0.8; }
+        dl { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1rem; }
+        dt { font-weight: 600; }
+        dd { margin: 0; }
+        .formats { 
+            background: var(--color-code-bg); 
+            padding: 1rem; 
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+        .formats h3 { margin-top: 0; }
+        .toc { 
+            background: var(--color-code-bg);
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+        .toc h3 { margin-top: 0; }
+        .toc ul { margin: 0; padding-left: 1.5rem; }
+        .toc li { margin: 0.25rem 0; }
+    </style>
+</head>
+<body vocab="{{ vocab.namespace }}" typeof="owl:Ontology">
+    <header>
+        <h1 property="rdfs:label">{{ vocab.label }}</h1>
+        <p property="rdfs:comment">{{ vocab.comment }}</p>
+    </header>
+
+    <section class="formats">
+        <h3>Namespace &amp; Formats</h3>
+        <p><strong>Namespace URI:</strong> <code>{{ vocab.namespace }}</code></p>
+        <p><strong>Preferred prefix:</strong> <code>acp</code></p>
+        <p><strong>Available formats:</strong></p>
+        <ul>
+            <li><a href="../vocab.jsonld">JSON-LD</a> (<code>application/ld+json</code>)</li>
+        </ul>
+    </section>
+
+    <nav class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li>
+                <a href="#classes">Classes</a>:
+                {%- for cls in vocab.classes %}
+                <a href="#{{ cls.id }}">{{ cls.id }}</a>{%- if not loop.last %}, {% endif %}
+                {%- endfor %}
+            </li>
+            <li>
+                <a href="#properties">Properties</a>:
+                {%- for prop in vocab.properties %}
+                <a href="#{{ prop.id }}">{{ prop.id }}</a>{%- if not loop.last %}, {% endif %}
+                {%- endfor %}
+            </li>
+        </ul>
+    </nav>
+
+    <section id="usage">
+        <h2>Usage Example</h2>
+        <pre><code>{
+  "@context": {
+    "acp": "{{ vocab.namespace }}",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@id": "acp:patterns/feedback-loop",
+  "@type": "acp:Pattern",
+  "rdfs:label": "Feedback Loop",
+  "acp:solves": [
+    {"@id": "acp:obstacles/keeping-up"},
+    {"@id": "acp:anti-patterns/flying-blind"}
+  ],
+  "acp:related": [
+    {"@id": "acp:patterns/playgrounds"},
+    {"@id": "acp:patterns/chain-of-small-steps"}
+  ]
+}</code></pre>
+    </section>
+
+    <section id="classes">
+        <h2>Classes</h2>
+        {% for cls in vocab.classes %}
+        <article id="{{ cls.id }}" class="term" resource="acp:{{ cls.id }}" typeof="{{ cls.types | join(' ') }}">
+            <h3>
+                <span class="term-type class">Class</span>
+                <span property="rdfs:label">{{ cls.label }}</span>
+            </h3>
+            <p class="term-uri"><code>acp:{{ cls.id }}</code></p>
+            <p property="rdfs:comment">{{ cls.comment }}</p>
+        </article>
+        {% endfor %}
+    </section>
+
+    <section id="properties">
+        <h2>Properties</h2>
+        {% for prop in vocab.properties %}
+        <article id="{{ prop.id }}" class="term" resource="acp:{{ prop.id }}" typeof="{{ prop.types | join(' ') }}">
+            <h3>
+                <span class="term-type property">{{ prop.propertyType }}</span>
+                <span property="rdfs:label">{{ prop.label }}</span>
+            </h3>
+            <p class="term-uri"><code>acp:{{ prop.id }}</code></p>
+            <p property="rdfs:comment">{{ prop.comment }}</p>
+            {% if prop.domain.length or prop.range.length %}
+            <dl>
+                {% if prop.domain.length %}
+                <dt>Domain</dt>
+                <dd>
+                    {%- for d in prop.domain %}
+                    <a href="#{{ d }}" rel="rdfs:domain" resource="acp:{{ d }}">acp:{{ d }}</a>{%- if not loop.last %}, {% endif %}
+                    {%- endfor %}
+                </dd>
+                {% endif %}
+                {% if prop.range.length %}
+                <dt>Range</dt>
+                <dd>
+                    {%- for r in prop.range %}
+                    <a href="#{{ r }}" rel="rdfs:range" resource="acp:{{ r }}">acp:{{ r }}</a>{%- if not loop.last %}, {% endif %}
+                    {%- endfor %}
+                </dd>
+                {% endif %}
+            </dl>
+            {% endif %}
+        </article>
+        {% endfor %}
+    </section>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--color-border); font-size: 0.9rem; opacity: 0.8;">
+        <p>Version <span property="owl:versionInfo">{{ vocab.version }}</span></p>
+    </footer>
+</body>
+</html>

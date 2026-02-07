@@ -1,0 +1,609 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/",
+        "acp": "https://barryels.github.io/projects/augmented-coding-patterns/vocab#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "Pattern": "acp:Pattern",
+        "AntiPattern": "acp:AntiPattern",
+        "Obstacle": "acp:Obstacle",
+        "solves": {
+            "@id": "acp:solves",
+            "@type": "@id"
+        },
+        "enables": {
+            "@id": "acp:enables",
+            "@type": "@id"
+        },
+        "uses": {
+            "@id": "acp:uses",
+            "@type": "@id"
+        },
+        "similar": {
+            "@id": "acp:related",
+            "@type": "@id"
+        },
+        "causes": {
+            "@id": "acp:causes",
+            "@type": "@id"
+        },
+        "related": {
+            "@id": "acp:related",
+            "@type": "@id"
+        },
+        "label": "rdfs:label",
+        "description": "rdfs:comment"
+    },
+    "@graph": [
+        {
+            "@id": "acp:Pattern",
+            "@type": "rdfs:Class",
+            "label": "Pattern",
+            "description": "A beneficial practice for AI-augmented coding"
+        },
+        {
+            "@id": "acp:AntiPattern",
+            "@type": "rdfs:Class",
+            "label": "Anti-Pattern",
+            "description": "A counterproductive practice in AI-augmented coding"
+        },
+        {
+            "@id": "acp:Obstacle",
+            "@type": "rdfs:Class",
+            "label": "Obstacle",
+            "description": "A challenge or limitation encountered in AI-augmented coding"
+        },
+        {
+            "@id": "acp:patterns/active-partner",
+            "@type": "Pattern",
+            "label": "Active Partner",
+            "solves": [
+                "acp:anti-patterns/silent-misalignment",
+                "acp:anti-patterns/tell-me-a-lie",
+                "acp:anti-patterns/flying-blind",
+                "acp:obstacles/compliance-bias",
+                "acp:obstacles/obedient-contractor",
+                "acp:obstacles/keeping-up"
+            ]
+        },
+        {
+            "@id": "acp:patterns/canary-in-the-code-mine",
+            "@type": "Pattern",
+            "label": "Canary in the Code Mine",
+            "solves": [
+                "acp:obstacles/degrades-under-complexity",
+                "acp:obstacles/context-rot"
+            ]
+        },
+        {
+            "@id": "acp:patterns/chain-of-small-steps",
+            "@type": "Pattern",
+            "label": "Chain of Small Steps",
+            "solves": [
+                "acp:obstacles/degrades-under-complexity",
+                "acp:obstacles/limited-focus"
+            ],
+            "similar": [
+                "acp:patterns/feedback-loop",
+                "acp:patterns/offload-deterministic"
+            ]
+        },
+        {
+            "@id": "acp:patterns/check-alignment",
+            "@type": "Pattern",
+            "label": "Check Alignment",
+            "solves": [
+                "acp:anti-patterns/silent-misalignment",
+                "acp:obstacles/black-box-ai"
+            ],
+            "similar": [
+                "acp:patterns/approved-fixtures"
+            ]
+        },
+        {
+            "@id": "acp:patterns/chunking",
+            "@type": "Pattern",
+            "label": "Chunking",
+            "solves": [
+                "acp:obstacles/limited-focus",
+                "acp:obstacles/limited-context-window",
+                "acp:obstacles/degrades-under-complexity"
+            ],
+            "uses": [
+                "acp:patterns/focused-agent"
+            ]
+        },
+        {
+            "@id": "acp:patterns/context-management",
+            "@type": "Pattern",
+            "label": "Context Management",
+            "solves": [
+                "acp:obstacles/cannot-learn",
+                "acp:obstacles/context-rot",
+                "acp:obstacles/limited-context-window"
+            ],
+            "uses": [
+                "acp:patterns/ground-rules",
+                "acp:patterns/reference-docs",
+                "acp:patterns/knowledge-document",
+                "acp:patterns/extract-knowledge",
+                "acp:patterns/knowledge-checkpoint",
+                "acp:patterns/focused-agent",
+                "acp:patterns/semantic-zoom",
+                "acp:patterns/noise-cancellation"
+            ]
+        },
+        {
+            "@id": "acp:patterns/context-markers",
+            "@type": "Pattern",
+            "label": "Context Markers",
+            "solves": [
+                "acp:obstacles/black-box-ai"
+            ]
+        },
+        {
+            "@id": "acp:patterns/extract-knowledge",
+            "@type": "Pattern",
+            "label": "Extract Knowledge",
+            "solves": [
+                "acp:obstacles/cannot-learn"
+            ],
+            "uses": [
+                "acp:patterns/knowledge-document"
+            ]
+        },
+        {
+            "@id": "acp:patterns/focused-agent",
+            "@type": "Pattern",
+            "label": "Focused Agent",
+            "solves": [
+                "acp:anti-patterns/distracted-agent",
+                "acp:obstacles/limited-focus",
+                "acp:obstacles/context-rot"
+            ]
+        },
+        {
+            "@id": "acp:patterns/ground-rules",
+            "@type": "Pattern",
+            "label": "Ground Rules",
+            "solves": [
+                "acp:obstacles/cannot-learn"
+            ],
+            "uses": [
+                "acp:patterns/knowledge-document"
+            ]
+        },
+        {
+            "@id": "acp:patterns/happy-to-delete",
+            "@type": "Pattern",
+            "label": "Happy to Delete",
+            "solves": [
+                "acp:anti-patterns/sunk-cost"
+            ],
+            "similar": [
+                "acp:patterns/parallel-implementations",
+                "acp:patterns/playgrounds"
+            ]
+        },
+        {
+            "@id": "acp:patterns/knowledge-checkpoint",
+            "@type": "Pattern",
+            "label": "Knowledge Checkpoint",
+            "solves": [
+                "acp:obstacles/non-determinism"
+            ]
+        },
+        {
+            "@id": "acp:patterns/knowledge-document",
+            "@type": "Pattern",
+            "label": "Knowledge Document",
+            "solves": [
+                "acp:obstacles/cannot-learn"
+            ]
+        },
+        {
+            "@id": "acp:patterns/knowledge-composition",
+            "@type": "Pattern",
+            "label": "Knowledge Composition"
+        },
+        {
+            "@id": "acp:patterns/noise-cancellation",
+            "@type": "Pattern",
+            "label": "Noise Cancellation",
+            "solves": [
+                "acp:obstacles/excess-verbosity"
+            ]
+        },
+        {
+            "@id": "acp:patterns/semantic-zoom",
+            "@type": "Pattern",
+            "label": "Semantic Zoom",
+            "solves": [
+                "acp:obstacles/excess-verbosity"
+            ]
+        },
+        {
+            "@id": "acp:patterns/offload-deterministic",
+            "@type": "Pattern",
+            "label": "Offload Deterministic",
+            "solves": [
+                "acp:obstacles/non-determinism"
+            ],
+            "similar": [
+                "acp:patterns/chain-of-small-steps"
+            ]
+        },
+        {
+            "@id": "acp:patterns/parallel-implementations",
+            "@type": "Pattern",
+            "label": "Parallel Implementations",
+            "solves": [
+                "acp:obstacles/non-determinism"
+            ],
+            "similar": [
+                "acp:patterns/happy-to-delete"
+            ]
+        },
+        {
+            "@id": "acp:patterns/playgrounds",
+            "@type": "Pattern",
+            "label": "Playgrounds",
+            "solves": [
+                "acp:anti-patterns/perfect-recall-fallacy"
+            ],
+            "similar": [
+                "acp:patterns/feedback-loop",
+                "acp:patterns/happy-to-delete"
+            ]
+        },
+        {
+            "@id": "acp:patterns/reference-docs",
+            "@type": "Pattern",
+            "label": "Reference Docs",
+            "solves": [
+                "acp:anti-patterns/distracted-agent",
+                "acp:anti-patterns/perfect-recall-fallacy",
+                "acp:obstacles/limited-focus",
+                "acp:obstacles/context-rot"
+            ],
+            "enables": [
+                "acp:patterns/knowledge-composition"
+            ]
+        },
+        {
+            "@id": "acp:patterns/reminders",
+            "@type": "Pattern",
+            "label": "Reminders",
+            "solves": [
+                "acp:obstacles/context-rot",
+                "acp:obstacles/selective-hearing"
+            ]
+        },
+        {
+            "@id": "acp:patterns/reverse-direction",
+            "@type": "Pattern",
+            "label": "Reverse Direction",
+            "solves": [
+                "acp:anti-patterns/answer-injection"
+            ]
+        },
+        {
+            "@id": "acp:patterns/take-all-paths",
+            "@type": "Pattern",
+            "label": "Take All Paths",
+            "solves": [
+                "acp:obstacles/non-determinism"
+            ]
+        },
+        {
+            "@id": "acp:patterns/approved-fixtures",
+            "@type": "Pattern",
+            "label": "Approved Fixtures",
+            "solves": [
+                "acp:obstacles/hallucinations"
+            ],
+            "uses": [
+                "acp:patterns/feedback-loop",
+                "acp:patterns/constrained-tests"
+            ],
+            "similar": [
+                "acp:patterns/check-alignment",
+                "acp:patterns/approved-logs"
+            ]
+        },
+        {
+            "@id": "acp:patterns/approved-logs",
+            "@type": "Pattern",
+            "label": "Approved Logs",
+            "solves": [
+                "acp:obstacles/hallucinations",
+                "acp:obstacles/black-box-ai"
+            ],
+            "uses": [
+                "acp:patterns/constrained-tests"
+            ],
+            "similar": [
+                "acp:patterns/approved-fixtures"
+            ]
+        },
+        {
+            "@id": "acp:patterns/constrained-tests",
+            "@type": "Pattern",
+            "label": "Constrained Tests",
+            "solves": [
+                "acp:obstacles/non-determinism",
+                "acp:obstacles/keeping-up",
+                "acp:anti-patterns/flying-blind"
+            ]
+        },
+        {
+            "@id": "acp:patterns/feedback-loop",
+            "@type": "Pattern",
+            "label": "Feedback Loop",
+            "solves": [
+                "acp:obstacles/keeping-up",
+                "acp:anti-patterns/flying-blind"
+            ],
+            "similar": [
+                "acp:patterns/playgrounds",
+                "acp:patterns/chain-of-small-steps"
+            ]
+        },
+        {
+            "@id": "acp:patterns/habit-hooks",
+            "@type": "Pattern",
+            "label": "Habit Hooks",
+            "solves": [
+                "acp:obstacles/cannot-learn",
+                "acp:obstacles/context-rot"
+            ],
+            "uses": [
+                "acp:patterns/hooks",
+                "acp:patterns/feedback-loop"
+            ]
+        },
+        {
+            "@id": "acp:patterns/hooks",
+            "@type": "Pattern",
+            "label": "Hooks",
+            "solves": [
+                "acp:obstacles/selective-hearing"
+            ],
+            "enables": [
+                "acp:patterns/habit-hooks"
+            ]
+        },
+        {
+            "@id": "acp:patterns/show-the-agent-let-it-repeat-automate",
+            "@type": "Pattern",
+            "label": "Show the Agent, Let it Repeat, Automate",
+            "uses": [
+                "acp:patterns/extract-knowledge"
+            ]
+        },
+        {
+            "@id": "acp:anti-patterns/silent-misalignment",
+            "@type": "AntiPattern",
+            "label": "Silent Misalignment"
+        },
+        {
+            "@id": "acp:anti-patterns/tell-me-a-lie",
+            "@type": "AntiPattern",
+            "label": "Tell Me a Lie",
+            "causes": [
+                "acp:obstacles/compliance-bias"
+            ],
+            "related": [
+                "acp:anti-patterns/sunk-cost"
+            ]
+        },
+        {
+            "@id": "acp:anti-patterns/distracted-agent",
+            "@type": "AntiPattern",
+            "label": "Distracted Agent",
+            "causes": [
+                "acp:obstacles/limited-focus",
+                "acp:obstacles/context-rot"
+            ]
+        },
+        {
+            "@id": "acp:anti-patterns/sunk-cost",
+            "@type": "AntiPattern",
+            "label": "Sunk Cost",
+            "causes": [
+                "acp:obstacles/degrades-under-complexity"
+            ],
+            "related": [
+                "acp:anti-patterns/answer-injection",
+                "acp:anti-patterns/tell-me-a-lie",
+                "acp:obstacles/limited-context-window"
+            ]
+        },
+        {
+            "@id": "acp:anti-patterns/perfect-recall-fallacy",
+            "@type": "AntiPattern",
+            "label": "Perfect Recall Fallacy"
+        },
+        {
+            "@id": "acp:anti-patterns/answer-injection",
+            "@type": "AntiPattern",
+            "label": "Answer Injection",
+            "related": [
+                "acp:anti-patterns/sunk-cost"
+            ]
+        },
+        {
+            "@id": "acp:anti-patterns/unvalidated-leaps",
+            "@type": "AntiPattern",
+            "label": "Unvalidated Leaps",
+            "causes": [
+                "acp:obstacles/black-box-ai"
+            ]
+        },
+        {
+            "@id": "acp:anti-patterns/flying-blind",
+            "@type": "AntiPattern",
+            "label": "Flying Blind"
+        },
+        {
+            "@id": "acp:obstacles/compliance-bias",
+            "@type": "Obstacle",
+            "label": "Compliance Bias",
+            "causes": [
+                "acp:anti-patterns/silent-misalignment"
+            ],
+            "related": [
+                "acp:obstacles/solution-fixation"
+            ]
+        },
+        {
+            "@id": "acp:obstacles/obedient-contractor",
+            "@type": "Obstacle",
+            "label": "Obedient Contractor",
+            "related": [
+                "acp:anti-patterns/silent-misalignment"
+            ]
+        },
+        {
+            "@id": "acp:obstacles/degrades-under-complexity",
+            "@type": "Obstacle",
+            "label": "Degrades Under Complexity"
+        },
+        {
+            "@id": "acp:obstacles/context-rot",
+            "@type": "Obstacle",
+            "label": "Context Rot",
+            "related": [
+                "acp:obstacles/selective-hearing"
+            ]
+        },
+        {
+            "@id": "acp:obstacles/limited-focus",
+            "@type": "Obstacle",
+            "label": "Limited Focus"
+        },
+        {
+            "@id": "acp:obstacles/black-box-ai",
+            "@type": "Obstacle",
+            "label": "Black Box AI",
+            "causes": [
+                "acp:anti-patterns/silent-misalignment"
+            ]
+        },
+        {
+            "@id": "acp:obstacles/limited-context-window",
+            "@type": "Obstacle",
+            "label": "Limited Context Window",
+            "related": [
+                "acp:anti-patterns/sunk-cost"
+            ]
+        },
+        {
+            "@id": "acp:obstacles/cannot-learn",
+            "@type": "Obstacle",
+            "label": "Cannot Learn"
+        },
+        {
+            "@id": "acp:obstacles/non-determinism",
+            "@type": "Obstacle",
+            "label": "Non-Determinism"
+        },
+        {
+            "@id": "acp:obstacles/excess-verbosity",
+            "@type": "Obstacle",
+            "label": "Excess Verbosity"
+        },
+        {
+            "@id": "acp:obstacles/hallucinations",
+            "@type": "Obstacle",
+            "label": "Hallucinations"
+        },
+        {
+            "@id": "acp:obstacles/keeping-up",
+            "@type": "Obstacle",
+            "label": "Keeping Up",
+            "causes": [
+                "acp:anti-patterns/flying-blind"
+            ]
+        },
+        {
+            "@id": "acp:obstacles/selective-hearing",
+            "@type": "Obstacle",
+            "label": "Selective Hearing",
+            "related": [
+                "acp:obstacles/context-rot"
+            ]
+        },
+        {
+            "@id": "acp:obstacles/solution-fixation",
+            "@type": "Obstacle",
+            "label": "Solution Fixation",
+            "related": [
+                "acp:obstacles/compliance-bias"
+            ]
+        },
+        {
+            "@id": "acp:solves",
+            "@type": "rdf:Property",
+            "label": "solves",
+            "description": "Indicates that a Pattern addresses or mitigates an Anti-Pattern or Obstacle",
+            "rdfs:domain": {
+                "@id": "acp:Pattern"
+            },
+            "rdfs:range": [
+                {
+                    "@id": "acp:AntiPattern"
+                },
+                {
+                    "@id": "acp:Obstacle"
+                }
+            ]
+        },
+        {
+            "@id": "acp:enables",
+            "@type": "rdf:Property",
+            "label": "enables",
+            "description": "Indicates that one Pattern makes another Pattern possible or more effective",
+            "rdfs:domain": {
+                "@id": "acp:Pattern"
+            },
+            "rdfs:range": {
+                "@id": "acp:Pattern"
+            }
+        },
+        {
+            "@id": "acp:uses",
+            "@type": "rdf:Property",
+            "label": "uses",
+            "description": "Indicates that one Pattern incorporates or depends on another Pattern",
+            "rdfs:domain": {
+                "@id": "acp:Pattern"
+            },
+            "rdfs:range": {
+                "@id": "acp:Pattern"
+            }
+        },
+        {
+            "@id": "acp:causes",
+            "@type": "rdf:Property",
+            "label": "causes",
+            "description": "Indicates that an Anti-Pattern or Obstacle leads to another problem",
+            "rdfs:domain": [
+                {
+                    "@id": "acp:AntiPattern"
+                },
+                {
+                    "@id": "acp:Obstacle"
+                }
+            ],
+            "rdfs:range": [
+                {
+                    "@id": "acp:AntiPattern"
+                },
+                {
+                    "@id": "acp:Obstacle"
+                }
+            ]
+        }
+    ]
+}

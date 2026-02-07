@@ -1,0 +1,173 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "acp": "https://barryels.github.io/projects/augmented-coding-patterns/vocab#"
+  },
+  "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab",
+  "@type": "owl:Ontology",
+  "rdfs:label": "Augmented Coding Patterns Vocabulary",
+  "rdfs:comment": "An RDF vocabulary for describing patterns, anti-patterns, and obstacles in AI-augmented coding practices.",
+  "owl:versionInfo": "1.0.0",
+  "@graph": [
+    {
+      "@id": "acp:Pattern",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": "Pattern",
+      "rdfs:comment": "A beneficial practice for AI-augmented coding",
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    },
+    {
+      "@id": "acp:AntiPattern",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": "Anti-Pattern",
+      "rdfs:comment": "A counterproductive practice in AI-augmented coding",
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    },
+    {
+      "@id": "acp:Obstacle",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": "Obstacle",
+      "rdfs:comment": "A challenge or limitation encountered in AI-augmented coding",
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    },
+    {
+      "@id": "acp:solves",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:label": "solves",
+      "rdfs:comment": "Indicates that a Pattern addresses or mitigates an Anti-Pattern or Obstacle",
+      "rdfs:domain": {
+        "@id": "acp:Pattern"
+      },
+      "rdfs:range": [
+        {
+          "@id": "acp:AntiPattern"
+        },
+        {
+          "@id": "acp:Obstacle"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    },
+    {
+      "@id": "acp:enables",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:label": "enables",
+      "rdfs:comment": "Indicates that one Pattern makes another Pattern possible or more effective",
+      "rdfs:domain": {
+        "@id": "acp:Pattern"
+      },
+      "rdfs:range": {
+        "@id": "acp:Pattern"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    },
+    {
+      "@id": "acp:uses",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:label": "uses",
+      "rdfs:comment": "Indicates that one Pattern incorporates or depends on another Pattern",
+      "rdfs:domain": {
+        "@id": "acp:Pattern"
+      },
+      "rdfs:range": {
+        "@id": "acp:Pattern"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    },
+    {
+      "@id": "acp:causes",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:label": "causes",
+      "rdfs:comment": "Indicates that an Anti-Pattern or Obstacle leads to another problem",
+      "rdfs:domain": [
+        {
+          "@id": "acp:AntiPattern"
+        },
+        {
+          "@id": "acp:Obstacle"
+        }
+      ],
+      "rdfs:range": [
+        {
+          "@id": "acp:AntiPattern"
+        },
+        {
+          "@id": "acp:Obstacle"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    },
+    {
+      "@id": "acp:related",
+      "@type": [
+        "rdf:Property",
+        "owl:SymmetricProperty"
+      ],
+      "rdfs:label": "related",
+      "rdfs:comment": "Indicates a general association between two concepts (Patterns, Anti-Patterns, or Obstacles)",
+      "rdfs:domain": [
+        {
+          "@id": "acp:Pattern"
+        },
+        {
+          "@id": "acp:AntiPattern"
+        },
+        {
+          "@id": "acp:Obstacle"
+        }
+      ],
+      "rdfs:range": [
+        {
+          "@id": "acp:Pattern"
+        },
+        {
+          "@id": "acp:AntiPattern"
+        },
+        {
+          "@id": "acp:Obstacle"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://barryels.github.io/projects/augmented-coding-patterns/vocab"
+      }
+    }
+  ]
+}
