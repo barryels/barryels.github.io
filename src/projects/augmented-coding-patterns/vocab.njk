@@ -1,9 +1,8 @@
 ---
 layout: false
-permalink: vocab/index.html
 ---
 <!DOCTYPE html>
-<html lang="en" prefix="rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# acp: {{ vocab.namespace }}">
+<html lang="en" prefix="rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# acp: {{ augmentedCodingPatternsVocab.namespace }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,14 +82,14 @@ permalink: vocab/index.html
         dl { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1rem; }
         dt { font-weight: 600; }
         dd { margin: 0; }
-        .formats { 
-            background: var(--color-code-bg); 
-            padding: 1rem; 
+        .formats {
+            background: var(--color-code-bg);
+            padding: 1rem;
             border-radius: 6px;
             margin: 1rem 0;
         }
         .formats h3 { margin-top: 0; }
-        .toc { 
+        .toc {
             background: var(--color-code-bg);
             padding: 1rem 1.5rem;
             border-radius: 6px;
@@ -101,15 +100,15 @@ permalink: vocab/index.html
         .toc li { margin: 0.25rem 0; }
     </style>
 </head>
-<body vocab="{{ vocab.namespace }}" typeof="owl:Ontology">
+<body vocab="{{ augmentedCodingPatternsVocab.namespace }}" typeof="owl:Ontology">
     <header>
-        <h1 property="rdfs:label">{{ vocab.label }}</h1>
-        <p property="rdfs:comment">{{ vocab.comment }}</p>
+        <h1 property="rdfs:label">{{ augmentedCodingPatternsVocab.label }}</h1>
+        <p property="rdfs:comment">{{ augmentedCodingPatternsVocab.comment }}</p>
     </header>
 
     <section class="formats">
         <h3>Namespace &amp; Formats</h3>
-        <p><strong>Namespace URI:</strong> <code>{{ vocab.namespace }}</code></p>
+        <p><strong>Namespace URI:</strong> <code>{{ augmentedCodingPatternsVocab.namespace }}</code></p>
         <p><strong>Preferred prefix:</strong> <code>acp</code></p>
         <p><strong>Available formats:</strong></p>
         <ul>
@@ -122,13 +121,13 @@ permalink: vocab/index.html
         <ul>
             <li>
                 <a href="#classes">Classes</a>:
-                {%- for cls in vocab.classes %}
+                {%- for cls in augmentedCodingPatternsVocab.classes %}
                 <a href="#{{ cls.id }}">{{ cls.id }}</a>{%- if not loop.last %}, {% endif %}
                 {%- endfor %}
             </li>
             <li>
                 <a href="#properties">Properties</a>:
-                {%- for prop in vocab.properties %}
+                {%- for prop in augmentedCodingPatternsVocab.properties %}
                 <a href="#{{ prop.id }}">{{ prop.id }}</a>{%- if not loop.last %}, {% endif %}
                 {%- endfor %}
             </li>
@@ -139,7 +138,7 @@ permalink: vocab/index.html
         <h2>Usage Example</h2>
         <pre><code>{
   "@context": {
-    "acp": "{{ vocab.namespace }}",
+    "acp": "{{ augmentedCodingPatternsVocab.namespace }}",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
   },
   "@id": "acp:patterns/feedback-loop",
@@ -158,7 +157,7 @@ permalink: vocab/index.html
 
     <section id="classes">
         <h2>Classes</h2>
-        {% for cls in vocab.classes %}
+        {% for cls in augmentedCodingPatternsVocab.classes %}
         <article id="{{ cls.id }}" class="term" resource="acp:{{ cls.id }}" typeof="{{ cls.types | join(' ') }}">
             <h3>
                 <span class="term-type class">Class</span>
@@ -172,7 +171,7 @@ permalink: vocab/index.html
 
     <section id="properties">
         <h2>Properties</h2>
-        {% for prop in vocab.properties %}
+        {% for prop in augmentedCodingPatternsVocab.properties %}
         <article id="{{ prop.id }}" class="term" resource="acp:{{ prop.id }}" typeof="{{ prop.types | join(' ') }}">
             <h3>
                 <span class="term-type property">{{ prop.propertyType }}</span>

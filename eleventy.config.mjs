@@ -16,6 +16,10 @@ console.warn(`🚫 Deleting files in "${dirToClean}"`);
 fs.rmSync(dirToClean, { recursive: true, force: true });
 
 export default async function (eleventyConfig) {
+  eleventyConfig.setServerOptions({
+    port: process.env.PORT || 8080,
+  });
+
   eleventyConfig.setTemplateFormats([
     "html",
     "njk",
@@ -34,6 +38,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/_includes/components/": "components/",
   });
+
+  eleventyConfig.addPassthroughCopy("**/*.json");
+  eleventyConfig.addPassthroughCopy("**/*.jsonld");
 
   eleventyConfig.addFilter(
     "allPostsExceptCurrent",

@@ -5,7 +5,13 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default function () {
-  const vocabPath = path.join(__dirname, "..", "vocab.jsonld");
+  const vocabPath = path.join(
+    __dirname,
+    "..",
+    "projects",
+    "augmented-coding-patterns",
+    "vocab.jsonld",
+  );
   const vocabData = JSON.parse(fs.readFileSync(vocabPath, "utf-8"));
 
   // Extract namespace from context
@@ -29,7 +35,9 @@ export default function () {
 
   // Helper to normalize domain/range to array of local names
   const normalizeRefs = (value) => {
-    if (!value) return [];
+    if (!value) {
+      return [];
+    }
     if (Array.isArray(value)) {
       return value.map((v) => getLocalName(v));
     }
@@ -38,9 +46,12 @@ export default function () {
 
   // Helper to get OWL type badge text
   const getPropertyType = (types) => {
-    if (!Array.isArray(types)) types = [types];
-    if (types.includes("owl:SymmetricProperty")) return "Symmetric Property";
-    if (types.includes("owl:ObjectProperty")) return "Property";
+    if (!Array.isArray(types)) {
+      types = [types];
+    }
+    if (types.includes("owl:SymmetricProperty")) {
+      return "Symmetric Property";
+    }
     return "Property";
   };
 
