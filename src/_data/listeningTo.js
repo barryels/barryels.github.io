@@ -1,4 +1,4 @@
-module.exports = function () {
+export default function () {
   return [
     {
       id: "35af0ad8-2ca9-4f24-ac87-dcb6afbddb5a",
@@ -61,4 +61,4 @@ module.exports = function () {
       },
     },
   ];
-};
+}

@@ -1,4 +1,4 @@
-module.exports = function () {
+export default function () {
   return [
     {
       id: "d7372d1b-afe4-4eef-b6fd-141254716188",
@@ -7,4 +7,4 @@ module.exports = function () {
       url: "https://barryels.substack.com",
     },
   ];
-};
+}

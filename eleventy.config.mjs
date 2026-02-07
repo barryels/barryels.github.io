@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from "fs";
 
 const config = {
   dataTemplateEngine: "njk",
@@ -15,7 +15,7 @@ const dirToClean = config.dir.output;
 console.warn(`🚫 Deleting files in "${dirToClean}"`);
 fs.rmSync(dirToClean, { recursive: true, force: true });
 
-module.exports = function (eleventyConfig) {
+export default async function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     "html",
     "njk",
@@ -41,10 +41,10 @@ module.exports = function (eleventyConfig) {
       return posts.filter((post) => {
         return post.url !== this.page.url;
       });
-    }
+    },
   );
 
   eleventyConfig.addShortcode("currentYear", () => new Date().getFullYear());
 
   return config;
-};
+}
