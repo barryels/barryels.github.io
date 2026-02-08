@@ -28,8 +28,8 @@ Small, focused agents > large, scattered agents.
 
 ## Related
 
-- <a rel="used_by" href="../../patterns/context-management">Context Management</a>
-- <a rel="used_by" href="../../patterns/chunking">Chunking</a>
-- <a rel="solves" href="../../anti-patterns/distracted-agent">Distracted Agent</a>
-- <a rel="solves" href="../../obstacles/limited-focus">Limited Focus</a>
-- <a rel="solves" href="../../obstacles/context-rot">Context Rot</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/context-management">Context Management</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/chunking">Chunking</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/distracted-agent">Distracted Agent</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/limited-focus">Limited Focus</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/context-rot">Context Rot</a>

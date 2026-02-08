@@ -57,4 +57,4 @@ This way let them stack:
 
 ## Related
 
-- <a rel="solves" href="../../obstacles/black-box-ai">Black Box AI</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/black-box-ai">Black Box AI</a>

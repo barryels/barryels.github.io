@@ -14,7 +14,7 @@ Engineers face a choice between speed and understanding. Since AI-generated code
 
 ## Related
 
-- <a rel="causes" href="../../anti-patterns/flying-blind">Flying Blind</a>
-- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>
-- <a rel="solved_by" href="../../patterns/feedback-loop">Feedback Loop</a>
-- <a rel="solved_by" href="../../patterns/constrained-tests">Constrained Tests</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/anti-patterns/flying-blind">Flying Blind</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/active-partner">Active Partner</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/constrained-tests">Constrained Tests</a>

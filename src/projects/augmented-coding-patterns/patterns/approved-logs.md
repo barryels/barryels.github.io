@@ -5,14 +5,17 @@ authors: [ivett_ordog]
 # Approved Logs
 
 ## Problem
+
 Bridging the gap between observing a bug and documenting it in a test. Reproducing production bugs in test environments is difficult, and writing tests from scratch during debugging is slow. With AI coding, explaining bugs can be harder than showing evidence - logs remove ambiguity between mental models.
 
 This is a special case of the Constrained Tests pattern.
 
 ## Pattern
+
 Turn production logs into regression tests immediately.
 
 When a bug appears:
+
 1. Grab the relevant structured log section from production/staging/development
 2. Fix the incorrect log lines to show expected behavior
 3. Save as a test file (`.log`, `.md`, or domain-appropriate extension)
@@ -30,6 +33,7 @@ Unlike Approved Fixtures (optimized for validation ease), Approved Logs optimize
 **Typical: Structured JSON logs**
 
 File: `payment-tests/discount-calculation-bug.log`
+
 ```
 {"event":"payment_processing", "user":"premium_member", "amount":1250}
 {"event":"discount_calculated", "discount_percent":20, "amount":250}
@@ -37,6 +41,7 @@ File: `payment-tests/discount-calculation-bug.log`
 ```
 
 Test runner:
+
 1. Parses first line, extracts `payment_processing` event
 2. Calls payment entry point with `{"user":"premium_member", "amount":1250}`
 3. Captures all emitted logs
@@ -47,6 +52,7 @@ Production bug: discount wasn't applied. Copy logs, fix `discount_calculated` an
 **Atypical: Mixed structured and visual logs**
 
 File: `hexogram-tests/clue-calculation.md`
+
 ```
 === HIDDEN SOLUTION ===
    ○ ○ ○ ●
@@ -81,6 +87,7 @@ Directions:
 ```
 
 Custom parser:
+
 1. Parses `HIDDEN SOLUTION` and `PLAYER STATE` as input (hex grids)
 2. Each `DEBUG INFO` section validates hover calculations for specific cells
 3. Visual format beats arrays of 0s and 1s for comprehension
@@ -89,7 +96,7 @@ Bespoke parsers for non-structured logs can enhance readability when domain-spec
 
 ## Related
 
-- <a rel="similar" href="../../patterns/approved-fixtures">Approved Fixtures</a>
-- <a rel="uses" href="../../patterns/constrained-tests">Constrained Tests</a>
-- <a rel="solves" href="../../obstacles/hallucinations">Hallucinations</a>
-- <a rel="solves" href="../../obstacles/black-box-ai">Black Box AI</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="uses" href="/projects/augmented-coding-patterns/patterns/constrained-tests">Constrained Tests</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/hallucinations">Hallucinations</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/black-box-ai">Black Box AI</a>

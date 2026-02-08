@@ -54,5 +54,5 @@ Inject critical rules into every message. Trading tokens for compliance.
 
 ## Related
 
-- <a rel="solves" href="../../obstacles/context-rot">Context Rot</a>
-- <a rel="solves" href="../../obstacles/selective-hearing">Selective Hearing</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/context-rot">Context Rot</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/selective-hearing">Selective Hearing</a>

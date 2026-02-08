@@ -37,6 +37,6 @@ The explicit `git reset --hard` instruction is important—without it, AI often 
 
 ## Related
 
-- <a rel="similar" href="../../patterns/parallel-implementations">Parallel Implementations</a>
-- <a rel="similar" href="../../patterns/playgrounds">Playgrounds</a>
-- <a rel="solves" href="../../anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/parallel-implementations">Parallel Implementations</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/playgrounds">Playgrounds</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/sunk-cost">Sunk Cost</a>

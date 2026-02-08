@@ -23,7 +23,7 @@ This makes resetting easier: instead of losing everything, you extract the valua
 
 ## Related
 
-- <a rel="used_by" href="../../patterns/extract-knowledge">Extract Knowledge</a>
-- <a rel="used_by" href="../../patterns/ground-rules">Ground Rules</a>
-- <a rel="used_by" href="../../patterns/context-management">Context Management</a>
-- <a rel="solves" href="../../obstacles/cannot-learn">Cannot Learn</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/extract-knowledge">Extract Knowledge</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/ground-rules">Ground Rules</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/cannot-learn">Cannot Learn</a>

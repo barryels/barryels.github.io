@@ -40,5 +40,5 @@ Designer creates mockup in Figma separately. Run parallel AI implementations. Co
 
 ## Related
 
-- <a rel="similar" href="../../patterns/happy-to-delete">Happy To Delete</a>
-- <a rel="solves" href="../../obstacles/non-determinism">Non-Determinism</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/happy-to-delete">Happy To Delete</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/non-determinism">Non-Determinism</a>

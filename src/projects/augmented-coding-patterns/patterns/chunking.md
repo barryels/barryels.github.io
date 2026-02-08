@@ -49,7 +49,7 @@ Main agent planned architecture and test strategy. Subagents implemented in para
 
 ## Related
 
-- <a rel="uses" href="../../patterns/focused-agent">Focused Agent</a>
-- <a rel="solves" href="../../obstacles/limited-focus">Limited Focus</a>
-- <a rel="solves" href="../../obstacles/limited-context-window">Limited Context Window</a>
-- <a rel="solves" href="../../obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="uses" href="/projects/augmented-coding-patterns/patterns/focused-agent">Focused Agent</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/limited-focus">Limited Focus</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/limited-context-window">Limited Context Window</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/degrades-under-complexity">Degrades Under Complexity</a>

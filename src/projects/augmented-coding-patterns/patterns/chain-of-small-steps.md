@@ -47,7 +47,7 @@ Result: fully automated version bumping. Each step was manageable for AI, verifi
 
 ## Related
 
-- <a rel="similar" href="../../patterns/feedback-loop">Feedback Loop</a>
-- <a rel="similar" href="../../patterns/offload-deterministic">Offload Deterministic</a>
-- <a rel="solves" href="../../obstacles/degrades-under-complexity">Degrades Under Complexity</a>
-- <a rel="solves" href="../../obstacles/limited-focus">Limited Focus</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/offload-deterministic">Offload Deterministic</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/limited-focus">Limited Focus</a>

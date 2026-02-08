@@ -29,4 +29,4 @@ The power: You're no longer limited to your first idea. Explore the whole soluti
 
 ## Related
 
-- <a rel="solves" href="../../obstacles/non-determinism">Non-Determinism</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/non-determinism">Non-Determinism</a>

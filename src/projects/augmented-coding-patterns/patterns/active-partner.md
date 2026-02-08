@@ -50,9 +50,9 @@ This is EXTREMELY IMPORTANT:
 
 ## Related
 
-- <a rel="solves" href="../../anti-patterns/silent-misalignment">Silent Misalignment</a>
-- <a rel="solves" href="../../anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
-- <a rel="solves" href="../../anti-patterns/flying-blind">Flying Blind</a>
-- <a rel="solves" href="../../obstacles/compliance-bias">Compliance Bias</a>
-- <a rel="solves" href="../../obstacles/obedient-contractor">Obedient Contractor</a>
-- <a rel="solves" href="../../obstacles/keeping-up">Keeping Up</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/flying-blind">Flying Blind</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/compliance-bias">Compliance Bias</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/obedient-contractor">Obedient Contractor</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/keeping-up">Keeping Up</a>

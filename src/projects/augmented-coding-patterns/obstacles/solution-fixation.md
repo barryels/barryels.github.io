@@ -19,4 +19,4 @@ When it finds something that _might_ be the problem, it declares "found it!" and
 
 ## Related
 
-- <a rel="related" href="../../obstacles/compliance-bias">Compliance Bias</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/obstacles/compliance-bias">Compliance Bias</a>

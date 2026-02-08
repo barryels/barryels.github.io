@@ -28,4 +28,4 @@ Enables: Pull just architecture when discussing design, or just tech-stack when 
 
 ## Related
 
-- <a rel="enabled_by" href="../../patterns/reference-docs">Reference Docs</a>
+- <a rel="enabled_by" href="/projects/augmented-coding-patterns/patterns/reference-docs">Reference Docs</a>

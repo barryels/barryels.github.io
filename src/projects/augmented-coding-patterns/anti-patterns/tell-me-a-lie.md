@@ -38,5 +38,5 @@ e) 0
 
 ## Related
 
-- <a rel="causes" href="../../obstacles/compliance-bias">Compliance Bias</a>
-- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/obstacles/compliance-bias">Compliance Bias</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/active-partner">Active Partner</a>

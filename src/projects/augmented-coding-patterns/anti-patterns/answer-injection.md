@@ -68,5 +68,5 @@ Present the problem, not your solution:
 
 ## Related
 
-- <a rel="related" href="../../anti-patterns/sunk-cost">Sunk Cost</a>
-- <a rel="solved_by" href="../../patterns/reverse-direction">Reverse Direction</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/reverse-direction">Reverse Direction</a>

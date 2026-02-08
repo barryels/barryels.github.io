@@ -42,8 +42,8 @@ Recognize when you've hit diminishing returns (typically by iteration 3-4) and s
 
 ## Related
 
-- <a rel="causes" href="../../obstacles/degrades-under-complexity">Degrades Under Complexity</a>
-- <a rel="related" href="../../anti-patterns/answer-injection">Answer Injection</a>
-- <a rel="related" href="../../anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
-- <a rel="related" href="../../obstacles/limited-context-window">Limited Context Window</a>
-- <a rel="solved_by" href="../../patterns/happy-to-delete">Happy To Delete</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/anti-patterns/answer-injection">Answer Injection</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/obstacles/limited-context-window">Limited Context Window</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/happy-to-delete">Happy To Delete</a>

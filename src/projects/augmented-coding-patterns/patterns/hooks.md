@@ -41,6 +41,6 @@ When the agent adds a code comment, the hook immediately gives feedback that the
 
 ## Related
 
-- <a rel="enables" href="../../patterns/habit-hooks">Habit Hooks</a>
-- <a rel="used_by" href="../../patterns/habit-hooks">Habit Hooks</a>
-- <a rel="solves" href="../../obstacles/selective-hearing">Selective Hearing</a>
+- <a rel="enables" href="/projects/augmented-coding-patterns/patterns/habit-hooks">Habit Hooks</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/habit-hooks">Habit Hooks</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/selective-hearing">Selective Hearing</a>

@@ -42,5 +42,5 @@ Extremely powerful as one of the steps during refactoring:
 
 ## Related
 
-- <a rel="used_by" href="../../patterns/context-management">Context Management</a>
-- <a rel="solves" href="../../obstacles/excess-verbosity">Excess Verbosity</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/excess-verbosity">Excess Verbosity</a>

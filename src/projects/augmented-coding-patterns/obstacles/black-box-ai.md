@@ -17,8 +17,8 @@ AI has something resembling a human mental model, but you can't inspect it.
 
 ## Related
 
-- <a rel="caused_by" href="../../anti-patterns/unvalidated-leaps">Unvalidated Leaps</a>
-- <a rel="causes" href="../../anti-patterns/silent-misalignment">Silent Misalignment</a>
-- <a rel="solved_by" href="../../patterns/check-alignment">Check Alignment</a>
-- <a rel="solved_by" href="../../patterns/context-markers">Context Markers</a>
-- <a rel="solved_by" href="../../patterns/approved-logs">Approved Logs</a>
+- <a rel="caused_by" href="/projects/augmented-coding-patterns/anti-patterns/unvalidated-leaps">Unvalidated Leaps</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/check-alignment">Check Alignment</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/context-markers">Context Markers</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/approved-logs">Approved Logs</a>

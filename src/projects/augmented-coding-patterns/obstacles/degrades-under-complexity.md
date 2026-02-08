@@ -20,7 +20,7 @@ Small errors accumulate, and quality drops when working with large codebases or 
 
 ## Related
 
-- <a rel="caused_by" href="../../anti-patterns/sunk-cost">Sunk Cost</a>
-- <a rel="solved_by" href="../../patterns/canary-in-the-code-mine">Canary In The Code Mine</a>
-- <a rel="solved_by" href="../../patterns/chain-of-small-steps">Chain Of Small Steps</a>
-- <a rel="solved_by" href="../../patterns/chunking">Chunking</a>
+- <a rel="caused_by" href="/projects/augmented-coding-patterns/anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/canary-in-the-code-mine">Canary In The Code Mine</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/chain-of-small-steps">Chain Of Small Steps</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/chunking">Chunking</a>

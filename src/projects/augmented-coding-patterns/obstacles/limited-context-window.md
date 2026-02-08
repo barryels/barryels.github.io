@@ -19,6 +19,6 @@ Everything you put in context competes for this limited space.
 
 ## Related
 
-- <a rel="related" href="../../anti-patterns/sunk-cost">Sunk Cost</a>
-- <a rel="solved_by" href="../../patterns/chunking">Chunking</a>
-- <a rel="solved_by" href="../../patterns/context-management">Context Management</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/chunking">Chunking</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/context-management">Context Management</a>

@@ -34,6 +34,6 @@ Quickly discovered: chess.js requires kings on board. Would have taken much long
 
 ## Related
 
-- <a rel="similar" href="../../patterns/feedback-loop">Feedback Loop</a>
-- <a rel="similar" href="../../patterns/happy-to-delete">Happy To Delete</a>
-- <a rel="solves" href="../../anti-patterns/perfect-recall-fallacy">Perfect Recall Fallacy</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/happy-to-delete">Happy To Delete</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/perfect-recall-fallacy">Perfect Recall Fallacy</a>

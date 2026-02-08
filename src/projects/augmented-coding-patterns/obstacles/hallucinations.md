@@ -15,5 +15,5 @@ Unlike factual hallucinations, code hallucinations are self-revealing - the code
 
 ## Related
 
-- <a rel="solved_by" href="../../patterns/approved-fixtures">Approved Fixtures</a>
-- <a rel="solved_by" href="../../patterns/approved-logs">Approved Logs</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/approved-logs">Approved Logs</a>

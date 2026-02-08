@@ -20,7 +20,7 @@ By default, it prioritizes following instructions over asking questions or pushi
 
 ## Related
 
-- <a rel="caused_by" href="../../anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
-- <a rel="causes" href="../../anti-patterns/silent-misalignment">Silent Misalignment</a>
-- <a rel="related" href="../../obstacles/solution-fixation">Solution Fixation</a>
-- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>
+- <a rel="caused_by" href="/projects/augmented-coding-patterns/anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/obstacles/solution-fixation">Solution Fixation</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/active-partner">Active Partner</a>

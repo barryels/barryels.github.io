@@ -22,7 +22,7 @@ Use Active Partner to maintain collaboration and understanding throughout develo
 
 ## Related
 
-- <a rel="caused_by" href="../../obstacles/keeping-up">Keeping Up</a>
-- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>
-- <a rel="solved_by" href="../../patterns/feedback-loop">Feedback Loop</a>
-- <a rel="solved_by" href="../../patterns/constrained-tests">Constrained Tests</a>
+- <a rel="caused_by" href="/projects/augmented-coding-patterns/obstacles/keeping-up">Keeping Up</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/active-partner">Active Partner</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/constrained-tests">Constrained Tests</a>

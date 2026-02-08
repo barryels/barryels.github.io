@@ -28,5 +28,5 @@ The AI acts as if it will never see this code again, making decisions that creat
 
 ## Related
 
-- <a rel="related" href="../../anti-patterns/silent-misalignment">Silent Misalignment</a>
-- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/active-partner">Active Partner</a>

@@ -38,4 +38,4 @@ Instead of an order taker, you get a collaborator. You're using AI's strengths (
 
 ## Related
 
-- <a rel="solves" href="../../anti-patterns/answer-injection">Answer Injection</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/answer-injection">Answer Injection</a>

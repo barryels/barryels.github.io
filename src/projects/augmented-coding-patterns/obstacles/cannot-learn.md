@@ -21,8 +21,8 @@ LLMs have two fundamental limitations that prevent further learning:
 
 ## Related
 
-- <a rel="solved_by" href="../../patterns/context-management">Context Management</a>
-- <a rel="solved_by" href="../../patterns/extract-knowledge">Extract Knowledge</a>
-- <a rel="solved_by" href="../../patterns/ground-rules">Ground Rules</a>
-- <a rel="solved_by" href="../../patterns/knowledge-document">Knowledge Document</a>
-- <a rel="solved_by" href="../../patterns/habit-hooks">Habit Hooks</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/context-management">Context Management</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/extract-knowledge">Extract Knowledge</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/ground-rules">Ground Rules</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/knowledge-document">Knowledge Document</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/habit-hooks">Habit Hooks</a>

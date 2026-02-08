@@ -21,8 +21,8 @@ When too much is loaded at once, the model either:
 
 ## Related
 
-- <a rel="caused_by" href="../../anti-patterns/distracted-agent">Distracted Agent</a>
-- <a rel="solved_by" href="../../patterns/chain-of-small-steps">Chain Of Small Steps</a>
-- <a rel="solved_by" href="../../patterns/chunking">Chunking</a>
-- <a rel="solved_by" href="../../patterns/focused-agent">Focused Agent</a>
-- <a rel="solved_by" href="../../patterns/reference-docs">Reference Docs</a>
+- <a rel="caused_by" href="/projects/augmented-coding-patterns/anti-patterns/distracted-agent">Distracted Agent</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/chain-of-small-steps">Chain Of Small Steps</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/chunking">Chunking</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/focused-agent">Focused Agent</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/reference-docs">Reference Docs</a>

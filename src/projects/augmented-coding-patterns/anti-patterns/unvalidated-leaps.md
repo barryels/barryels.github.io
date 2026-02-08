@@ -43,4 +43,4 @@ Early in my career, paired with someone who wrote PL/SQL for three hours without
 
 ## Related
 
-- <a rel="causes" href="../../obstacles/black-box-ai">Black Box AI</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/obstacles/black-box-ai">Black Box AI</a>

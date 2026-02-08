@@ -75,7 +75,7 @@ A hack that tends to work well is including a 🙂💬 emoji pair in the generat
 
 ## Related
 
-- <a rel="uses" href="../../patterns/hooks">Hooks</a>
-- <a rel="uses" href="../../patterns/feedback-loop">Feedback Loop</a>
-- <a rel="solves" href="../../obstacles/cannot-learn">Cannot Learn</a>
-- <a rel="solves" href="../../obstacles/context-rot">Context Rot</a>
+- <a rel="uses" href="/projects/augmented-coding-patterns/patterns/hooks">Hooks</a>
+- <a rel="uses" href="/projects/augmented-coding-patterns/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/cannot-learn">Cannot Learn</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/context-rot">Context Rot</a>

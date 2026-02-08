@@ -48,5 +48,5 @@ formatting. Now every update is quick and reliable.
 
 ## Related
 
-- <a rel="similar" href="../../patterns/chain-of-small-steps">Chain Of Small Steps</a>
-- <a rel="solves" href="../../obstacles/non-determinism">Non-Determinism</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/chain-of-small-steps">Chain Of Small Steps</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/non-determinism">Non-Determinism</a>

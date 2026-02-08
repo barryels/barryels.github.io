@@ -63,4 +63,4 @@ The documentation becomes a living knowledge base that captures effective patter
 
 ## Related
 
-- <a rel="uses" href="../../patterns/extract-knowledge">Extract Knowledge</a>
+- <a rel="uses" href="/projects/augmented-coding-patterns/patterns/extract-knowledge">Extract Knowledge</a>

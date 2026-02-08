@@ -38,8 +38,8 @@ Two implementations of this pattern optimize for different goals:
 
 ## Related
 
-- <a rel="used_by" href="../../patterns/approved-fixtures">Approved Fixtures</a>
-- <a rel="used_by" href="../../patterns/approved-logs">Approved Logs</a>
-- <a rel="solves" href="../../anti-patterns/flying-blind">Flying Blind</a>
-- <a rel="solves" href="../../obstacles/non-determinism">Non-Determinism</a>
-- <a rel="solves" href="../../obstacles/keeping-up">Keeping Up</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/approved-logs">Approved Logs</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/flying-blind">Flying Blind</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/non-determinism">Non-Determinism</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/keeping-up">Keeping Up</a>

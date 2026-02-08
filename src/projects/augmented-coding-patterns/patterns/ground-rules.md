@@ -32,6 +32,6 @@ Contains: behaviors, tools, context, links - whatever is essential for each scop
 
 ## Related
 
-- <a rel="uses" href="../../patterns/knowledge-document">Knowledge Document</a>
-- <a rel="used_by" href="../../patterns/context-management">Context Management</a>
-- <a rel="solves" href="../../obstacles/cannot-learn">Cannot Learn</a>
+- <a rel="uses" href="/projects/augmented-coding-patterns/patterns/knowledge-document">Knowledge Document</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/cannot-learn">Cannot Learn</a>

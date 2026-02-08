@@ -28,7 +28,7 @@ Main development agent with ground rules to catch bad practices. Same rules as a
 
 ## Related
 
-- <a rel="causes" href="../../obstacles/limited-focus">Limited Focus</a>
-- <a rel="causes" href="../../obstacles/context-rot">Context Rot</a>
-- <a rel="solved_by" href="../../patterns/focused-agent">Focused Agent</a>
-- <a rel="solved_by" href="../../patterns/reference-docs">Reference Docs</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/obstacles/limited-focus">Limited Focus</a>
+- <a rel="causes" href="/projects/augmented-coding-patterns/obstacles/context-rot">Context Rot</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/focused-agent">Focused Agent</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/reference-docs">Reference Docs</a>

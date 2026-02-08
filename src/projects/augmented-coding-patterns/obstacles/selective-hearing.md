@@ -39,6 +39,6 @@ Your constraints get filtered out as "noise" as all available attention flows to
 
 ## Related
 
-- <a rel="related" href="../../obstacles/context-rot">Context Rot</a>
-- <a rel="solved_by" href="../../patterns/hooks">Hooks</a>
-- <a rel="solved_by" href="../../patterns/reminders">Reminders</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/obstacles/context-rot">Context Rot</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/hooks">Hooks</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/reminders">Reminders</a>

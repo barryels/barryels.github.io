@@ -18,8 +18,8 @@ Unlike deterministic systems where same input always produces same output:
 
 ## Related
 
-- <a rel="solved_by" href="../../patterns/knowledge-checkpoint">Knowledge Checkpoint</a>
-- <a rel="solved_by" href="../../patterns/offload-deterministic">Offload Deterministic</a>
-- <a rel="solved_by" href="../../patterns/parallel-implementations">Parallel Implementations</a>
-- <a rel="solved_by" href="../../patterns/take-all-paths">Take All Paths</a>
-- <a rel="solved_by" href="../../patterns/constrained-tests">Constrained Tests</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/knowledge-checkpoint">Knowledge Checkpoint</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/offload-deterministic">Offload Deterministic</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/parallel-implementations">Parallel Implementations</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/take-all-paths">Take All Paths</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/constrained-tests">Constrained Tests</a>

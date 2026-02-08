@@ -30,6 +30,6 @@ AI draws diagram, reveals it misunderstood service boundaries. Corrected before 
 
 ## Related
 
-- <a rel="similar" href="../../patterns/approved-fixtures">Approved Fixtures</a>
-- <a rel="solves" href="../../anti-patterns/silent-misalignment">Silent Misalignment</a>
-- <a rel="solves" href="../../obstacles/black-box-ai">Black Box AI</a>
+- <a rel="similar" href="/projects/augmented-coding-patterns/patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/black-box-ai">Black Box AI</a>

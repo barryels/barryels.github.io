@@ -35,5 +35,5 @@ Let AI play and discover instead of expecting it to remember.
 
 ## Related
 
-- <a rel="solved_by" href="../../patterns/playgrounds">Playgrounds</a>
-- <a rel="solved_by" href="../../patterns/reference-docs">Reference Docs</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/playgrounds">Playgrounds</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/reference-docs">Reference Docs</a>

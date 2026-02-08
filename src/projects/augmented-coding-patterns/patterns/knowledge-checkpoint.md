@@ -36,5 +36,5 @@ Some models are over eager to start working and want to jump straight into imple
 
 ## Related
 
-- <a rel="used_by" href="../../patterns/context-management">Context Management</a>
-- <a rel="solves" href="../../obstacles/non-determinism">Non-Determinism</a>
+- <a rel="used_by" href="/projects/augmented-coding-patterns/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/projects/augmented-coding-patterns/obstacles/non-determinism">Non-Determinism</a>

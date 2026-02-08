@@ -19,5 +19,5 @@ The level of detail you get by default when talking to it rarely matches your ac
 
 ## Related
 
-- <a rel="solved_by" href="../../patterns/noise-cancellation">Noise Cancellation</a>
-- <a rel="solved_by" href="../../patterns/semantic-zoom">Semantic Zoom</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/noise-cancellation">Noise Cancellation</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/semantic-zoom">Semantic Zoom</a>

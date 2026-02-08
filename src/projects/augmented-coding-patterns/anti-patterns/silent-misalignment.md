@@ -45,8 +45,8 @@ Instead of asking clarifying questions, the AI started adding CSS to random divs
 
 ## Related
 
-- <a rel="caused_by" href="../../obstacles/compliance-bias">Compliance Bias</a>
-- <a rel="caused_by" href="../../obstacles/black-box-ai">Black Box AI</a>
-- <a rel="related" href="../../obstacles/obedient-contractor">Obedient Contractor</a>
-- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>
-- <a rel="solved_by" href="../../patterns/check-alignment">Check Alignment</a>
+- <a rel="caused_by" href="/projects/augmented-coding-patterns/obstacles/compliance-bias">Compliance Bias</a>
+- <a rel="caused_by" href="/projects/augmented-coding-patterns/obstacles/black-box-ai">Black Box AI</a>
+- <a rel="related" href="/projects/augmented-coding-patterns/obstacles/obedient-contractor">Obedient Contractor</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/active-partner">Active Partner</a>
+- <a rel="solved_by" href="/projects/augmented-coding-patterns/patterns/check-alignment">Check Alignment</a>
