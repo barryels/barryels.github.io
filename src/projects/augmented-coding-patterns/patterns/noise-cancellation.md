@@ -5,18 +5,22 @@ authors: [lada_kesseler]
 # Noise Cancellation
 
 ## Problem
+
 AI is verbose by default, creating poor signal-to-noise ratio. Responses overwhelm you with detail, and documents accumulate bloat and outdated information over time ("document rot") - making everything hard to scan and work with.
 
 ## Pattern
+
 Explicitly ask AI to be more succinct - strip filler, compress to essence. Don't let bloat accumulate.
 
-**For responses:** 
+**For responses:**
+
 - "Much more succinct please" (use this liberally)
 - "shorter"
 - "Higher level of abstraction"
 - "Give me TLDR"
 
-**For documents:** 
+**For documents:**
+
 - Regularly compress knowledge documents - ask AI to remove outdated info and noise
 - Delete mercilessly - Git is your friend, you can always get it back
 - Think of files as temporary vs permanent - toss the temporary ones frequently
@@ -40,5 +44,5 @@ The level of detail now matches your level of curiosity.
 
 ## Related
 
-- <a rel="used_by" href="/patterns/context-management">Context Management</a>
-- <a rel="solves" href="/obstacles/excess-verbosity">Excess Verbosity</a>
+- <a rel="used_by" href="../../patterns/context-management">Context Management</a>
+- <a rel="solves" href="../../obstacles/excess-verbosity">Excess Verbosity</a>

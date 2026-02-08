@@ -5,11 +5,13 @@ authors: [lada_kesseler]
 # Parallel Implementations
 
 ## Problem
+
 AI is non-deterministic - like rolling dice. You want a three, but probably won't get it on the first try.
 
 What do you do? Roll five dice.
 
 ## Pattern
+
 Run multiple implementations in parallel from the same checkpoint:
 
 1. Create checkpoint (save plan + git commit)
@@ -21,6 +23,7 @@ Run multiple implementations in parallel from the same checkpoint:
 This is trading tokens (relatively cheap) for your time (expensive).
 
 Two complementary modes:
+
 - **Failure Mitigation**: Complex feature, uncertain approach. Run 3-5 parallel attempts. Some fail, some succeed. You move forward immediately instead of debugging sequential failures.
 - **Exploration of the Solution Space**: When quality matters more than speed. Generate multiple working versions, compare approaches, combine the best ideas. Works especially well for creative work: UIs, game mechanics, designs.
 
@@ -30,12 +33,12 @@ Two complementary modes:
 Ran three parallel implementations. First version: no walls, robot didn't move - total failure. Second: mediocre. Third: movement logic worked great, loved the button styling. Combined the working movement with the better buttons.
 
 **UI design:**
-Run several parallel implementations. One has great layout, another has clever responsive breakpoints, third has interesting  color scheme. Borrow the best from each, combine into richer final design.
+Run several parallel implementations. One has great layout, another has clever responsive breakpoints, third has interesting color scheme. Borrow the best from each, combine into richer final design.
 
 **Designer collaboration:**
 Designer creates mockup in Figma separately. Run parallel AI implementations. Combine designer's vision with AI's working implementations.
 
 ## Related
 
-- <a rel="similar" href="/patterns/happy-to-delete">Happy To Delete</a>
-- <a rel="solves" href="/obstacles/non-determinism">Non-Determinism</a>
+- <a rel="similar" href="../../patterns/happy-to-delete">Happy To Delete</a>
+- <a rel="solves" href="../../obstacles/non-determinism">Non-Determinism</a>

@@ -44,5 +44,5 @@ The AI's struggle is your canary - an early warning signal that code quality is 
 
 ## Related
 
-- <a rel="solves" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
-- <a rel="solves" href="/obstacles/context-rot">Context Rot</a>
+- <a rel="solves" href="../../obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="solves" href="../../obstacles/context-rot">Context Rot</a>

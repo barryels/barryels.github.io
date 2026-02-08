@@ -6,14 +6,17 @@ synonyms: [Dementia]
 # Context Rot (Obstacle)
 
 ## Description
+
 Context degrades as the conversation grows. The model stops following earlier instructions, and performance drops unpredictably This happens long before you hit the context window limit.
 
 Context doesn't decay evenly; it fades in zones:
+
 - **Focus zone**: Instructions followed reliably
 - **Effective context**: Still usable but weakening. Feels productive, yet earlier guidance is starting to be ignored or de-prioritized
 - **Red zone**: Past instructions are routinely lost or contradicted.
 
 ## Impact
+
 - Earlier instructions lose influence as conversation progresses
 - The same question may yield very different results later in the thread
 - You can't rely on what the model will remember or follow
@@ -21,11 +24,11 @@ Context doesn't decay evenly; it fades in zones:
 
 ## Related
 
-- <a rel="caused_by" href="/anti-patterns/distracted-agent">Distracted Agent</a>
-- <a rel="related" href="/obstacles/selective-hearing">Selective Hearing</a>
-- <a rel="solved_by" href="/patterns/canary-in-the-code-mine">Canary In The Code Mine</a>
-- <a rel="solved_by" href="/patterns/context-management">Context Management</a>
-- <a rel="solved_by" href="/patterns/focused-agent">Focused Agent</a>
-- <a rel="solved_by" href="/patterns/reference-docs">Reference Docs</a>
-- <a rel="solved_by" href="/patterns/reminders">Reminders</a>
-- <a rel="solved_by" href="/patterns/habit-hooks">Habit Hooks</a>
+- <a rel="caused_by" href="../../anti-patterns/distracted-agent">Distracted Agent</a>
+- <a rel="related" href="../../obstacles/selective-hearing">Selective Hearing</a>
+- <a rel="solved_by" href="../../patterns/canary-in-the-code-mine">Canary In The Code Mine</a>
+- <a rel="solved_by" href="../../patterns/context-management">Context Management</a>
+- <a rel="solved_by" href="../../patterns/focused-agent">Focused Agent</a>
+- <a rel="solved_by" href="../../patterns/reference-docs">Reference Docs</a>
+- <a rel="solved_by" href="../../patterns/reminders">Reminders</a>
+- <a rel="solved_by" href="../../patterns/habit-hooks">Habit Hooks</a>

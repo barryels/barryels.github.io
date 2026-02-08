@@ -5,10 +5,13 @@ authors: [ivett_ordog]
 # Sunk Cost (Anti-pattern)
 
 ## Problem
+
 You're multiple iterations into asking an AI to accomplish a task, but it keeps failing to deliver what you need. Despite repeated attempts, the AI either can't understand the requirement or produces increasingly problematic solutions.
 
 ## What Goes Wrong
+
 Continuing to push the AI beyond the point where it makes sense wastes time and degrades quality:
+
 - Time wasted on increasingly degraded attempts
 - AI compounds errors trying to patch over previous mistakes
 - You lose trust in the AI's work quality
@@ -23,12 +26,15 @@ This parallels the sunk cost fallacy in human decision-making: we feel uncomfort
 **Iterative degradation**: AI fixes one bug but introduces another. You ask for a fix. It patches that but breaks something else. By the fourth or fifth iteration, the code is worse than when you started, yet you continue pushing for one more fix.
 
 Common root causes include:
+
 - Answer injection is leading the AI down the wrong path
 - Tell me a lie pattern where AI fabricates plausible-sounding but incorrect fixes
 - Code complexity exceeding the agent's effective context window
 
 ## Solution
+
 Recognize when you've hit diminishing returns (typically by iteration 3-4) and switch strategies:
+
 - Use **Parallel Implementations**: Start fresh conversations with different approaches
 - Apply **Happy to Delete**: Treat the attempt as disposable exploration, discard it, and begin again with lessons learned
 - Break the problem into smaller pieces that fit the AI's capabilities
@@ -36,9 +42,8 @@ Recognize when you've hit diminishing returns (typically by iteration 3-4) and s
 
 ## Related
 
-- <a rel="causes" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
-- <a rel="related" href="/anti-patterns/answer-injection">Answer Injection</a>
-- <a rel="related" href="/anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
-- <a rel="related" href="/obstacles/limited-context-window">Limited Context Window</a>
-- <a rel="solved_by" href="/patterns/happy-to-delete">Happy To Delete</a>
-
+- <a rel="causes" href="../../obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="related" href="../../anti-patterns/answer-injection">Answer Injection</a>
+- <a rel="related" href="../../anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
+- <a rel="related" href="../../obstacles/limited-context-window">Limited Context Window</a>
+- <a rel="solved_by" href="../../patterns/happy-to-delete">Happy To Delete</a>

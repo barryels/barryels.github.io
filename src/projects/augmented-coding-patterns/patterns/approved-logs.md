@@ -89,7 +89,7 @@ Bespoke parsers for non-structured logs can enhance readability when domain-spec
 
 ## Related
 
-- <a rel="similar" href="/patterns/approved-fixtures">Approved Fixtures</a>
-- <a rel="uses" href="/patterns/constrained-tests">Constrained Tests</a>
-- <a rel="solves" href="/obstacles/hallucinations">Hallucinations</a>
-- <a rel="solves" href="/obstacles/black-box-ai">Black Box AI</a>
+- <a rel="similar" href="../../patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="uses" href="../../patterns/constrained-tests">Constrained Tests</a>
+- <a rel="solves" href="../../obstacles/hallucinations">Hallucinations</a>
+- <a rel="solves" href="../../obstacles/black-box-ai">Black Box AI</a>

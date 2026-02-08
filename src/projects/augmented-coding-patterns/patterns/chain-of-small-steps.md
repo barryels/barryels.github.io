@@ -5,10 +5,13 @@ authors: [lada_kesseler]
 # Chain of Small Steps
 
 ## Problem
+
 AI degrades under complexity. Complex, multi-step tasks often fail or produce incorrect results when attempted in one shot. AI loses track of requirements and context as complexity increases.
 
 ## Pattern
+
 You have to manage the complexity. Break complex goals into small, focused, verifiable steps. Chain them together:
+
 1. Identify the complex goal
 2. Break it into small, independent steps
 3. Execute each step with AI, verify it works
@@ -18,11 +21,13 @@ You have to manage the complexity. Break complex goals into small, focused, veri
 Small steps are reliable. Each has narrow focus, which AI handles well. Verification catches problems early before they compound.
 
 ## Example
+
 Hack4Good hackathon - needed version numbering for rapid releases (v1 → v51):
 
 **Instead of**: "Add automated version bumping to the app"
 
 **Small steps**:
+
 1. **Step 1**: Add version variable to JavaScript (starting at 001) and display it in settings UI
    - Small change to existing code
    - Verify: version shows in UI
@@ -42,7 +47,7 @@ Result: fully automated version bumping. Each step was manageable for AI, verifi
 
 ## Related
 
-- <a rel="similar" href="/patterns/feedback-loop">Feedback Loop</a>
-- <a rel="similar" href="/patterns/offload-deterministic">Offload Deterministic</a>
-- <a rel="solves" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
-- <a rel="solves" href="/obstacles/limited-focus">Limited Focus</a>
+- <a rel="similar" href="../../patterns/feedback-loop">Feedback Loop</a>
+- <a rel="similar" href="../../patterns/offload-deterministic">Offload Deterministic</a>
+- <a rel="solves" href="../../obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="solves" href="../../obstacles/limited-focus">Limited Focus</a>

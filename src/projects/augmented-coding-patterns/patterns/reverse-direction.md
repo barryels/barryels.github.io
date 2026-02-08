@@ -5,6 +5,7 @@ authors: [lada_kesseler]
 # Reverse Direction
 
 ## Problem
+
 Monologue has inertia.
 Once you’re telling AI what to do, you keep telling.
 Once AI is asking you questions, it keeps asking.
@@ -12,21 +13,23 @@ Once AI is asking you questions, it keeps asking.
 That inertia makes you miss chances where switching to dialogue would surface better options.
 
 ## Pattern
+
 Break the inertia — flip the direction at key moments:
 
-* AI asks you to decide → *“What do you think would work better?”*
-* You’re stuck telling → *“What questions do you have?”*
-* You’re deciding alone → *“Show me a few approaches”*
+- AI asks you to decide → _“What do you think would work better?”_
+- You’re stuck telling → _“What questions do you have?”_
+- You’re deciding alone → _“Show me a few approaches”_
 
 The reversal turns monologue into dialogue. Surfaces options you wouldn't have considered and makes preferences clearer by comparison.
 
 When you catch yourself about to answer AI's question, pause. Ask what it thinks or could suggest instead.
 
-Instead of an order taker, you get a collaborator. You're using AI's strengths (breadth, fast generation) and yours (quick scanning, clear preferences and more ideas once you *see* some options).
+Instead of an order taker, you get a collaborator. You're using AI's strengths (breadth, fast generation) and yours (quick scanning, clear preferences and more ideas once you _see_ some options).
 
 ## Example
 
 **File renaming:**
+
 - You: "Rename this file"
 - AI: "What should I rename it to?"
 - You reverse: "Can you think of some good names?"
@@ -35,4 +38,4 @@ Instead of an order taker, you get a collaborator. You're using AI's strengths (
 
 ## Related
 
-- <a rel="solves" href="/anti-patterns/answer-injection">Answer Injection</a>
+- <a rel="solves" href="../../anti-patterns/answer-injection">Answer Injection</a>

@@ -5,11 +5,13 @@ authors: [ivett_ordog]
 # Chunking
 
 ## Problem
+
 AI agents must keep everything in conscious attention - strategy, tactics, implementation, all file context. This cognitive overload degrades performance.
 
 Humans chunk practiced tasks into automatic execution, freeing attention for higher-level thinking. We can't retrain production models, but we can simulate this.
 
 ## Pattern
+
 Use a main orchestrator agent with focused subagents:
 
 1. **Main agent stays strategic**: Plans, designs, breaks down work, integrates results
@@ -19,17 +21,20 @@ Use a main orchestrator agent with focused subagents:
 **Key insight**: Delegate execution to subagents like humans delegate practiced skills to automatic processes. Orchestrator operates strategically while subagents handle details.
 
 **How to apply:**
+
 - Use planning mode for mid-size tasks
 - Request plans for parallel subagent execution
 - Include comprehensive test plans
 - Configure agent: "Always delegate coding tasks to subagents"
 
 **When this works:**
+
 - Mid-size tasks in clean, modular codebases
 - First prototypes
 - Well-defined interfaces between components
 
 **When this fails:**
+
 - Non-modular code
 - Tightly coupled systems
 - Subagents make incompatible tradeoffs
@@ -44,7 +49,7 @@ Main agent planned architecture and test strategy. Subagents implemented in para
 
 ## Related
 
-- <a rel="uses" href="/patterns/focused-agent">Focused Agent</a>
-- <a rel="solves" href="/obstacles/limited-focus">Limited Focus</a>
-- <a rel="solves" href="/obstacles/limited-context-window">Limited Context Window</a>
-- <a rel="solves" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="uses" href="../../patterns/focused-agent">Focused Agent</a>
+- <a rel="solves" href="../../obstacles/limited-focus">Limited Focus</a>
+- <a rel="solves" href="../../obstacles/limited-context-window">Limited Context Window</a>
+- <a rel="solves" href="../../obstacles/degrades-under-complexity">Degrades Under Complexity</a>

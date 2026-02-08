@@ -5,11 +5,13 @@ authors: [lada_kesseler]
 # Offload Deterministic
 
 ## Problem
-AI is non-deterministic. Using it for deterministic work (counting, parsing, exact operations, repeatable  tasks) produces unreliable results.
+
+AI is non-deterministic. Using it for deterministic work (counting, parsing, exact operations, repeatable tasks) produces unreliable results.
 
 Every time you ask AI to do something deterministic, there's a chance it does it wrong.
 
 ## Pattern
+
 AI is bad at determinism. Code is good at it. Use the right tool for the job.
 
 **Don't ask AI to do deterministic work. Ask AI to write code that does it.**
@@ -46,5 +48,5 @@ formatting. Now every update is quick and reliable.
 
 ## Related
 
-- <a rel="similar" href="/patterns/chain-of-small-steps">Chain Of Small Steps</a>
-- <a rel="solves" href="/obstacles/non-determinism">Non-Determinism</a>
+- <a rel="similar" href="../../patterns/chain-of-small-steps">Chain Of Small Steps</a>
+- <a rel="solves" href="../../obstacles/non-determinism">Non-Determinism</a>

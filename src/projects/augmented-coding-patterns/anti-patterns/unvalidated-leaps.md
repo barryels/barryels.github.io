@@ -5,7 +5,9 @@ authors: [lada_kesseler]
 # Unvalidated Leaps (Anti-pattern)
 
 ## Problem
+
 AI gets stuck because it's building on unverified assumptions about the code.
+
 - Assumes functions return X when they return Y
 - Misinterprets errors based on a wrong mental model
 - Each assumption becomes a foundation for the next wrong step
@@ -13,12 +15,15 @@ AI gets stuck because it's building on unverified assumptions about the code.
 This is a human problem too - when you can't run code frequently but keep writing it, you make assumption chains. AI does the same.
 
 ## What Goes Wrong
+
 AI gets stuck spinning:
+
 - Checks step A, step C, step V
 - Misses the wrong assumption at step B
 - Every "fix" builds on that wrong foundation
 
 ## Solution
+
 - When AI gets stuck, stop it and tell it to validate each step incrementally
 - Use TDD to create automatic micro-feedback loops that catch drift early. Try Predictive TDD - AI predicts test outcomes, gets surprised when wrong (like humans do), immediately corrects its mental model
 
@@ -38,4 +43,4 @@ Early in my career, paired with someone who wrote PL/SQL for three hours without
 
 ## Related
 
-- <a rel="causes" href="/obstacles/black-box-ai">Black Box AI</a>
+- <a rel="causes" href="../../obstacles/black-box-ai">Black Box AI</a>

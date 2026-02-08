@@ -5,9 +5,11 @@ authors: [ivett_ordog]
 # Happy to Delete
 
 ## Problem
+
 Humans are naturally precious about code, especially code they wrote themselves. This attachment makes us reluctant to delete failed attempts and start fresh. With AI-generated code, this instinct is counterproductive—the code is cheap to regenerate, yet we treat it as if it took hours to write by hand. This leads to forcing fixes on fundamentally flawed implementations instead of simply reverting and trying again.
 
 ## Pattern
+
 Embrace the disposability of AI-generated code:
 
 - **Treat AI code as cheap exploration**: Unlike hand-written code, AI can regenerate solutions in seconds
@@ -25,6 +27,7 @@ The willingness to delete removes the pressure to "make it work" and paradoxical
 **Good**: AI generates a refactoring that misses key requirements. You immediately revert, refine your prompt with clearer constraints, and try again. The second attempt gets it right in one go because you learned from the first failure.
 
 **Example prompt for reverting**:
+
 ```
 Your solution [describe the problem]. A better approach would be [describe the better approach].
 Please `git reset --hard` and try again.
@@ -34,6 +37,6 @@ The explicit `git reset --hard` instruction is important—without it, AI often 
 
 ## Related
 
-- <a rel="similar" href="/patterns/parallel-implementations">Parallel Implementations</a>
-- <a rel="similar" href="/patterns/playgrounds">Playgrounds</a>
-- <a rel="solves" href="/anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="similar" href="../../patterns/parallel-implementations">Parallel Implementations</a>
+- <a rel="similar" href="../../patterns/playgrounds">Playgrounds</a>
+- <a rel="solves" href="../../anti-patterns/sunk-cost">Sunk Cost</a>

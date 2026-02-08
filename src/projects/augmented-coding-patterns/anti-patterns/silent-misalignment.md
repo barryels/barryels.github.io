@@ -5,11 +5,13 @@ authors: [lada_kesseler]
 # Silent Misalignment (Anti-pattern)
 
 ## Problem
+
 When user instructions don't make sense within the AI's model, the AI still tries to comply instead of
 stopping or asking questions. Misalignment grows silently as it builds on wrong interpretations.
 
 ## What Goes Wrong
-This is hard to even suspect. AI says "Sure thing!" repeatedly, seems confident, produces changes, yet the changes don't work. 
+
+This is hard to even suspect. AI says "Sure thing!" repeatedly, seems confident, produces changes, yet the changes don't work.
 You can't understand why and don't realize you're talking past each other.
 
 - AI accepts impossible or contradictory instructions
@@ -18,6 +20,7 @@ You can't understand why and don't realize you're talking past each other.
 - Misalignment compounds until output becomes messy or useless
 
 ## Example
+
 While fixing a Vue.js layout, asked AI to align the top parts of two panels. To a human, the misaligned panels were visually obvious — but to the AI, they were just nested divs.
 
 Instead of asking clarifying questions, the AI started adding CSS to random divs, hoping one would match user intent. Each "fix" was a guess, because user instructions referenced concepts that didn't exist in its perception.
@@ -27,11 +30,14 @@ Instead of asking clarifying questions, the AI started adding CSS to random divs
 **Why it stayed silent:** The AI kept saying "Sure thing, boss" and producing changes instead of admitting "I don't understand what you mean by 'top parts.'" Compliance Bias prevented it from questioning nonsensical instructions, and you can't see inside its internal state to spot the confusion (Black Box AI).
 
 ## Solution
+
 **Give AI Permission to Push Back**
+
 - Add to ground rules: "Ask questions when unclear, flag contradictions, point out mistakes"
 - Explicitly allow: "Tell me if my instructions don't make sense"
 
 **Make Mental Models Explicit**
+
 - Before changes: "Describe the structure you see"
 - During work: Ask "Does this make sense?" or "What questions do you have?"
 - Require a plan or outline before implementation
@@ -39,8 +45,8 @@ Instead of asking clarifying questions, the AI started adding CSS to random divs
 
 ## Related
 
-- <a rel="caused_by" href="/obstacles/compliance-bias">Compliance Bias</a>
-- <a rel="caused_by" href="/obstacles/black-box-ai">Black Box AI</a>
-- <a rel="related" href="/obstacles/obedient-contractor">Obedient Contractor</a>
-- <a rel="solved_by" href="/patterns/active-partner">Active Partner</a>
-- <a rel="solved_by" href="/patterns/check-alignment">Check Alignment</a>
+- <a rel="caused_by" href="../../obstacles/compliance-bias">Compliance Bias</a>
+- <a rel="caused_by" href="../../obstacles/black-box-ai">Black Box AI</a>
+- <a rel="related" href="../../obstacles/obedient-contractor">Obedient Contractor</a>
+- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>
+- <a rel="solved_by" href="../../patterns/check-alignment">Check Alignment</a>

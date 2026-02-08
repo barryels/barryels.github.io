@@ -10,11 +10,12 @@ AI has some deeply trained behaviors that might contradict your preferences and 
 
 ## Solution
 
-Some systems (Claude Code) have hooks that hook into deterministic points in the agent lifecycle. They are **deterministic** and in combination with custom scripts allow for flexible and reliable correction of behaviors. 
+Some systems (Claude Code) have hooks that hook into deterministic points in the agent lifecycle. They are **deterministic** and in combination with custom scripts allow for flexible and reliable correction of behaviors.
 
 Use lifecycle event hooks to intercept the agent's workflow at specific trigger points and inject targeted prompts, corrections, validations, or add monitoring.
 
 Example of lifecycle events:
+
 ```
 • UserPromptSubmit
 • PreToolUse
@@ -26,6 +27,7 @@ Example of lifecycle events:
 ```
 
 Hooks run shell scripts at these events that can allow you to:
+
 - Validate code quality before commits proceed
 - Collect metrics on tool usage patterns
 - Enforce project-specific conventions automatically
@@ -39,7 +41,6 @@ When the agent adds a code comment, the hook immediately gives feedback that the
 
 ## Related
 
-- <a rel="enables" href="/patterns/habit-hooks">Habit Hooks</a>
-- <a rel="used_by" href="/patterns/habit-hooks">Habit Hooks</a>
-- <a rel="solves" href="/obstacles/selective-hearing">Selective Hearing</a>
-
+- <a rel="enables" href="../../patterns/habit-hooks">Habit Hooks</a>
+- <a rel="used_by" href="../../patterns/habit-hooks">Habit Hooks</a>
+- <a rel="solves" href="../../obstacles/selective-hearing">Selective Hearing</a>

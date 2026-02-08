@@ -49,9 +49,9 @@ Human elevates from tactical executor to strategic director.
 
 ## Related
 
-- <a rel="similar" href="/patterns/playgrounds">Playgrounds</a>
-- <a rel="similar" href="/patterns/chain-of-small-steps">Chain Of Small Steps</a>
-- <a rel="used_by" href="/patterns/approved-fixtures">Approved Fixtures</a>
-- <a rel="used_by" href="/patterns/habit-hooks">Habit Hooks</a>
-- <a rel="solves" href="/anti-patterns/flying-blind">Flying Blind</a>
-- <a rel="solves" href="/obstacles/keeping-up">Keeping Up</a>
+- <a rel="similar" href="../../patterns/playgrounds">Playgrounds</a>
+- <a rel="similar" href="../../patterns/chain-of-small-steps">Chain Of Small Steps</a>
+- <a rel="used_by" href="../../patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="used_by" href="../../patterns/habit-hooks">Habit Hooks</a>
+- <a rel="solves" href="../../anti-patterns/flying-blind">Flying Blind</a>
+- <a rel="solves" href="../../obstacles/keeping-up">Keeping Up</a>

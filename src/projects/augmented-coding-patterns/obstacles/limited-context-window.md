@@ -5,11 +5,13 @@ authors: [lada_kesseler]
 # Limited Context Window (Obstacle)
 
 ## Description
+
 Context has a fixed size limit. Once the limit is reached, older content has to be dropped or summarized by coding assistant to make room for new input.
 
 Everything you put in context competes for this limited space.
 
 ## Impact
+
 - Long conversations eventually lose early messages
 - Large files can't be loaded whole
 - Everything loaded (code, docs, ground rules, conversation history) fights for the same limited space
@@ -17,7 +19,6 @@ Everything you put in context competes for this limited space.
 
 ## Related
 
-- <a rel="related" href="/anti-patterns/sunk-cost">Sunk Cost</a>
-- <a rel="solved_by" href="/patterns/chunking">Chunking</a>
-- <a rel="solved_by" href="/patterns/context-management">Context Management</a>
-
+- <a rel="related" href="../../anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="solved_by" href="../../patterns/chunking">Chunking</a>
+- <a rel="solved_by" href="../../patterns/context-management">Context Management</a>

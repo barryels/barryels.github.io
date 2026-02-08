@@ -5,6 +5,7 @@ authors: [ivett_ordog]
 # Obedient Contractor (Obstacle)
 
 ## Description
+
 AI behaves like an obedient contractor hired for a single day—focused on completing the immediate task and leaving as quickly as possible. This manifests in two key ways:
 
 **Short-term mindset**: AI prioritizes getting the job done right now over long-term maintainability. It works with existing code and finds the quickest solution rather than considering how small improvements could benefit both immediate and future work.
@@ -12,6 +13,7 @@ AI behaves like an obedient contractor hired for a single day—focused on compl
 **Excessive politeness**: AI treats contradicting the original request as very impolite. It won't push back even when it should, instead working within given constraints rather than questioning whether those constraints make sense.
 
 ## Impact
+
 This contractor mentality produces several harmful effects:
 
 - **Technical debt accumulation**: Quick fixes chosen over sustainable solutions that require slightly more upfront effort
@@ -26,5 +28,5 @@ The AI acts as if it will never see this code again, making decisions that creat
 
 ## Related
 
-- <a rel="related" href="/anti-patterns/silent-misalignment">Silent Misalignment</a>
-- <a rel="solved_by" href="/patterns/active-partner">Active Partner</a>
+- <a rel="related" href="../../anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="solved_by" href="../../patterns/active-partner">Active Partner</a>

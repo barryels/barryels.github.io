@@ -127,8 +127,8 @@ This pattern has similarities to Gherkin but better adapts to the specific domai
 
 ## Related
 
-- <a rel="similar" href="/patterns/check-alignment">Check Alignment</a>
-- <a rel="similar" href="/patterns/approved-logs">Approved Logs</a>
-- <a rel="uses" href="/patterns/feedback-loop">Feedback Loop</a>
-- <a rel="uses" href="/patterns/constrained-tests">Constrained Tests</a>
-- <a rel="solves" href="/obstacles/hallucinations">Hallucinations</a>
+- <a rel="similar" href="../../patterns/check-alignment">Check Alignment</a>
+- <a rel="similar" href="../../patterns/approved-logs">Approved Logs</a>
+- <a rel="uses" href="../../patterns/feedback-loop">Feedback Loop</a>
+- <a rel="uses" href="../../patterns/constrained-tests">Constrained Tests</a>
+- <a rel="solves" href="../../obstacles/hallucinations">Hallucinations</a>

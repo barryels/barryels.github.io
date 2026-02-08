@@ -5,9 +5,11 @@ authors: [lada_kesseler]
 # Knowledge Composition
 
 ## Problem
+
 When you keep everything in one big file, you lose the ability to load just what you need. It's all or nothing - either load the whole thing and bloat your context, or skip it entirely.
 
 ## Pattern
+
 Split knowledge into focused, composable files. Like avoiding giant functions in code - each file should have a single responsibility.
 
 This lets you load only what's relevant for the current task instead of polluting context with everything.
@@ -26,4 +28,4 @@ Enables: Pull just architecture when discussing design, or just tech-stack when 
 
 ## Related
 
-- <a rel="enabled_by" href="/patterns/reference-docs">Reference Docs</a>
+- <a rel="enabled_by" href="../../patterns/reference-docs">Reference Docs</a>
