@@ -37,3 +37,9 @@ Hooks run shell scripts at these events that can allow you to:
 Create a hook that runs when the agent uses a writing tool (**Write|Edit|MultiEdit** in Claude Code) and a script that detects code comments.  
 When the agent adds a code comment, the hook immediately gives feedback that the agent needs to address before it can proceed with the next task.
 
+## Related
+
+- <a rel="enables" href="/patterns/habit-hooks">Habit Hooks</a>
+- <a rel="used_by" href="/patterns/habit-hooks">Habit Hooks</a>
+- <a rel="solves" href="/obstacles/selective-hearing">Selective Hearing</a>
+

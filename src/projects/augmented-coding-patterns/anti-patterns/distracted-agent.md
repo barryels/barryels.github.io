@@ -22,3 +22,10 @@ Even with the same ground rules, a distracted agent won't follow them as well as
 Main development agent with ground rules to catch bad practices. Same rules as a focused committer agent. The main agent never warned about committing node_modules or style violations. The focused committer caught both immediately.
 
 **This is hard to spot**. The distracted agent doesn't feel broken - it often seems to work fine. You only realize the problem when you see a focused agent handle the same responsibility. The contrast makes it obvious how much the distracted agent was missing.
+
+## Related
+
+- <a rel="causes" href="/obstacles/limited-focus">Limited Focus</a>
+- <a rel="causes" href="/obstacles/context-rot">Context Rot</a>
+- <a rel="solved_by" href="/patterns/focused-agent">Focused Agent</a>
+- <a rel="solved_by" href="/patterns/reference-docs">Reference Docs</a>

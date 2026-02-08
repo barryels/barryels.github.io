@@ -17,3 +17,10 @@ This makes resetting easier: instead of losing everything, you extract the valua
 - `project.md` - project-specific context
 - `tdd-process.md` - how you want to work
 - `approval_tests.md` - specific techniques to follow
+
+## Related
+
+- <a rel="used_by" href="/patterns/extract-knowledge">Extract Knowledge</a>
+- <a rel="used_by" href="/patterns/ground-rules">Ground Rules</a>
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/obstacles/cannot-learn">Cannot Learn</a>

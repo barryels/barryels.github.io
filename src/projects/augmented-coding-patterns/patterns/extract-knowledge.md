@@ -17,3 +17,10 @@ Like extract variable for conversations: when you figure something out, explicit
 While integrating the `uv` package manager, AI repeatedly uses incorrect syntax. 
 You tell it correct commands via search or experimentation, then ask it to create `uv.md` documenting the correct commands. 
 Next session, you load that file when you need it, and AI uses uv correctly from the start.
+
+## Related
+
+- <a rel="uses" href="/patterns/knowledge-document">Knowledge Document</a>
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="used_by" href="/patterns/show-the-agent-let-it-repeat-automate">Show The Agent Let It Repeat Automate</a>
+- <a rel="solves" href="/obstacles/cannot-learn">Cannot Learn</a>

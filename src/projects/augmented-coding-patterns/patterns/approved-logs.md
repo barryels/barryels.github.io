@@ -86,3 +86,10 @@ Custom parser:
 3. Visual format beats arrays of 0s and 1s for comprehension
 
 Bespoke parsers for non-structured logs can enhance readability when domain-specific representations (ASCII grids, trees, graphs) make context obvious.
+
+## Related
+
+- <a rel="similar" href="/patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="uses" href="/patterns/constrained-tests">Constrained Tests</a>
+- <a rel="solves" href="/obstacles/hallucinations">Hallucinations</a>
+- <a rel="solves" href="/obstacles/black-box-ai">Black Box AI</a>

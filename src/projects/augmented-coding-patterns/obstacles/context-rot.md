@@ -18,3 +18,14 @@ Context doesn't decay evenly; it fades in zones:
 - The same question may yield very different results later in the thread
 - You can't rely on what the model will remember or follow
 - Forces frequent resets to maintain quality
+
+## Related
+
+- <a rel="caused_by" href="/anti-patterns/distracted-agent">Distracted Agent</a>
+- <a rel="related" href="/obstacles/selective-hearing">Selective Hearing</a>
+- <a rel="solved_by" href="/patterns/canary-in-the-code-mine">Canary In The Code Mine</a>
+- <a rel="solved_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solved_by" href="/patterns/focused-agent">Focused Agent</a>
+- <a rel="solved_by" href="/patterns/reference-docs">Reference Docs</a>
+- <a rel="solved_by" href="/patterns/reminders">Reminders</a>
+- <a rel="solved_by" href="/patterns/habit-hooks">Habit Hooks</a>

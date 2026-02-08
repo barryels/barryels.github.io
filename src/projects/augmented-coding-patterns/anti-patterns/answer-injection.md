@@ -58,3 +58,8 @@ Present the problem, not your solution:
 - Remove arbitrary constraints (numbers, specific tech)
 - Let AI's breadth reveal unknown unknowns
 - AI is incredibly well-read - use that
+
+## Related
+
+- <a rel="related" href="/anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="solved_by" href="/patterns/reverse-direction">Reverse Direction</a>

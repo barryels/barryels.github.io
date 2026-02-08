@@ -41,3 +41,10 @@ Use a main orchestrator agent with focused subagents:
 Main agent planned architecture and test strategy. Subagents implemented in parallel: markdown processing, page components, unit tests, E2E tests. Result: fully functional site in one iteration.
 
 **Multi-layer system**: Main agent designed layer interfaces. Subagents worked on separate layers following contracts. Worked because codebase was modular. In poorly structured code, subagents create integration problems.
+
+## Related
+
+- <a rel="uses" href="/patterns/focused-agent">Focused Agent</a>
+- <a rel="solves" href="/obstacles/limited-focus">Limited Focus</a>
+- <a rel="solves" href="/obstacles/limited-context-window">Limited Context Window</a>
+- <a rel="solves" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>

@@ -14,3 +14,7 @@ When it finds something that *might* be the problem, it declares "found it!" and
 - Misses the actual problem while fixating on red herrings
 - Declares victory prematurely: "This must be it!"
 - Stops being critical or rational once a pattern matches
+
+## Related
+
+- <a rel="related" href="/obstacles/compliance-bias">Compliance Bias</a>

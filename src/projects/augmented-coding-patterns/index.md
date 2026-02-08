@@ -1,6 +1,6 @@
 # Augmented Coding Patterns
 
-Test RDF implementation for https://github.com/lexler/augmented-coding-patterns
+Different UI implementation for https://github.com/lexler/augmented-coding-patterns
 
 ## Patterns
 

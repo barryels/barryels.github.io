@@ -23,3 +23,8 @@ This contractor mentality produces several harmful effects:
 - **Maintenance burden**: Code works now but becomes progressively harder to maintain over time
 
 The AI acts as if it will never see this code again, making decisions that create problems for whoever (including itself in future conversations) has to work with the code later.
+
+## Related
+
+- <a rel="related" href="/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="solved_by" href="/patterns/active-partner">Active Partner</a>

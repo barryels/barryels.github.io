@@ -16,3 +16,11 @@ LLMs have two fundamental limitations that prevent further learning:
 - Knowledge vanishes when a session resets or starts fresh
 - The model cannot adapt to your codebase or preferences through experience
 - Any lasting memory must be explicitly managed through external means (files, notes, configurations, etc)
+
+## Related
+
+- <a rel="solved_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solved_by" href="/patterns/extract-knowledge">Extract Knowledge</a>
+- <a rel="solved_by" href="/patterns/ground-rules">Ground Rules</a>
+- <a rel="solved_by" href="/patterns/knowledge-document">Knowledge Document</a>
+- <a rel="solved_by" href="/patterns/habit-hooks">Habit Hooks</a>

@@ -15,3 +15,10 @@ Engineer asks AI to "add user authentication" and accepts whatever gets generate
 
 ## Solution
 Use Active Partner to maintain collaboration and understanding throughout development. Use Feedback Loop for quick verification cycles that catch issues early. Use Constrained Tests to ensure validation happens automatically without manual review overhead.
+
+## Related
+
+- <a rel="caused_by" href="/obstacles/keeping-up">Keeping Up</a>
+- <a rel="solved_by" href="/patterns/active-partner">Active Partner</a>
+- <a rel="solved_by" href="/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="solved_by" href="/patterns/constrained-tests">Constrained Tests</a>

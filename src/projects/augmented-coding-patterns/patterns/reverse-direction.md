@@ -32,3 +32,7 @@ Instead of an order taker, you get a collaborator. You're using AI's strengths (
 - You reverse: "Can you think of some good names?"
 - AI shows options with reasoning.
 - You see different options and that might give you more ideas or show to you quickly what you don't like
+
+## Related
+
+- <a rel="solves" href="/anti-patterns/answer-injection">Answer Injection</a>

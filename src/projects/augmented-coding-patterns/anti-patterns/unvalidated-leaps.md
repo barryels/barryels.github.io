@@ -35,3 +35,7 @@ Asked "check each command step by step" - it isolated the AppleScript call, vali
 
 **This happens with humans too:**
 Early in my career, paired with someone who wrote PL/SQL for three hours without running it once. So many unvalidated assumptions. When we finally ran it, it didn't even compile.
+
+## Related
+
+- <a rel="causes" href="/obstacles/black-box-ai">Black Box AI</a>

@@ -15,3 +15,10 @@ Small errors accumulate, and quality drops when working with large codebases or 
 - AI loses track of requirements, constraints, or context
 - Multi-step transformations attempted in one shot are especially error-prone 
 - Small errors accumulate, code quality and system reliability degrade rapidly
+
+## Related
+
+- <a rel="caused_by" href="/anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="solved_by" href="/patterns/canary-in-the-code-mine">Canary In The Code Mine</a>
+- <a rel="solved_by" href="/patterns/chain-of-small-steps">Chain Of Small Steps</a>
+- <a rel="solved_by" href="/patterns/chunking">Chunking</a>

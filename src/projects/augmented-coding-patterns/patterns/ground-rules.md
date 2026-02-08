@@ -25,3 +25,9 @@ Contains: behaviors, tools, context, links - whatever is essential for each scop
   - "Use TypeScript strict mode, all functions must have explicit return types"
   - "always run tests via ./test.sh" 
   - links to key places in the repository
+
+## Related
+
+- <a rel="uses" href="/patterns/knowledge-document">Knowledge Document</a>
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/obstacles/cannot-learn">Cannot Learn</a>

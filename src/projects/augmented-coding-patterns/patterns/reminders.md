@@ -45,3 +45,8 @@ Inject critical rules into every message. Trading tokens for compliance.
 - **Automated (hooks):** Inject automatically via hooks on every user prompt. Don't recommend more than 5 reminders maximum to avoid context rot and distracting the agent. Example: https://github.com/lexler/claude-code-user-reminders
 - **Manual:** In-place prompt with your most important rules when you especially need them followed
 
+## Related
+
+- <a rel="solves" href="/obstacles/context-rot">Context Rot</a>
+- <a rel="solves" href="/obstacles/selective-hearing">Selective Hearing</a>
+

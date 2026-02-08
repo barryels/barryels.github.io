@@ -27,3 +27,8 @@ Don't expect perfect recall. Give AI tools to discover:
 - Extract working patterns for next time
 
 Let AI play and discover instead of expecting it to remember.
+
+## Related
+
+- <a rel="solved_by" href="/patterns/playgrounds">Playgrounds</a>
+- <a rel="solved_by" href="/patterns/reference-docs">Reference Docs</a>

@@ -18,3 +18,12 @@ Unlike ground rules (always loaded), you explicitly pull in references when rele
 - `architecture.md` - load when you need to quickly explain architecture of your project
  
 Build a library of these. Pull them in as needed.
+
+## Related
+
+- <a rel="enables" href="/patterns/knowledge-composition">Knowledge Composition</a>
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/anti-patterns/distracted-agent">Distracted Agent</a>
+- <a rel="solves" href="/anti-patterns/perfect-recall-fallacy">Perfect Recall Fallacy</a>
+- <a rel="solves" href="/obstacles/limited-focus">Limited Focus</a>
+- <a rel="solves" href="/obstacles/context-rot">Context Rot</a>

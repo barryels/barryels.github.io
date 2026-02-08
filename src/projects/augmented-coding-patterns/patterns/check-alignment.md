@@ -23,3 +23,9 @@ When you see something, you immediately spot what needs adjusting. Catch it earl
 Before refactoring: "Show me how you understand the current architecture and what you plan to change, succinctly"
 
 AI draws diagram, reveals it misunderstood service boundaries. Corrected before any code was written - saved an hour of going in wrong direction.
+
+## Related
+
+- <a rel="similar" href="/patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="solves" href="/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="solves" href="/obstacles/black-box-ai">Black Box AI</a>

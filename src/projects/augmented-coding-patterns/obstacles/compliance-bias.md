@@ -15,3 +15,10 @@ By default, it prioritizes following instructions over asking questions or pushi
 - Silently misinterprets rather than questioning your assumptions
 - Creates elaborate workarounds instead of suggesting better approaches
 - Combined with Black Box AI, makes misalignment invisible until things break
+
+## Related
+
+- <a rel="caused_by" href="/anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
+- <a rel="causes" href="/anti-patterns/silent-misalignment">Silent Misalignment</a>
+- <a rel="related" href="/obstacles/solution-fixation">Solution Fixation</a>
+- <a rel="solved_by" href="/patterns/active-partner">Active Partner</a>

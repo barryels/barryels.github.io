@@ -61,3 +61,10 @@ AI can generally create these hooks with minimal prompting. The key is:
 - **Treat as user prompts**: Include guidance in your agent file to treat these prompts as user prompts
 
 A hack that tends to work well is including a 🙂💬 emoji pair in the generated prompts, and mentioning their meaning in the agent file as CRITICAL.
+
+## Related
+
+- <a rel="uses" href="/patterns/hooks">Hooks</a>
+- <a rel="uses" href="/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="solves" href="/obstacles/cannot-learn">Cannot Learn</a>
+- <a rel="solves" href="/obstacles/context-rot">Context Rot</a>

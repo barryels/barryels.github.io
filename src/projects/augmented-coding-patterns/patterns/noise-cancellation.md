@@ -37,3 +37,8 @@ Say "Much more succinct please" and get: "It's Rust's project configuration file
 metadata, dependencies, build settings."
 
 The level of detail now matches your level of curiosity.
+
+## Related
+
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/obstacles/excess-verbosity">Excess Verbosity</a>

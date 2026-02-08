@@ -30,3 +30,8 @@ e) 0
 - Watch for false premises in your questions
 - Frame questions to allow truth, not force a specific answer
 - Ask explicitly "Does my question make sense?"
+
+## Related
+
+- <a rel="causes" href="/obstacles/compliance-bias">Compliance Bias</a>
+- <a rel="solved_by" href="/patterns/active-partner">Active Partner</a>

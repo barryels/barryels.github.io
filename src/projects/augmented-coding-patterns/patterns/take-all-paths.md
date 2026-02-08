@@ -22,3 +22,7 @@ Actually feel how each one works instead of imagining it.
 **UX decisions**: Instead of mockups, build 10 working versions. Play with all of them (can also borrow behaviors and combine)
 
 The power: You're no longer limited to your first idea. Explore the whole solution space.
+
+## Related
+
+- <a rel="solves" href="/obstacles/non-determinism">Non-Determinism</a>

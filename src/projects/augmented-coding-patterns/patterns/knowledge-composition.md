@@ -23,3 +23,7 @@ Enables: Pull just refactoring process when cleaning code, or just git-workflow 
 Bad: One `project-info.md` with architecture + tech stack + deployment + API docs
 Good: Separate files - `architecture.md`, `tech-stack.md`, `deployment.md`, `api-docs.md`
 Enables: Pull just architecture when discussing design, or just tech-stack when evaluating libraries
+
+## Related
+
+- <a rel="enabled_by" href="/patterns/reference-docs">Reference Docs</a>

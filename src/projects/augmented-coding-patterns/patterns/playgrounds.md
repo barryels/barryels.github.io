@@ -26,3 +26,9 @@ When AI gets stuck or when working with new libraries or uncommon languages:
 Building chess app, nothing working. Instead of debugging through UI → components → chess.js integration, stopped and had AI write playground script to test chess.js directly.
 
 Quickly discovered: chess.js requires kings on board. Would have taken much longer debugging from the top down.
+
+## Related
+
+- <a rel="similar" href="/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="similar" href="/patterns/happy-to-delete">Happy To Delete</a>
+- <a rel="solves" href="/anti-patterns/perfect-recall-fallacy">Perfect Recall Fallacy</a>

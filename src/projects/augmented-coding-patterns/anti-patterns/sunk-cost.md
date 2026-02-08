@@ -34,3 +34,11 @@ Recognize when you've hit diminishing returns (typically by iteration 3-4) and s
 - Break the problem into smaller pieces that fit the AI's capabilities
 - Step back and verify you haven't triggered Answer Injection or Tell Me a Lie anti-patterns
 
+## Related
+
+- <a rel="causes" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="related" href="/anti-patterns/answer-injection">Answer Injection</a>
+- <a rel="related" href="/anti-patterns/tell-me-a-lie">Tell Me A Lie</a>
+- <a rel="related" href="/obstacles/limited-context-window">Limited Context Window</a>
+- <a rel="solved_by" href="/patterns/happy-to-delete">Happy To Delete</a>
+

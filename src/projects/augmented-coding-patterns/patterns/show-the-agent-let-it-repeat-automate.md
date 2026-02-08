@@ -52,3 +52,7 @@ The documentation becomes a living knowledge base that captures effective patter
 - "migrated this MongoDB collection to a Postgres database"
 - "refactored this part of the system to hexagonal architecture"
 - "extracted this legacy component into a microservice"
+
+## Related
+
+- <a rel="uses" href="/patterns/extract-knowledge">Extract Knowledge</a>

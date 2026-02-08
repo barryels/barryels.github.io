@@ -31,3 +31,9 @@ Please `git reset --hard` and try again.
 ```
 
 The explicit `git reset --hard` instruction is important—without it, AI often tries to regenerate the original code from memory instead of properly reverting.
+
+## Related
+
+- <a rel="similar" href="/patterns/parallel-implementations">Parallel Implementations</a>
+- <a rel="similar" href="/patterns/playgrounds">Playgrounds</a>
+- <a rel="solves" href="/anti-patterns/sunk-cost">Sunk Cost</a>

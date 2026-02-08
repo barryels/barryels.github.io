@@ -28,11 +28,19 @@ Instead of asking clarifying questions, the AI started adding CSS to random divs
 
 ## Solution
 **Give AI Permission to Push Back**
-- Add to ground rules: “Ask questions when unclear, flag contradictions, point out mistakes”
-- Explicitly allow: “Tell me if my instructions don’t make sense”
+- Add to ground rules: "Ask questions when unclear, flag contradictions, point out mistakes"
+- Explicitly allow: "Tell me if my instructions don't make sense"
 
 **Make Mental Models Explicit**
-- Before changes: “Describe the structure you see”
-- During work: Ask “Does this make sense?” or “What questions do you have?”
+- Before changes: "Describe the structure you see"
+- During work: Ask "Does this make sense?" or "What questions do you have?"
 - Require a plan or outline before implementation
-- When stuck, check explicitly for misalignment and surface the AI’s view
+- When stuck, check explicitly for misalignment and surface the AI's view
+
+## Related
+
+- <a rel="caused_by" href="/obstacles/compliance-bias">Compliance Bias</a>
+- <a rel="caused_by" href="/obstacles/black-box-ai">Black Box AI</a>
+- <a rel="related" href="/obstacles/obedient-contractor">Obedient Contractor</a>
+- <a rel="solved_by" href="/patterns/active-partner">Active Partner</a>
+- <a rel="solved_by" href="/patterns/check-alignment">Check Alignment</a>

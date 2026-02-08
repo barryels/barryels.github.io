@@ -15,3 +15,9 @@ Everything you put in context competes for this limited space.
 - Everything loaded (code, docs, ground rules, conversation history) fights for the same limited space
 - Forces choices about what to keep in context and what to leave out
 
+## Related
+
+- <a rel="related" href="/anti-patterns/sunk-cost">Sunk Cost</a>
+- <a rel="solved_by" href="/patterns/chunking">Chunking</a>
+- <a rel="solved_by" href="/patterns/context-management">Context Management</a>
+

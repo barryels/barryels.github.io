@@ -34,3 +34,8 @@ Run several parallel implementations. One has great layout, another has clever r
 
 **Designer collaboration:**
 Designer creates mockup in Figma separately. Run parallel AI implementations. Combine designer's vision with AI's working implementations.
+
+## Related
+
+- <a rel="similar" href="/patterns/happy-to-delete">Happy To Delete</a>
+- <a rel="solves" href="/obstacles/non-determinism">Non-Determinism</a>

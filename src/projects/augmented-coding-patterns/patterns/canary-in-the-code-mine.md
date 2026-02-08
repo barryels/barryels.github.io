@@ -41,3 +41,8 @@ The AI's struggle is your canary - an early warning signal that code quality is 
 - AI insists the failures are "expected" or "will resolve themselves"
 - Contradicts itself about what's working
 - **Signal**: Code is too complex for AI to reason about correctly; likely needs refactoring
+
+## Related
+
+- <a rel="solves" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="solves" href="/obstacles/context-rot">Context Rot</a>

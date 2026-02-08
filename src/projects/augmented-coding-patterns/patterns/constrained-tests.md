@@ -31,3 +31,11 @@ Two implementations of this pattern optimize for different goals:
 **Approved Fixtures** uses domain-specific formats optimized for easy validation. Even non-experts can review and verify correctness at a glance.
 
 **Approved Logs** captures production logs and turns them into regression tests immediately. Optimizes for bug reproduction speed over readability.
+
+## Related
+
+- <a rel="used_by" href="/patterns/approved-fixtures">Approved Fixtures</a>
+- <a rel="used_by" href="/patterns/approved-logs">Approved Logs</a>
+- <a rel="solves" href="/anti-patterns/flying-blind">Flying Blind</a>
+- <a rel="solves" href="/obstacles/non-determinism">Non-Determinism</a>
+- <a rel="solves" href="/obstacles/keeping-up">Keeping Up</a>

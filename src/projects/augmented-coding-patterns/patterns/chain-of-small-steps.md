@@ -38,4 +38,11 @@ Hack4Good hackathon - needed version numbering for rapid releases (v1 → v51):
    - Test: make commit, verify version bumps automatically
    - Commit
 
-Result: fully automated version bumping. Each step was manageable for AI, verified before moving on. Complex goal achieved through chain of simple steps. 
+Result: fully automated version bumping. Each step was manageable for AI, verified before moving on. Complex goal achieved through chain of simple steps.
+
+## Related
+
+- <a rel="similar" href="/patterns/feedback-loop">Feedback Loop</a>
+- <a rel="similar" href="/patterns/offload-deterministic">Offload Deterministic</a>
+- <a rel="solves" href="/obstacles/degrades-under-complexity">Degrades Under Complexity</a>
+- <a rel="solves" href="/obstacles/limited-focus">Limited Focus</a>

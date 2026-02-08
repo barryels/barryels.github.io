@@ -21,3 +21,11 @@ Dedicated committer agent - only writes commit messages. Immediately caught nami
 Main development agent with identical ground rules and same model never caught these issues. Its attention was diluted across coding, debugging, architecture decisions The focused committer could dedicate all its attention to commit quality.
 
 Small, focused agents > large, scattered agents.
+
+## Related
+
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="used_by" href="/patterns/chunking">Chunking</a>
+- <a rel="solves" href="/anti-patterns/distracted-agent">Distracted Agent</a>
+- <a rel="solves" href="/obstacles/limited-focus">Limited Focus</a>
+- <a rel="solves" href="/obstacles/context-rot">Context Rot</a>

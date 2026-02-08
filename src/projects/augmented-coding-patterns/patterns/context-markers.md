@@ -46,3 +46,7 @@ STARTER_CHARACTER = 🔴 for red test, 🌱 for green, 🌀 when refactoring, al
  
 This way let them stack:
 "🍀 ✅" = base rules loaded + committer role active. Easy to see what context AI is operating under.
+
+## Related
+
+- <a rel="solves" href="/obstacles/black-box-ai">Black Box AI</a>

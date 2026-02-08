@@ -43,3 +43,8 @@ Mermaid → DrawIO conversion needed repeatedly. Gave AI examples, it wrote conv
 formatting. Now every update is quick and reliable.
 
 **Making tools makes you more capable.** AI helps you create the tools quickly. Code makes them reliable.
+
+## Related
+
+- <a rel="similar" href="/patterns/chain-of-small-steps">Chain Of Small Steps</a>
+- <a rel="solves" href="/obstacles/non-determinism">Non-Determinism</a>

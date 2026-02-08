@@ -12,3 +12,11 @@ Responses can vary in quality: sometimes worse, sometimes better.
 Unlike deterministic systems where same input always produces same output:
 - Results are not guaranteed to be repeatable.
 - Reliability is unpredictable — retries may diverge significantly.
+
+## Related
+
+- <a rel="solved_by" href="/patterns/knowledge-checkpoint">Knowledge Checkpoint</a>
+- <a rel="solved_by" href="/patterns/offload-deterministic">Offload Deterministic</a>
+- <a rel="solved_by" href="/patterns/parallel-implementations">Parallel Implementations</a>
+- <a rel="solved_by" href="/patterns/take-all-paths">Take All Paths</a>
+- <a rel="solved_by" href="/patterns/constrained-tests">Constrained Tests</a>

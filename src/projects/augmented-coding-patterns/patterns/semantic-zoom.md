@@ -34,3 +34,8 @@ Extremely powerful as one of the steps during refactoring:
 - ask a coding agent to explain your code in English
 - force to the right level of abstraction by zooming in or out and tuning the details out until English is extremely clear
 - then ask AI to align code with the English
+
+## Related
+
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/obstacles/excess-verbosity">Excess Verbosity</a>

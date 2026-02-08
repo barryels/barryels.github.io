@@ -29,3 +29,8 @@ fails. Reset in under a minute, try again - your planning is preserved. You can 
 starting from a known good state.
 
 Some models are over eager to start working and want to jump straight into implementation. You'll have to interrupt it and save it to a file first.
+
+## Related
+
+- <a rel="used_by" href="/patterns/context-management">Context Management</a>
+- <a rel="solves" href="/obstacles/non-determinism">Non-Determinism</a>
