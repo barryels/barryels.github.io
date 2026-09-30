@@ -1,34 +1,40 @@
 {
+  "schemaVersion": 2,
   "events": [
     {
       "id": "b1d3f6a2-2f18-4d7a-9c1b-8a5e0f2c1a11",
       "type": "ROLE_STARTED",
-      "timestamp": "2001-08-01T00:00:00Z",
+      "timestamp": "2001-08-01T00:00:00.000Z",
       "data": {
+        "roleId": "b1d3f6a2-2f18-4d7a-9c1b-8a5e0f2c1a11",
         "company": "Shareware Systems",
         "position": "Multimedia Developer",
         "startDate": "2001-08-01",
         "endDate": "2003-10-31",
         "location": "Johannesburg, South Africa",
-        "skills": ["ActionScript", "Flash Animation", "User Interface Design"],
+        "skills": [
+          "ActionScript",
+          "Flash Animation",
+          "User Interface Design"
+        ],
         "description": "Design and development of multimedia presentations and interactive e-learning projects."
       }
     },
     {
       "id": "f8c2a9d4-3a6b-4d72-8b2f-3e9a1b5c2d22",
       "type": "ROLE_ENDED",
-      "timestamp": "2003-10-31T23:59:59Z",
+      "timestamp": "2003-10-31T23:59:59.999Z",
       "data": {
-        "company": "Shareware Systems",
-        "position": "Multimedia Developer",
+        "roleId": "b1d3f6a2-2f18-4d7a-9c1b-8a5e0f2c1a11",
         "endDate": "2003-10-31"
       }
     },
     {
       "id": "9e4b1c3a-5f6d-4a88-9b7c-6f2d0e7a3b33",
       "type": "ROLE_STARTED",
-      "timestamp": "2004-07-01T00:00:00Z",
+      "timestamp": "2004-07-01T00:00:00.000Z",
       "data": {
+        "roleId": "9e4b1c3a-5f6d-4a88-9b7c-6f2d0e7a3b33",
         "company": "Commonwealth Academy",
         "position": "IT Tutor & Network Engineer",
         "startDate": "2004-07-01",
@@ -47,114 +53,128 @@
     {
       "id": "2a7c5d8f-1b9e-4c66-948a-1d3f0b6e4c44",
       "type": "ROLE_ENDED",
-      "timestamp": "2006-11-30T23:59:59Z",
+      "timestamp": "2006-11-30T23:59:59.999Z",
       "data": {
-        "company": "Commonwealth Academy",
-        "position": "IT Tutor & Network Engineer",
+        "roleId": "9e4b1c3a-5f6d-4a88-9b7c-6f2d0e7a3b33",
         "endDate": "2006-11-30"
       }
     },
     {
       "id": "7d6f2b1a-4e8c-49f0-9f2b-5c8a7e0d5b55",
       "type": "ROLE_STARTED",
-      "timestamp": "2006-12-01T00:00:00Z",
+      "timestamp": "2006-12-01T00:00:00.000Z",
       "data": {
+        "roleId": "7d6f2b1a-4e8c-49f0-9f2b-5c8a7e0d5b55",
         "company": "iDiversity Studios",
         "position": "Intermediate Web Designer",
         "startDate": "2006-12-01",
         "endDate": "2007-04-30",
         "location": "Johannesburg, South Africa",
-        "skills": ["PHP", "ActionScript", "Content Management Systems (CMS)"],
+        "skills": [
+          "PHP",
+          "ActionScript",
+          "Content Management Systems (CMS)"
+        ],
         "description": "Designed websites and implemented designs with CMS integrations."
       }
     },
     {
       "id": "c3e9f0a7-6b2d-4f22-a8c1-2e4b9d7f6c66",
       "type": "ROLE_ENDED",
-      "timestamp": "2007-04-30T23:59:59Z",
+      "timestamp": "2007-04-30T23:59:59.999Z",
       "data": {
-        "company": "iDiversity Studios",
-        "position": "Intermediate Web Designer",
+        "roleId": "7d6f2b1a-4e8c-49f0-9f2b-5c8a7e0d5b55",
         "endDate": "2007-04-30"
       }
     },
     {
       "id": "a1b2c3d4-e5f6-4789-9abc-0d1e2f3a4b77",
       "type": "ROLE_STARTED",
-      "timestamp": "2007-05-01T00:00:00Z",
+      "timestamp": "2007-05-01T00:00:00.000Z",
       "data": {
+        "roleId": "a1b2c3d4-e5f6-4789-9abc-0d1e2f3a4b77",
         "company": "Aqua Online",
         "position": "Flash Developer",
         "startDate": "2007-05-01",
         "endDate": "2010-07-31",
         "location": "Johannesburg, South Africa",
-        "skills": ["Touch Screens", "ActionScript", "User Experience (UX)"],
+        "skills": [
+          "Touch Screens",
+          "ActionScript",
+          "User Experience (UX)"
+        ],
         "description": "Architected and deployed interactive Flash-based web and touchscreen interfaces."
       }
     },
     {
       "id": "d4c3b2a1-9f8e-4765-8b3a-7c6d5e4f8a88",
       "type": "ROLE_ENDED",
-      "timestamp": "2010-07-31T23:59:59Z",
+      "timestamp": "2010-07-31T23:59:59.999Z",
       "data": {
-        "company": "Aqua Online",
-        "position": "Flash Developer",
+        "roleId": "a1b2c3d4-e5f6-4789-9abc-0d1e2f3a4b77",
         "endDate": "2010-07-31"
       }
     },
     {
       "id": "e5f4a3b2-6c1d-4e9f-8b7a-5c3d2e1f9a99",
       "type": "ROLE_STARTED",
-      "timestamp": "2010-08-01T00:00:00Z",
+      "timestamp": "2010-08-01T00:00:00.000Z",
       "data": {
+        "roleId": "e5f4a3b2-6c1d-4e9f-8b7a-5c3d2e1f9a99",
         "company": "Quirk",
         "position": "Flash Developer",
         "startDate": "2010-08-01",
         "endDate": "2011-12-31",
         "location": "Johannesburg, South Africa",
-        "skills": ["ActionScript", "Web Development", "Flash Animation"],
+        "skills": [
+          "ActionScript",
+          "Web Development",
+          "Flash Animation"
+        ],
         "description": "Developed Flash-based interactive solutions and animations."
-      }
-    },
-    {
-      "id": "f1e2d3c4-b5a6-4f77-8a9b-2c1d0e3f6b00",
-      "type": "ROLE_ENDED",
-      "timestamp": "2011-12-31T23:59:59Z",
-      "data": {
-        "company": "Quirk",
-        "position": "Flash Developer",
-        "endDate": "2011-12-31"
       }
     },
     {
       "id": "0a1b2c3d-4e5f-6789-9abc-1d2e3f4a5b11",
       "type": "ROLE_STARTED",
-      "timestamp": "2011-01-01T00:00:00Z",
+      "timestamp": "2011-01-01T00:00:00.000Z",
       "data": {
+        "roleId": "0a1b2c3d-4e5f-6789-9abc-1d2e3f4a5b11",
         "company": "Quirk",
         "position": "Senior Software Developer",
         "startDate": "2011-01-01",
         "endDate": "2012-12-31",
         "location": "Johannesburg, South Africa",
-        "skills": ["Web Development"],
+        "skills": [
+          "Web Development"
+        ],
         "description": "Senior developer working on responsive websites, custom CMSs and integrations."
+      }
+    },
+    {
+      "id": "f1e2d3c4-b5a6-4f77-8a9b-2c1d0e3f6b00",
+      "type": "ROLE_ENDED",
+      "timestamp": "2011-12-31T23:59:59.999Z",
+      "data": {
+        "roleId": "e5f4a3b2-6c1d-4e9f-8b7a-5c3d2e1f9a99",
+        "endDate": "2011-12-31"
       }
     },
     {
       "id": "1b2c3d4e-5f6a-4789-8b9c-3d2e1f0a6b22",
       "type": "ROLE_ENDED",
-      "timestamp": "2012-12-31T23:59:59Z",
+      "timestamp": "2012-12-31T23:59:59.999Z",
       "data": {
-        "company": "Quirk",
-        "position": "Senior Software Developer",
+        "roleId": "0a1b2c3d-4e5f-6789-9abc-1d2e3f4a5b11",
         "endDate": "2012-12-31"
       }
     },
     {
       "id": "2c3d4e5f-6a7b-4890-9c1d-4e3f2a1b7c33",
       "type": "ROLE_STARTED",
-      "timestamp": "2013-01-01T00:00:00Z",
+      "timestamp": "2013-01-01T00:00:00.000Z",
       "data": {
+        "roleId": "2c3d4e5f-6a7b-4890-9c1d-4e3f2a1b7c33",
         "company": "Quirk",
         "position": "Head of Development",
         "startDate": "2013-01-01",
@@ -172,42 +192,46 @@
     {
       "id": "3d4e5f6a-7b8c-4901-8d2e-5f4a3b2c8d44",
       "type": "ROLE_ENDED",
-      "timestamp": "2014-01-31T23:59:59Z",
+      "timestamp": "2014-01-31T23:59:59.999Z",
       "data": {
-        "company": "Quirk",
-        "position": "Head of Development",
+        "roleId": "2c3d4e5f-6a7b-4890-9c1d-4e3f2a1b7c33",
         "endDate": "2014-01-31"
       }
     },
     {
       "id": "4e5f6a7b-8c9d-4012-9e3f-6a5b4c3d9e55",
       "type": "ROLE_STARTED",
-      "timestamp": "2014-02-01T00:00:00Z",
+      "timestamp": "2014-02-01T00:00:00.000Z",
       "data": {
+        "roleId": "4e5f6a7b-8c9d-4012-9e3f-6a5b4c3d9e55",
         "company": "Freelance",
         "position": "Freelance Creative Developer and UI Designer",
         "startDate": "2014-02-01",
         "endDate": "2014-05-31",
         "location": "Johannesburg, South Africa",
-        "skills": ["JavaScript", "Web Development", "Groovy"],
+        "skills": [
+          "JavaScript",
+          "Web Development",
+          "Groovy"
+        ],
         "description": "Architected, developed and deployed interactive websites focused on UX and maintainable back-ends."
       }
     },
     {
       "id": "5f6a7b8c-9d0e-4123-0f4a-7b6c5d4e0f66",
       "type": "ROLE_ENDED",
-      "timestamp": "2014-05-31T23:59:59Z",
+      "timestamp": "2014-05-31T23:59:59.999Z",
       "data": {
-        "company": "Freelance",
-        "position": "Freelance Creative Developer and UI Designer",
+        "roleId": "4e5f6a7b-8c9d-4012-9e3f-6a5b4c3d9e55",
         "endDate": "2014-05-31"
       }
     },
     {
       "id": "6a7b8c9d-0e1f-4234-1a5b-8c7d6e5f1a77",
       "type": "ROLE_STARTED",
-      "timestamp": "2014-06-01T00:00:00Z",
+      "timestamp": "2014-06-01T00:00:00.000Z",
       "data": {
+        "roleId": "6a7b8c9d-0e1f-4234-1a5b-8c7d6e5f1a77",
         "company": "BBD",
         "position": "Software Developer",
         "startDate": "2014-06-01",
@@ -225,18 +249,18 @@
     {
       "id": "7b8c9d0e-1f2a-4345-2b6c-9d8e7f6a2b88",
       "type": "ROLE_ENDED",
-      "timestamp": "2015-07-31T23:59:59Z",
+      "timestamp": "2015-07-31T23:59:59.999Z",
       "data": {
-        "company": "BBD",
-        "position": "Software Developer",
+        "roleId": "6a7b8c9d-0e1f-4234-1a5b-8c7d6e5f1a77",
         "endDate": "2015-07-31"
       }
     },
     {
       "id": "8c9d0e1f-2a3b-4456-3c7d-0e9f8a7b3c99",
       "type": "ROLE_STARTED",
-      "timestamp": "2015-08-01T00:00:00Z",
+      "timestamp": "2015-08-01T00:00:00.000Z",
       "data": {
+        "roleId": "8c9d0e1f-2a3b-4456-3c7d-0e9f8a7b3c99",
         "company": "Fogg Experiential Design",
         "position": "Senior Developer",
         "startDate": "2015-08-01",
@@ -252,20 +276,83 @@
       }
     },
     {
+      "id": "07aa3bc7-23b6-4335-8ef1-6958dc63ae9e",
+      "type": "PROJECT_STARTED",
+      "timestamp": "2015-08-01T00:00:00.000Z",
+      "data": {
+        "projectId": "07aa3bc7-23b6-4335-8ef1-6958dc63ae9e",
+        "title": "Crimson Hexagon analytics dashboard",
+        "startDate": "2015-08-01",
+        "roleId": "8c9d0e1f-2a3b-4456-3c7d-0e9f8a7b3c99",
+        "summary": "Dynamic dashboard pulling data from Crimson Hexagon and Google spreadsheets."
+      }
+    },
+    {
+      "id": "a9f751b3-aa0b-49e9-b091-ed46c4d5017e",
+      "type": "PROJECT_STARTED",
+      "timestamp": "2015-09-01T00:00:00.000Z",
+      "data": {
+        "projectId": "a9f751b3-aa0b-49e9-b091-ed46c4d5017e",
+        "title": "Cape Town.travel WordPress theme",
+        "startDate": "2015-09-01",
+        "roleId": "8c9d0e1f-2a3b-4456-3c7d-0e9f8a7b3c99",
+        "summary": "Bespoke WordPress theme with custom post types, Timber templates, and external blog data source."
+      }
+    },
+    {
+      "id": "8989b832-7760-458f-97b6-fe7108e2667e",
+      "type": "PROJECT_STARTED",
+      "timestamp": "2015-10-01T00:00:00.000Z",
+      "data": {
+        "projectId": "8989b832-7760-458f-97b6-fe7108e2667e",
+        "title": "Household energy consumption calculator",
+        "startDate": "2015-10-01",
+        "roleId": "8c9d0e1f-2a3b-4456-3c7d-0e9f8a7b3c99",
+        "summary": "PHP back-end and REST API with MithrilJS front-end."
+      }
+    },
+    {
+      "id": "a0586aca-6e00-4ff6-ba5c-1dea7c532bef",
+      "type": "PROJECT_COMPLETED",
+      "timestamp": "2016-03-31T23:59:59.999Z",
+      "data": {
+        "projectId": "07aa3bc7-23b6-4335-8ef1-6958dc63ae9e",
+        "completedDate": "2016-03-31"
+      }
+    },
+    {
+      "id": "44e016d6-80a4-4282-8087-3e2f6885bd68",
+      "type": "PROJECT_COMPLETED",
+      "timestamp": "2016-05-31T23:59:59.999Z",
+      "data": {
+        "projectId": "a9f751b3-aa0b-49e9-b091-ed46c4d5017e",
+        "completedDate": "2016-05-31"
+      }
+    },
+    {
+      "id": "fe873f18-4489-45b0-afd8-28a01b4000e3",
+      "type": "PROJECT_COMPLETED",
+      "timestamp": "2016-06-30T23:59:59.999Z",
+      "data": {
+        "projectId": "8989b832-7760-458f-97b6-fe7108e2667e",
+        "completedDate": "2016-06-30"
+      }
+    },
+    {
       "id": "9d0e1f2a-3b4c-4567-4d8e-1f0a9b8c4d00",
       "type": "ROLE_ENDED",
-      "timestamp": "2016-06-30T23:59:59Z",
+      "timestamp": "2016-06-30T23:59:59.999Z",
       "data": {
-        "company": "Fogg Experiential Design",
-        "position": "Senior Developer",
+        "roleId": "8c9d0e1f-2a3b-4456-3c7d-0e9f8a7b3c99",
         "endDate": "2016-06-30"
       }
     },
     {
       "id": "0e1f2a3b-4c5d-4678-5e9f-2a1b0c9d5e11",
       "type": "ROLE_STARTED",
-      "timestamp": "2016-07-01T00:00:00Z",
+      "timestamp": "2016-07-01T00:00:00.000Z",
       "data": {
+        "roleId": "0e1f2a3b-4c5d-4678-5e9f-2a1b0c9d5e11",
         "company": "Digital Path",
         "position": "Front-end Developer and Team Lead",
         "startDate": "2016-07-01",
@@ -281,28 +368,51 @@
       }
     },
     {
+      "id": "c1b890f9-dd36-47ed-bdea-848ecf71a9dc",
+      "type": "PROJECT_STARTED",
+      "timestamp": "2016-07-01T00:00:00.000Z",
+      "data": {
+        "projectId": "c1b890f9-dd36-47ed-bdea-848ecf71a9dc",
+        "title": "White-label mobile application generator",
+        "startDate": "2016-07-01",
+        "roleId": "0e1f2a3b-4c5d-4678-5e9f-2a1b0c9d5e11",
+        "summary": "White-label solution to dynamically generate 40+ mobile applications for insurance companies."
+      }
+    },
+    {
       "id": "d4518113-713a-4cc0-9a9b-87e159e5055b",
       "type": "TASK_COMPLETED",
-      "timestamp": "2017-09-30T23:59:59Z",
+      "timestamp": "2017-09-30T23:59:59.000Z",
       "data": {
-        "task_id": "8d1ff3b8-b462-4630-996b-36734c4b1a9e"
+        "completedDate": "2017-09-30",
+        "roleId": "0e1f2a3b-4c5d-4678-5e9f-2a1b0c9d5e11",
+        "taskId": "8d1ff3b8-b462-4630-996b-36734c4b1a9e"
+      }
+    },
+    {
+      "id": "eb7e0f1f-6ac7-42ea-864c-89b23eeeebca",
+      "type": "PROJECT_COMPLETED",
+      "timestamp": "2017-09-30T23:59:59.999Z",
+      "data": {
+        "projectId": "c1b890f9-dd36-47ed-bdea-848ecf71a9dc",
+        "completedDate": "2017-09-30"
       }
     },
     {
       "id": "1f2a3b4c-5d6e-4789-6f0a-3b2c1d0e6f22",
       "type": "ROLE_ENDED",
-      "timestamp": "2017-09-30T23:59:59Z",
+      "timestamp": "2017-09-30T23:59:59.999Z",
       "data": {
-        "company": "Digital Path",
-        "position": "Front-end Developer and Team Lead",
+        "roleId": "0e1f2a3b-4c5d-4678-5e9f-2a1b0c9d5e11",
         "endDate": "2017-09-30"
       }
     },
     {
-      "id": "2a3b4c5d-6e7f-4890-7f1b-4c3d2e1f7g33",
+      "id": "a3c7e901-4f2b-4d18-9e6a-1b2c3d4e5f61",
       "type": "ROLE_STARTED",
-      "timestamp": "2017-10-01T00:00:00Z",
+      "timestamp": "2017-10-01T00:00:00.000Z",
       "data": {
+        "roleId": "a3c7e901-4f2b-4d18-9e6a-1b2c3d4e5f61",
         "company": "Qualica Technologies",
         "position": "Web Developer",
         "startDate": "2017-10-01",
@@ -318,44 +428,70 @@
       }
     },
     {
-      "id": "3b4c5d6e-7f80-4911-8g2c-5d4e3f2h8i44",
+      "id": "a3c7e901-4f2b-4d18-9e6a-1b2c3d4e5f62",
       "type": "ROLE_ENDED",
-      "timestamp": "2018-05-31T23:59:59Z",
+      "timestamp": "2018-05-31T23:59:59.999Z",
       "data": {
-        "company": "Qualica Technologies",
-        "position": "Web Developer",
+        "roleId": "a3c7e901-4f2b-4d18-9e6a-1b2c3d4e5f61",
         "endDate": "2018-05-31"
       }
     },
     {
-      "id": "4c5d6e7f-8091-4a22-9h3d-6e5f4g3i9j55",
+      "id": "b4d8f012-5a3c-4e29-0f7b-2c3d4e5f6072",
       "type": "ROLE_STARTED",
-      "timestamp": "2018-06-01T00:00:00Z",
+      "timestamp": "2018-06-01T00:00:00.000Z",
       "data": {
+        "roleId": "b4d8f012-5a3c-4e29-0f7b-2c3d4e5f6072",
         "company": "Platform45",
         "position": "Software Engineer",
         "startDate": "2018-06-01",
         "endDate": "2021-07-31",
         "location": "Johannesburg, South Africa",
-        "skills": ["Ruby on Rails", "Team Leadership", "CSS", "JavaScript"],
+        "skills": [
+          "Ruby on Rails",
+          "Team Leadership",
+          "CSS",
+          "JavaScript"
+        ],
         "description": "Updated a large Ruby on Rails project for an event marketing client."
       }
     },
     {
-      "id": "5d6e7f80-9123-4b33-0i4e-7f6g5h4j0k66",
-      "type": "ROLE_ENDED",
-      "timestamp": "2021-07-31T23:59:59Z",
+      "id": "3c7f2e13-0285-4256-9c91-47f7cc8b27ec",
+      "type": "PROJECT_STARTED",
+      "timestamp": "2018-06-01T00:00:00.000Z",
       "data": {
-        "company": "Platform45",
-        "position": "Software Engineer",
+        "projectId": "3c7f2e13-0285-4256-9c91-47f7cc8b27ec",
+        "title": "Event marketing client platform (Ruby on Rails)",
+        "startDate": "2018-06-01",
+        "roleId": "b4d8f012-5a3c-4e29-0f7b-2c3d4e5f6072",
+        "summary": "Large Ruby on Rails codebase update for an event marketing client."
+      }
+    },
+    {
+      "id": "c8e76f03-d13b-4237-b4f9-420a859fc3de",
+      "type": "PROJECT_COMPLETED",
+      "timestamp": "2021-07-31T23:59:59.999Z",
+      "data": {
+        "projectId": "3c7f2e13-0285-4256-9c91-47f7cc8b27ec",
+        "completedDate": "2021-07-31"
+      }
+    },
+    {
+      "id": "b4d8f012-5a3c-4e29-0f7b-2c3d4e5f6073",
+      "type": "ROLE_ENDED",
+      "timestamp": "2021-07-31T23:59:59.999Z",
+      "data": {
+        "roleId": "b4d8f012-5a3c-4e29-0f7b-2c3d4e5f6072",
         "endDate": "2021-07-31"
       }
     },
     {
-      "id": "6e7f8091-2345-4c44-1j5f-8g7h6i5k1l77",
+      "id": "c5e90123-6b4d-4f3a-1a8c-3d4e5f607184",
       "type": "ROLE_STARTED",
-      "timestamp": "2021-08-01T00:00:00Z",
+      "timestamp": "2021-08-01T00:00:00.000Z",
       "data": {
+        "roleId": "c5e90123-6b4d-4f3a-1a8c-3d4e5f607184",
         "company": "Platform45",
         "position": "Technical Architect",
         "startDate": "2021-08-01",
@@ -373,20 +509,41 @@
       }
     },
     {
-      "id": "7f809123-4567-4d55-2k6g-9h8i7j6l2m88",
-      "type": "ROLE_ENDED",
-      "timestamp": "2024-05-31T23:59:59Z",
+      "id": "50f811f8-b89e-4265-ba94-d477bc79c7df",
+      "type": "PROJECT_STARTED",
+      "timestamp": "2021-08-01T00:00:00.000Z",
       "data": {
-        "company": "Platform45",
-        "position": "Technical Architect",
+        "projectId": "50f811f8-b89e-4265-ba94-d477bc79c7df",
+        "title": "Healthcare web application",
+        "startDate": "2021-08-01",
+        "roleId": "c5e90123-6b4d-4f3a-1a8c-3d4e5f607184",
+        "summary": "Greenfield SPA architecture, mentoring, pair programming, architecture decision log, and automated Gherkin testing."
+      }
+    },
+    {
+      "id": "624726de-aa33-4228-adb1-23314ec033ea",
+      "type": "PROJECT_COMPLETED",
+      "timestamp": "2024-05-31T23:59:59.999Z",
+      "data": {
+        "projectId": "50f811f8-b89e-4265-ba94-d477bc79c7df",
+        "completedDate": "2024-05-31"
+      }
+    },
+    {
+      "id": "c5e90123-6b4d-4f3a-1a8c-3d4e5f607185",
+      "type": "ROLE_ENDED",
+      "timestamp": "2024-05-31T23:59:59.999Z",
+      "data": {
+        "roleId": "c5e90123-6b4d-4f3a-1a8c-3d4e5f607184",
         "endDate": "2024-05-31"
       }
     },
     {
-      "id": "8f901234-5678-4e66-3l7h-0i9j8k7m3n99",
+      "id": "d6fa1234-7c5e-405b-2b9d-4e5f60718294",
       "type": "ROLE_STARTED",
-      "timestamp": "2024-06-01T00:00:00Z",
+      "timestamp": "2024-06-01T00:00:00.000Z",
       "data": {
+        "roleId": "d6fa1234-7c5e-405b-2b9d-4e5f60718294",
         "company": "MWI Animal Health United Kingdom",
         "position": "Senior Software Engineer",
         "startDate": "2024-06-01",
@@ -399,6 +556,18 @@
           "Web Application Development"
         ],
         "description": "Senior Software Engineer working on micro front-end web applications."
+      }
+    },
+    {
+      "id": "be5d0a03-9e9a-4390-bdbc-09cbd9a696f4",
+      "type": "PROJECT_STARTED",
+      "timestamp": "2024-06-01T00:00:00.000Z",
+      "data": {
+        "projectId": "be5d0a03-9e9a-4390-bdbc-09cbd9a696f4",
+        "title": "Micro front-end web applications",
+        "startDate": "2024-06-01",
+        "roleId": "d6fa1234-7c5e-405b-2b9d-4e5f60718294",
+        "summary": "Senior engineer on micro front-end web applications."
       }
     }
   ]
