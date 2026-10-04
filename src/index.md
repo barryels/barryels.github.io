@@ -117,7 +117,7 @@ description: "I am passionate about building better experiences for end users, a
     id="contact"
     class="stack stack--spacing-2x panel panel--contact"
   >
-    <p>You can find me here:</p>
+    <p>You can find me here, or read my <a href="/cv/">CV</a>:</p>
     <ul class="contact-list">
       <li class="contact-list__item">
         <a

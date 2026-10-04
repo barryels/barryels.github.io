@@ -1,0 +1,86 @@
+<article class="cv">
+  <header class="cv__header panel stack stack--spacing-2x">
+    <p class="cv__kicker">Curriculum Vitae</p>
+    <h1 class="h3">{{ cv.name }}</h1>
+    <p class="cv__headline">{{ cv.headline }}</p>
+    <p class="cv__meta">
+      <span>{{ cv.location }}</span>
+      <span>{{ cv.startedLabel }}</span>
+    </p>
+    <ul class="cv__links u-unstyled-list">
+      {%- for link in cv.links %}
+        <li>
+          {%- if link.external %}
+            <a href="{{ link.href }}" rel="noreferrer" target="_blank">{{ link.label }}</a>
+          {%- else %}
+            <a href="{{ link.href }}">{{ link.label }}</a>
+          {%- endif %}
+        </li>
+      {%- endfor %}
+    </ul>
+    <p>{{ cv.summary }}</p>
+  </header>
+
+  <aside class="cv__sidebar stack stack--spacing-2x">
+    <section class="panel stack stack--spacing-2x">
+      <h2 class="h5">Skills</h2>
+      <ul class="cv__skills u-unstyled-list">
+        {%- for skill in cv.skills %}
+          <li>
+            <span class="tag tag--inline">{{ skill.name }}</span>
+          </li>
+        {%- endfor %}
+      </ul>
+    </section>
+  </aside>
+
+  <div class="cv__experience stack stack--spacing-2x">
+    <h2 class="h4">Experience</h2>
+    {%- for company in cv.companies %}
+      <section class="cv-company panel stack stack--spacing-2x">
+        <header class="cv-company__header">
+          <h3 class="h5">{{ company.name }}</h3>
+          <p class="cv-company__meta">
+            <time>{{ company.dateLabel }}</time>
+            <span>{{ company.location }}</span>
+          </p>
+        </header>
+
+        {%- for role in company.roles %}
+          <article class="cv-role stack">
+            <h4 class="cv-role__title">{{ role.position }}</h4>
+            <p class="cv-role__dates">
+              <time>{{ role.dateLabel }}</time>
+            </p>
+            {%- if role.description %}
+              <p>{{ role.description }}</p>
+            {%- endif %}
+
+            {%- if role.projects.length %}
+              <ul class="cv-projects">
+                {%- for project in role.projects %}
+                  <li>
+                    <strong>{{ project.title }}</strong>
+                    {%- if project.summary %}
+                      <span> — {{ project.summary }}</span>
+                    {%- endif %}
+                  </li>
+                {%- endfor %}
+              </ul>
+            {%- endif %}
+
+            {%- if role.skills.length %}
+              <ul class="cv__skills cv__skills--role u-unstyled-list">
+                {%- for skill in role.skills %}
+                  <li>
+                    <span class="tag tag--inline">{{ skill }}</span>
+                  </li>
+                {%- endfor %}
+              </ul>
+            {%- endif %}
+          </article>
+        {%- endfor %}
+      </section>
+    {%- endfor %}
+  </div>
+</article>

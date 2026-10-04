@@ -530,3 +530,140 @@ body.hide-main-navigation-menu .main-navigation__menu {
   overflow-x: auto;
   white-space: pre-wrap;
 }
+
+.cv {
+  display: grid;
+  gap: var(--spacing-unit-4x);
+}
+
+.cv__kicker {
+  color: var(--legal-light-foreground);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.cv__headline {
+  font-weight: 800;
+}
+
+.cv__meta,
+.cv-company__meta,
+.cv-role__dates {
+  color: var(--legal-light-foreground);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit) var(--spacing-unit-2x);
+  font-size: 1.4rem;
+}
+
+.cv__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit-2x);
+}
+
+.cv__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit);
+}
+
+.cv__skills .tag {
+  white-space: nowrap;
+}
+
+.cv-company__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cv-role + .cv-role {
+  border-top: 1px dotted rgba(0, 0, 0, 0.15);
+  padding-top: var(--spacing-unit-2x);
+}
+
+.cv-role__title {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.cv-projects {
+  padding-left: 1.6rem;
+}
+
+.cv-projects li + li {
+  margin-top: 0.4rem;
+}
+
+@media (min-width: 800px) {
+  .cv {
+    align-items: start;
+    grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
+  }
+
+  .cv__header {
+    grid-column: 1 / -1;
+  }
+
+  .cv-company__header {
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-unit-2x);
+  }
+
+  .cv-company__meta {
+    flex-direction: column;
+    gap: 0.2rem;
+    text-align: right;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .cv__kicker,
+  .cv__meta,
+  .cv-company__meta,
+  .cv-role__dates {
+    color: var(--legal-dark-foreground);
+  }
+
+  .cv-role + .cv-role {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media print {
+  html {
+    background: #fff;
+    font-size: 50%;
+  }
+
+  body {
+    color: #111;
+  }
+
+  .site-main {
+    animation: none;
+    padding: 0;
+  }
+
+  .site-footer {
+    display: none;
+  }
+
+  .cv,
+  .cv__header,
+  .cv__sidebar .panel,
+  .cv-company {
+    background: #fff;
+    border-color: #ccc;
+    color: #111;
+  }
+
+  .cv-company,
+  .cv-role {
+    break-inside: avoid;
+  }
+}
