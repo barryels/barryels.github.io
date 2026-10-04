@@ -1,0 +1,12 @@
+{%- set events = events | default(career.events) -%}
+<ol class="career-events">
+  {%- for event in events %}
+    <li class="career-events__item">
+      <p class="career-events__meta">
+        <span class="tag tag--inline">{{ event.type }}</span>
+        <time datetime="{{ event.timestamp }}">{{ event.timestamp }}</time>
+      </p>
+      <pre class="career-events__data">{{ event | json }}</pre>
+    </li>
+  {%- endfor %}
+</ol>

@@ -51,6 +51,8 @@ export default async function (eleventyConfig) {
     },
   );
 
+  eleventyConfig.addFilter("json", (value) => JSON.stringify(value, null, 2));
+
   eleventyConfig.addShortcode("currentYear", () => new Date().getFullYear());
 
   return config;

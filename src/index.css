@@ -482,3 +482,51 @@ body.hide-main-navigation-menu .main-navigation__menu {
     color: var(--legal-dark-foreground);
   }
 }
+
+.career-events {
+  list-style: none;
+}
+
+.career-events__item {
+  background: var(--panel-light-background);
+  border: 1px dotted rgba(0, 0, 0, 0.15);
+  border-radius: var(--border-radius-unit-2x);
+  padding: var(--spacing-unit-2x);
+}
+
+.career-events__item + .career-events__item {
+  margin-top: var(--spacing-unit-2x);
+}
+
+@media (prefers-color-scheme: dark) {
+  .career-events__item {
+    background: var(--panel-dark-background);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.career-events__meta {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
+}
+
+.career-events__meta time {
+  color: var(--legal-light-foreground);
+  font-size: 1.4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .career-events__meta time {
+    color: var(--legal-dark-foreground);
+  }
+}
+
+.career-events__data {
+  font-size: 1.3rem;
+  line-height: 150%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
