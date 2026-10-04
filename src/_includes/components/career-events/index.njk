@@ -1,0 +1,37 @@
+{%- set events = events | default(career.events) -%}
+{%- set eventTypes = events | careerEventTypes -%}
+<div class="career-events-viewer stack stack--spacing-2x" data-career-events-viewer>
+  <form class="career-events-filter panel stack">
+    <fieldset>
+      <legend class="h5">Event types</legend>
+      <ul class="career-events-filter__options u-unstyled-list">
+        {%- for eventType in eventTypes %}
+          <li>
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="{{ eventType }}"
+                checked
+              />
+              <span>{{ eventType }}</span>
+            </label>
+          </li>
+        {%- endfor %}
+      </ul>
+    </fieldset>
+  </form>
+
+  <ol class="career-events">
+    {%- for event in events %}
+      <li class="career-events__item" data-event-type="{{ event.type }}">
+        <p class="career-events__meta">
+          <span class="tag tag--inline">{{ event.type }}</span>
+          <time datetime="{{ event.timestamp }}">{{ event.timestamp }}</time>
+        </p>
+        <pre class="career-events__data">{{ event | json }}</pre>
+      </li>
+    {%- endfor %}
+  </ol>
+</div>
+<script src="/components/career-events/index.js" defer></script>

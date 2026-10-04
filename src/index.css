@@ -202,6 +202,9 @@ h6,
   line-height: 1;
   padding: 0.2rem var(--spacing-unit);
 }
+.tag--inset-2x {
+  padding: var(--spacing-unit) var(--spacing-unit-2x);
+}
 .tag--domain-healthcare {
   background: var(--domain-healthcare);
 }
@@ -480,5 +483,231 @@ body.hide-main-navigation-menu .main-navigation__menu {
 @media (prefers-color-scheme: dark) {
   .site-footer .legal {
     color: var(--legal-dark-foreground);
+  }
+}
+
+.career-events-filter fieldset {
+  border: 0;
+}
+
+.career-events-filter legend {
+  margin-bottom: var(--spacing-unit);
+}
+
+.career-events-filter__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit) var(--spacing-unit-2x);
+}
+
+.career-events-filter label {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-unit);
+}
+
+.career-events {
+  list-style: none;
+}
+
+.career-events__item {
+  background: var(--panel-light-background);
+  border: 1px dotted rgba(0, 0, 0, 0.15);
+  border-radius: var(--border-radius-unit-2x);
+  padding: var(--spacing-unit-2x);
+}
+
+.career-events__item + .career-events__item {
+  margin-top: var(--spacing-unit-2x);
+}
+
+@media (prefers-color-scheme: dark) {
+  .career-events__item {
+    background: var(--panel-dark-background);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.career-events__meta {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
+}
+
+.career-events__meta time {
+  color: var(--legal-light-foreground);
+  font-size: 1.4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .career-events__meta time {
+    color: var(--legal-dark-foreground);
+  }
+}
+
+.career-events__data {
+  font-size: 1.3rem;
+  line-height: 150%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.career-events__item.is-collapsed .career-events__meta {
+  margin-bottom: 0;
+}
+
+.career-events__item.is-collapsed .career-events__data {
+  display: none;
+}
+
+.cv {
+  display: grid;
+  gap: var(--spacing-unit-4x);
+  min-width: 0;
+}
+
+.cv__sidebar,
+.cv__experience {
+  min-width: 0;
+}
+
+.cv__kicker {
+  color: var(--legal-light-foreground);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.cv__headline {
+  font-weight: 800;
+}
+
+.cv__meta,
+.cv-company__meta,
+.cv-role__dates {
+  color: var(--legal-light-foreground);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit) var(--spacing-unit-2x);
+  font-size: 1.4rem;
+}
+
+.cv__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit-2x);
+}
+
+.cv__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit);
+  min-width: 0;
+}
+
+.cv__skills li {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.cv__skills .tag {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.cv-company__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cv-role + .cv-role {
+  border-top: 1px dotted rgba(0, 0, 0, 0.15);
+  padding-top: var(--spacing-unit-2x);
+}
+
+.cv-role__title {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.cv-projects {
+  padding-left: 1.6rem;
+}
+
+.cv-projects li + li {
+  margin-top: 0.4rem;
+}
+
+@media (min-width: 800px) {
+  .cv {
+    align-items: start;
+    grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
+  }
+
+  .cv__header {
+    grid-column: 1 / -1;
+  }
+
+  .cv-company__header {
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-unit-2x);
+  }
+
+  .cv-company__meta {
+    flex-direction: column;
+    gap: 0.2rem;
+    text-align: right;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .cv__kicker,
+  .cv__meta,
+  .cv-company__meta,
+  .cv-role__dates {
+    color: var(--legal-dark-foreground);
+  }
+
+  .cv-role + .cv-role {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media print {
+  html {
+    background: #fff;
+    font-size: 50%;
+  }
+
+  body {
+    color: #111;
+  }
+
+  .site-main {
+    animation: none;
+    padding: 0;
+  }
+
+  .site-footer {
+    display: none;
+  }
+
+  .cv,
+  .cv__header,
+  .cv__sidebar .panel,
+  .cv-company {
+    background: #fff;
+    border-color: #ccc;
+    color: #111;
+  }
+
+  .cv-company,
+  .cv-role {
+    break-inside: avoid;
   }
 }

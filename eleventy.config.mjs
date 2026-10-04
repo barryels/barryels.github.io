@@ -51,6 +51,33 @@ export default async function (eleventyConfig) {
     },
   );
 
+  eleventyConfig.addFilter("json", (value) => JSON.stringify(value, null, 2));
+
+  eleventyConfig.addFilter("careerEventTypes", (events = []) => {
+    const order = [
+      "ROLE_STARTED",
+      "ROLE_ENDED",
+      "PROJECT_STARTED",
+      "PROJECT_COMPLETED",
+      "TASK_COMPLETED",
+    ];
+
+    return [...new Set(events.map((event) => event.type))].sort((a, b) => {
+      const aIndex = order.indexOf(a);
+      const bIndex = order.indexOf(b);
+      if (aIndex === -1 && bIndex === -1) {
+        return a.localeCompare(b);
+      }
+      if (aIndex === -1) {
+        return 1;
+      }
+      if (bIndex === -1) {
+        return -1;
+      }
+      return aIndex - bIndex;
+    });
+  });
+
   eleventyConfig.addShortcode("currentYear", () => new Date().getFullYear());
 
   return config;
