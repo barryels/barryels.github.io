@@ -202,6 +202,9 @@ h6,
   line-height: 1;
   padding: 0.2rem var(--spacing-unit);
 }
+.tag--inset-2x {
+  padding: var(--spacing-unit) var(--spacing-unit-2x);
+}
 .tag--domain-healthcare {
   background: var(--domain-healthcare);
 }
@@ -534,6 +537,12 @@ body.hide-main-navigation-menu .main-navigation__menu {
 .cv {
   display: grid;
   gap: var(--spacing-unit-4x);
+  min-width: 0;
+}
+
+.cv__sidebar,
+.cv__experience {
+  min-width: 0;
 }
 
 .cv__kicker {
@@ -567,10 +576,17 @@ body.hide-main-navigation-menu .main-navigation__menu {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-unit);
+  min-width: 0;
+}
+
+.cv__skills li {
+  max-width: 100%;
+  min-width: 0;
 }
 
 .cv__skills .tag {
-  white-space: nowrap;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .cv-company__header {
