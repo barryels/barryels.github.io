@@ -486,6 +486,26 @@ body.hide-main-navigation-menu .main-navigation__menu {
   }
 }
 
+.career-events-filter fieldset {
+  border: 0;
+}
+
+.career-events-filter legend {
+  margin-bottom: var(--spacing-unit);
+}
+
+.career-events-filter__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit) var(--spacing-unit-2x);
+}
+
+.career-events-filter label {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-unit);
+}
+
 .career-events {
   list-style: none;
 }
@@ -532,6 +552,14 @@ body.hide-main-navigation-menu .main-navigation__menu {
   line-height: 150%;
   overflow-x: auto;
   white-space: pre-wrap;
+}
+
+.career-events__item.is-collapsed .career-events__meta {
+  margin-bottom: 0;
+}
+
+.career-events__item.is-collapsed .career-events__data {
+  display: none;
 }
 
 .cv {
