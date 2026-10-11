@@ -5,6 +5,10 @@
   "description": "A simple portfolio site",
   "author": "Barry Els <barryels@gmail.com>",
   "private": true,
+  "engines": {
+    "npm": ">=11.0.0",
+    "node": ">=24.21.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://barryels@github.com/barryels/barryels.github.io.git"
