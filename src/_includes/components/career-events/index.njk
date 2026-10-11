@@ -1,37 +1,80 @@
 {%- set events = events | default(career.events) -%}
 {%- set eventTypes = events | careerEventTypes -%}
-<div class="career-events-viewer stack stack--spacing-2x" data-career-events-viewer>
-  <form class="career-events-filter panel stack">
-    <fieldset>
-      <legend class="h5">Event types</legend>
-      <ul class="career-events-filter__options u-unstyled-list">
-        {%- for eventType in eventTypes %}
-          <li>
-            <label>
-              <input
-                type="checkbox"
-                name="eventType"
-                value="{{ eventType }}"
-                checked
-              />
-              <span>{{ eventType }}</span>
-            </label>
-          </li>
-        {%- endfor %}
-      </ul>
-    </fieldset>
-  </form>
+<div class="career-dashboard stack stack--spacing-2x" data-career-dashboard>
+  <section class="career-dashboard__controls panel stack" aria-label="Chart controls">
+    <div>
+      <h2 class="h5">Time range</h2>
+      <p class="career-dashboard__hint">Choose a period to update every chart.</p>
+    </div>
+    <div class="career-dashboard__ranges" role="group" aria-label="Choose a time range">
+      <button type="button" data-range-years="1">1 year</button>
+      <button type="button" data-range-years="3">3 years</button>
+      <button type="button" data-range-years="5">5 years</button>
+      <button type="button" data-range-years="10">10 years</button>
+      <button type="button" data-range-years="all" aria-pressed="true">All time</button>
+    </div>
+    <form class="career-dashboard__custom-range" data-custom-range>
+      <label>From <input type="date" name="from" /></label>
+      <label>To <input type="date" name="to" /></label>
+      <button type="submit">Apply dates</button>
+    </form>
+    <p class="career-dashboard__status" data-update-status aria-live="polite">Loading career data…</p>
+  </section>
 
-  <ol class="career-events">
-    {%- for event in events %}
-      <li class="career-events__item" data-event-type="{{ event.type }}">
-        <p class="career-events__meta">
-          <span class="tag tag--inline">{{ event.type }}</span>
-          <time datetime="{{ event.timestamp }}">{{ event.timestamp }}</time>
-        </p>
-        <pre class="career-events__data">{{ event | json }}</pre>
-      </li>
-    {%- endfor %}
-  </ol>
+  <ul class="career-dashboard__stats u-unstyled-list" data-career-stats aria-label="Career summary"></ul>
+
+  <section class="career-dashboard__chart panel stack">
+    <div>
+      <h2 class="h5">Career activity</h2>
+      <p class="career-dashboard__hint">Events recorded over time, grouped by year or month.</p>
+    </div>
+    <div class="career-dashboard__chart-content" data-activity-chart></div>
+  </section>
+
+  <section class="career-dashboard__chart panel stack">
+    <div>
+      <h2 class="h5">Experience timeline</h2>
+      <p class="career-dashboard__hint">Roles overlapping the selected period.</p>
+    </div>
+    <div class="career-dashboard__chart-content career-dashboard__chart-content--scroll" data-experience-chart></div>
+  </section>
+
+  <section class="career-dashboard__chart panel stack">
+    <div>
+      <h2 class="h5">Skills in this period</h2>
+      <p class="career-dashboard__hint">Skills listed on roles overlapping the selected period.</p>
+    </div>
+    <div class="career-dashboard__chart-content" data-skills-chart></div>
+  </section>
+
+  <details class="career-dashboard__event-log panel stack">
+    <summary class="h5">Browse source events</summary>
+    <form class="career-events-filter stack">
+      <fieldset>
+        <legend>Event types</legend>
+        <ul class="career-events-filter__options u-unstyled-list">
+          {%- for eventType in eventTypes %}
+            <li>
+              <label>
+                <input type="checkbox" name="eventType" value="{{ eventType }}" checked />
+                <span>{{ eventType }}</span>
+              </label>
+            </li>
+          {%- endfor %}
+        </ul>
+      </fieldset>
+    </form>
+    <ol class="career-events" data-career-events>
+      {%- for event in events %}
+        <li class="career-events__item" data-event-type="{{ event.type }}">
+          <p class="career-events__meta">
+            <span class="tag tag--inline">{{ event.type }}</span>
+            <time datetime="{{ event.timestamp }}">{{ event.timestamp }}</time>
+          </p>
+          <pre class="career-events__data">{{ event | json }}</pre>
+        </li>
+      {%- endfor %}
+    </ol>
+  </details>
 </div>
 <script src="/components/career-events/index.js" defer></script>
