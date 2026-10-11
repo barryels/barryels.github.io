@@ -30,34 +30,43 @@ function parseDate(value) {
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
-function utcDateInput(date) {
-  return date.toISOString().slice(0, 10);
+function startOfMonth(date) {
+  return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), 1));
 }
 
-function getInitialRange(events) {
+function endOfToday() {
+  const end = new Date();
+  end.setUTCHours(23, 59, 59, 999);
+  return end;
+}
+
+function getDateBounds(events) {
   const eventDates = events
     .map((event) => new Date(event.timestamp))
     .filter((date) => !Number.isNaN(date.getTime()));
-  const firstDate = eventDates.length
+  const minimum = eventDates.length
     ? new Date(Math.min(...eventDates.map((date) => date.getTime())))
     : new Date();
-  const start = new Date(Date.UTC(firstDate.getUTCFullYear(), firstDate.getUTCMonth(), 1));
-  const end = new Date();
-  end.setUTCHours(23, 59, 59, 999);
-  return { start, end, preset: "all" };
+  const start = startOfMonth(minimum);
+  const currentMonth = startOfMonth(new Date());
+  const monthCount = Math.max(
+    0,
+    (currentMonth.getUTCFullYear() - start.getUTCFullYear()) * 12
+      + currentMonth.getUTCMonth() - start.getUTCMonth(),
+  );
+  return { start, monthCount };
 }
 
-function presetRange(years, events) {
-  const end = new Date();
-  end.setUTCHours(23, 59, 59, 999);
-  if (years === "all") {
-    return getInitialRange(events);
-  }
+function getInitialRange(events) {
+  return { start: getDateBounds(events).start, end: endOfToday(), preset: "all" };
+}
 
-  const start = new Date(end);
-  start.setUTCFullYear(start.getUTCFullYear() - Number(years));
-  start.setUTCHours(0, 0, 0, 0);
-  return { start, end, preset: String(years) };
+function formatMonth(date) {
+  return date.toLocaleDateString("en-GB", {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  });
 }
 
 function eventDate(event) {
@@ -392,10 +401,36 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
   const skillsChart = dashboard.querySelector("[data-skills-chart]");
   const eventList = dashboard.querySelector("[data-career-events]");
   const eventFilter = dashboard.querySelector(".career-events-filter");
-  const customRange = dashboard.querySelector("[data-custom-range]");
+  const dateRange = dashboard.querySelector("[data-date-range]");
+  const rangeLabel = dashboard.querySelector("[data-range-label]");
+  const rangeMinimum = dashboard.querySelector("[data-range-minimum]");
   let events = [];
   let range = null;
   let refreshInProgress = false;
+
+  function updateDateRangeControl() {
+    const bounds = getDateBounds(events);
+    const selectedOffset = Math.max(
+      0,
+      Math.min(
+        bounds.monthCount,
+        (range.start.getUTCFullYear() - bounds.start.getUTCFullYear()) * 12
+          + range.start.getUTCMonth() - bounds.start.getUTCMonth(),
+      ),
+    );
+    const selectedStart = new Date(Date.UTC(
+      bounds.start.getUTCFullYear(),
+      bounds.start.getUTCMonth() + selectedOffset,
+      1,
+    ));
+    dateRange.min = "0";
+    dateRange.max = String(bounds.monthCount);
+    dateRange.value = String(selectedOffset);
+    dateRange.disabled = bounds.monthCount === 0;
+    dateRange.setAttribute("aria-valuetext", formatMonth(selectedStart));
+    rangeLabel.textContent = `${formatMonth(selectedStart)} – today`;
+    rangeMinimum.textContent = formatMonth(bounds.start);
+  }
 
   function render() {
     const { roles, projects } = replayEvents(events);
@@ -416,32 +451,18 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
 
   function setRange(nextRange) {
     range = nextRange;
-    dashboard.querySelectorAll("[data-range-years]").forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.rangeYears === range.preset));
-    });
+    updateDateRangeControl();
     render();
   }
 
-  dashboard.querySelectorAll("[data-range-years]").forEach((button) => {
-    button.addEventListener("click", () => {
-      customRange.elements.from.value = "";
-      customRange.elements.to.value = "";
-      setRange(presetRange(button.dataset.rangeYears, events));
-    });
-  });
-
-  customRange.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const fromValue = customRange.elements.from.value;
-    const toValue = customRange.elements.to.value;
-    if (!fromValue || !toValue || fromValue > toValue) {
-      status.textContent = "Choose a valid start and end date.";
-      return;
-    }
-    const start = parseDate(fromValue);
-    const end = parseDate(toValue);
-    end.setUTCHours(23, 59, 59, 999);
-    setRange({ start, end, preset: "custom" });
+  dateRange.addEventListener("input", () => {
+    const bounds = getDateBounds(events);
+    const start = new Date(Date.UTC(
+      bounds.start.getUTCFullYear(),
+      bounds.start.getUTCMonth() + Number(dateRange.value),
+      1,
+    ));
+    setRange({ start, end: endOfToday(), preset: "slider" });
   });
 
   eventFilter.addEventListener("change", (event) => {
@@ -469,9 +490,10 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
       );
       if (!range) {
         range = getInitialRange(events);
-      } else if (range.preset !== "custom") {
-        range = presetRange(range.preset, events);
+      } else if (range.preset === "all") {
+        range = getInitialRange(events);
       }
+      updateDateRangeControl();
       render();
       status.textContent = `Updated ${new Date().toLocaleTimeString()} · ${events.length} source events · refreshes every minute`;
     } catch (error) {

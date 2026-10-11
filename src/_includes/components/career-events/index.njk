@@ -3,21 +3,19 @@
 <div class="career-dashboard stack stack--spacing-2x" data-career-dashboard>
   <section class="career-dashboard__controls panel stack" aria-label="Chart controls">
     <div>
-      <h2 class="h5">Time range</h2>
+      <h2 class="h5">Date range</h2>
       <p class="career-dashboard__hint">Choose a period to update every chart.</p>
     </div>
-    <div class="career-dashboard__ranges" role="group" aria-label="Choose a time range">
-      <button type="button" data-range-years="1">1 year</button>
-      <button type="button" data-range-years="3">3 years</button>
-      <button type="button" data-range-years="5">5 years</button>
-      <button type="button" data-range-years="10">10 years</button>
-      <button type="button" data-range-years="all" aria-pressed="true">All time</button>
+    <div class="career-dashboard__date-range">
+      <label class="career-dashboard__date-range-label">
+        Starting from <output data-range-label>All time</output>
+        <input type="range" min="0" max="0" value="0" step="1" data-date-range aria-label="Start date" />
+      </label>
+      <div class="career-dashboard__date-range-boundaries" aria-hidden="true">
+        <span data-range-minimum></span>
+        <span>Today</span>
+      </div>
     </div>
-    <form class="career-dashboard__custom-range" data-custom-range>
-      <label>From <input type="date" name="from" /></label>
-      <label>To <input type="date" name="to" /></label>
-      <button type="submit">Apply dates</button>
-    </form>
     <p class="career-dashboard__status" data-update-status aria-live="polite">Loading career data…</p>
   </section>
 

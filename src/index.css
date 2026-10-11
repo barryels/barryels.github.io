@@ -496,44 +496,35 @@ body.hide-main-navigation-menu .main-navigation__menu {
   gap: var(--spacing-unit-2x);
 }
 
-.career-dashboard__ranges,
-.career-dashboard__custom-range {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+.career-dashboard__date-range {
+  display: grid;
   gap: var(--spacing-unit);
+  max-width: 64rem;
 }
 
-.career-dashboard__ranges button,
-.career-dashboard__custom-range button {
-  background: transparent;
-  border: 1px solid var(--color-neutral-400);
-  border-radius: 2rem;
-  color: inherit;
+.career-dashboard__date-range-label {
+  display: grid;
+  gap: var(--spacing-unit);
+  grid-template-columns: 1fr auto;
+}
+
+.career-dashboard__date-range-label input {
+  accent-color: var(--color-neutral-900);
   cursor: pointer;
-  font: inherit;
-  padding: 0.6rem 1.2rem;
+  grid-column: 1 / -1;
+  margin: 0;
+  width: 100%;
 }
 
-.career-dashboard__ranges button[aria-pressed="true"] {
-  background: var(--color-neutral-900);
-  border-color: var(--color-neutral-900);
-  color: var(--color-neutral-0);
+.career-dashboard__date-range-label input:disabled {
+  cursor: default;
 }
 
-.career-dashboard__custom-range label {
-  align-items: center;
+.career-dashboard__date-range-boundaries {
+  color: var(--legal-light-foreground);
   display: flex;
-  gap: var(--spacing-unit);
-}
-
-.career-dashboard__custom-range input {
-  background: var(--panel-light-background);
-  border: 1px solid var(--color-neutral-400);
-  border-radius: var(--border-radius-unit);
-  color: inherit;
-  font: inherit;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  justify-content: space-between;
 }
 
 .career-dashboard__status {
@@ -696,14 +687,12 @@ body.hide-main-navigation-menu .main-navigation__menu {
     color: var(--legal-dark-foreground);
   }
 
-  .career-dashboard__ranges button[aria-pressed="true"] {
-    background: var(--color-neutral-200);
-    border-color: var(--color-neutral-200);
-    color: var(--color-neutral-900);
+  .career-dashboard__date-range-label input {
+    accent-color: var(--color-neutral-200);
   }
 
-  .career-dashboard__custom-range input {
-    background: var(--panel-dark-background);
+  .career-dashboard__date-range-boundaries {
+    color: var(--legal-dark-foreground);
   }
 
   .career-dashboard__stats > li {
