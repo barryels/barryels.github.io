@@ -30,11 +30,6 @@
 
 html {
   background: var(--html-light-background);
-  background: 0px 0px / 24px 24px
-    radial-gradient(
-      var(--color-neutral-300) 0.4px,
-      var(--html-light-background) 1px
-    );
   color: var(--html-light-foreground);
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -53,7 +48,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: var(--font-size-unit);
   margin: 0;
 }
 
@@ -88,62 +83,62 @@ h6,
 
 h1,
 .h1 {
-  font-size: 4rem;
+  font-size: var(--font-size-unit-5x);
 }
 @media (min-width: 600px) {
   h1,
   .h1 {
-    font-size: 6.4rem;
+    font-size: var(--font-size-unit-8x);
   }
 }
 
 h2,
 .h2 {
-  font-size: 3rem;
+  font-size: var(--font-size-unit-4x);
 }
 @media (min-width: 600px) {
   h2,
   .h2 {
-    font-size: 4rem;
+    font-size: var(--font-size-unit-5x);
   }
 }
 
 h3,
 .h3 {
-  font-size: 2.4rem;
+  font-size: var(--font-size-unit-3x);
 }
 @media (min-width: 600px) {
   h3,
   .h3 {
-    font-size: 3.2rem;
+    font-size: var(--font-size-unit-4x);
   }
 }
 
 h4,
 .h4 {
-  font-size: 2rem;
+  font-size: var(--font-size-unit-2x);
 }
 @media (min-width: 600px) {
   h4,
   .h4 {
-    font-size: 2.4rem;
+    font-size: var(--font-size-unit-3x);
   }
 }
 
 h5,
 .h5 {
-  font-size: 1.8rem;
+  font-size: var(--font-size-unit-2x);
 }
 @media (min-width: 600px) {
   h5,
   .h5 {
-    font-size: 2rem;
+    font-size: var(--font-size-unit-3x);
   }
 }
 
 h6,
 .h6 {
-  font-size: 1.6rem;
+  font-size: var(--font-size-unit);
 }
 
 .inset {
@@ -251,8 +246,8 @@ h6,
 
 .main-navigation {
   background: var(--panel-light-background);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 4.8rem;
+  border: 1px solid var(--panel-light-border-color);
+  border-radius: var(--spacing-unit-6x);
   display: inline-flex;
   gap: 0.4rem;
   margin: 0 auto;
@@ -301,18 +296,18 @@ h6,
 .main-navigation__menu-item a {
   background: var(--main-navigation-light-link-background);
   color: var(--main-navigation-light-link-foreground);
-  border-radius: 2.4rem;
+  border-radius: var(--border-radius-unit-4x);
   display: block;
-  padding: var(--spacing-unit) 1.2rem;
+  padding: var(--spacing-unit);
   text-decoration: none;
   transition: background 0.25s ease-out;
 }
 
 .main-navigation__menu-item--avatar a {
   border-radius: 100%;
-  height: 4rem;
+  height: var(--spacing-unit-5x);
   padding: 0;
-  width: 4rem;
+  width: var(--spacing-unit-5x);
 }
 
 .main-navigation__menu-item a:hover {
@@ -346,7 +341,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 .interests-list__item a {
   background: var(--interests-list-item-light-background);
   color: var(--interests-list-item-light-foreground);
-  border-radius: 2.4rem;
+  border-radius: var(--border-radius-unit-4x);
   display: inline-block;
   padding: var(--spacing-unit) var(--spacing-unit-2x);
   text-align: center;
@@ -394,7 +389,8 @@ body.hide-main-navigation-menu .main-navigation__menu {
   background: var(--panel-light-background);
   color: var(--panel-light-foreground);
   border-radius: var(--border-radius-unit-2x);
-  border: 1px dotted rgba(0, 0, 0, 0.15);
+  border: 1px dotted;
+  border-color: var(--panel-light-border-color);
   overflow: hidden;
   padding: var(--spacing-unit-4x);
 }
@@ -402,6 +398,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
   .panel {
     background: var(--panel-dark-background);
     color: var(--panel-dark-foreground);
+    border-color: var(--panel-dark-border-color);
   }
 }
 
@@ -445,7 +442,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 
 .contact-list {
   display: flex;
-  gap: 1.6rem;
+  gap: var(--spacing-unit-2x);
   list-style: none;
   justify-content: center;
 }
@@ -488,7 +485,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 
 .career-dashboard__hint {
   color: var(--legal-light-foreground);
-  font-size: 1.4rem;
+  font-size: var(--font-size-unit);
   margin-top: 0.4rem;
 }
 
@@ -523,13 +520,13 @@ body.hide-main-navigation-menu .main-navigation__menu {
 .career-dashboard__date-range-boundaries {
   color: var(--legal-light-foreground);
   display: flex;
-  font-size: 1.3rem;
+  font-size: var(--font-size-unit);
   justify-content: space-between;
 }
 
 .career-dashboard__status {
   color: var(--legal-light-foreground);
-  font-size: 1.3rem;
+  font-size: var(--font-size-unit);
 }
 
 .career-dashboard__stats {
@@ -550,13 +547,13 @@ body.hide-main-navigation-menu .main-navigation__menu {
 }
 
 .career-dashboard__stats strong {
-  font-size: 2.4rem;
+  font-size: var(--font-size-unit-3x);
   line-height: 1;
 }
 
 .career-dashboard__stats span {
   color: var(--legal-light-foreground);
-  font-size: 1.3rem;
+  font-size: var(--font-size-unit);
 }
 
 .career-dashboard__chart {
@@ -594,13 +591,13 @@ body.hide-main-navigation-menu .main-navigation__menu {
 .career-chart-axis {
   fill: var(--legal-light-foreground);
   font-family: inherit;
-  font-size: 11px;
+  font-size: var(--font-size-small);
 }
 
 .career-chart-role-label {
   fill: var(--html-light-foreground);
   font-family: inherit;
-  font-size: 12px;
+  font-size: var(--font-size-small);
 }
 
 .career-chart-bar {
@@ -621,7 +618,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 .career-chart-legend li {
   align-items: center;
   display: inline-flex;
-  font-size: 1.3rem;
+  font-size: var(--font-size-unit);
   gap: 0.6rem;
 }
 
@@ -645,7 +642,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 }
 
 .career-skills-chart__label {
-  font-size: 1.4rem;
+  font-size: var(--font-size-unit);
   overflow-wrap: anywhere;
 }
 
@@ -665,7 +662,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 }
 
 .career-skills-chart__count {
-  font-size: 1.3rem;
+  font-size: var(--font-size-unit);
   text-align: right;
 }
 
@@ -757,7 +754,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 
 .career-events__meta time {
   color: var(--legal-light-foreground);
-  font-size: 1.4rem;
+  font-size: var(--font-size-unit);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -767,7 +764,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
 }
 
 .career-events__data {
-  font-size: 1.3rem;
+  font-size: var(--font-size-unit);
   line-height: 150%;
   overflow-x: auto;
   white-space: pre-wrap;
@@ -796,7 +793,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
   color: var(--legal-light-foreground);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: var(--font-size-small);
 }
 
 .cv__headline {
@@ -810,7 +807,7 @@ body.hide-main-navigation-menu .main-navigation__menu {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-unit) var(--spacing-unit-2x);
-  font-size: 1.4rem;
+  font-size: var(--font-size-unit);
 }
 
 .cv__links {
@@ -848,12 +845,12 @@ body.hide-main-navigation-menu .main-navigation__menu {
 }
 
 .cv-role__title {
-  font-size: 1.6rem;
+  font-size: var(--font-size-unit);
   font-weight: 800;
 }
 
 .cv-projects {
-  padding-left: 1.6rem;
+  padding-left: var(--spacing-unit-2x);
 }
 
 .cv-projects li + li {
