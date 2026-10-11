@@ -40,6 +40,12 @@ function endOfToday() {
   return end;
 }
 
+function endOfMonth(date) {
+  const end = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + 1, 0));
+  end.setUTCHours(23, 59, 59, 999);
+  return end;
+}
+
 function getDateBounds(events) {
   const eventDates = events
     .map((event) => new Date(event.timestamp))
@@ -58,7 +64,8 @@ function getDateBounds(events) {
 }
 
 function getInitialRange(events) {
-  return { start: getDateBounds(events).start, end: endOfToday(), preset: "all" };
+  const bounds = getDateBounds(events);
+  return { start: bounds.start, end: endOfToday(), preset: "all" };
 }
 
 function formatMonth(date) {
@@ -414,21 +421,23 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
       0,
       Math.min(
         bounds.monthCount,
-        (range.start.getUTCFullYear() - bounds.start.getUTCFullYear()) * 12
-          + range.start.getUTCMonth() - bounds.start.getUTCMonth(),
+        (range.end.getUTCFullYear() - bounds.start.getUTCFullYear()) * 12
+          + range.end.getUTCMonth() - bounds.start.getUTCMonth(),
       ),
     );
-    const selectedStart = new Date(Date.UTC(
+    const selectedEnd = new Date(Date.UTC(
       bounds.start.getUTCFullYear(),
       bounds.start.getUTCMonth() + selectedOffset,
       1,
     ));
+    range.start = bounds.start;
+    range.end = selectedOffset === bounds.monthCount ? endOfToday() : endOfMonth(selectedEnd);
     dateRange.min = "0";
     dateRange.max = String(bounds.monthCount);
     dateRange.value = String(selectedOffset);
     dateRange.disabled = bounds.monthCount === 0;
-    dateRange.setAttribute("aria-valuetext", formatMonth(selectedStart));
-    rangeLabel.textContent = `${formatMonth(selectedStart)} – today`;
+    dateRange.setAttribute("aria-valuetext", formatMonth(selectedEnd));
+    rangeLabel.textContent = `From ${formatMonth(bounds.start)} to ${formatMonth(selectedEnd)}`;
     rangeMinimum.textContent = formatMonth(bounds.start);
   }
 
@@ -457,12 +466,14 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
 
   dateRange.addEventListener("input", () => {
     const bounds = getDateBounds(events);
-    const start = new Date(Date.UTC(
+    const selectedOffset = Number(dateRange.value);
+    const selectedEnd = new Date(Date.UTC(
       bounds.start.getUTCFullYear(),
-      bounds.start.getUTCMonth() + Number(dateRange.value),
+      bounds.start.getUTCMonth() + selectedOffset,
       1,
     ));
-    setRange({ start, end: endOfToday(), preset: "slider" });
+    const end = selectedOffset === bounds.monthCount ? endOfToday() : endOfMonth(selectedEnd);
+    setRange({ start: bounds.start, end, preset: "slider" });
   });
 
   eventFilter.addEventListener("change", (event) => {
