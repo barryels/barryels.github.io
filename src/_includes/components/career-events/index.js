@@ -41,7 +41,9 @@ function endOfToday() {
 }
 
 function endOfMonth(date) {
-  const end = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + 1, 0));
+  const end = new Date(
+    Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + 1, 0),
+  );
   end.setUTCHours(23, 59, 59, 999);
   return end;
 }
@@ -57,8 +59,9 @@ function getDateBounds(events) {
   const currentMonth = startOfMonth(new Date());
   const monthCount = Math.max(
     0,
-    (currentMonth.getUTCFullYear() - start.getUTCFullYear()) * 12
-      + currentMonth.getUTCMonth() - start.getUTCMonth(),
+    (currentMonth.getUTCFullYear() - start.getUTCFullYear()) * 12 +
+      currentMonth.getUTCMonth() -
+      start.getUTCMonth(),
   );
   return { start, monthCount };
 }
@@ -107,7 +110,8 @@ function replayEvents(events) {
     } else if (event.type === "PROJECT_COMPLETED" && data.projectId) {
       const project = projects.get(data.projectId);
       if (project) {
-        project.completedDate = data.completedDate ?? event.timestamp.slice(0, 10);
+        project.completedDate =
+          data.completedDate ?? event.timestamp.slice(0, 10);
       }
     }
   }
@@ -130,7 +134,11 @@ function overlapsRange(startValue, endValue, range) {
 
 function formatTick(date, monthly) {
   return monthly
-    ? date.toLocaleDateString("en-GB", { month: "short", year: "2-digit", timeZone: "UTC" })
+    ? date.toLocaleDateString("en-GB", {
+        month: "short",
+        year: "2-digit",
+        timeZone: "UTC",
+      })
     : String(date.getUTCFullYear());
 }
 
@@ -150,7 +158,9 @@ function buildActivityChart(container, events, range) {
     const key = monthly
       ? `${date.getUTCFullYear()}-${date.getUTCMonth()}`
       : String(date.getUTCFullYear());
-    const values = bins.get(key) ?? Object.fromEntries(EVENT_SERIES.map(({ type }) => [type, 0]));
+    const values =
+      bins.get(key) ??
+      Object.fromEntries(EVENT_SERIES.map(({ type }) => [type, 0]));
     values[event.type] += 1;
     bins.set(key, values);
   }
@@ -161,11 +171,19 @@ function buildActivityChart(container, events, range) {
   if (monthly) {
     first.setUTCDate(1);
     last.setUTCDate(1);
-    for (const date = new Date(first); date <= last; date.setUTCMonth(date.getUTCMonth() + 1)) {
+    for (
+      const date = new Date(first);
+      date <= last;
+      date.setUTCMonth(date.getUTCMonth() + 1)
+    ) {
       dates.push(new Date(date));
     }
   } else {
-    for (let year = first.getUTCFullYear(); year <= last.getUTCFullYear(); year += 1) {
+    for (
+      let year = first.getUTCFullYear();
+      year <= last.getUTCFullYear();
+      year += 1
+    ) {
       dates.push(new Date(Date.UTC(year, 0, 1)));
     }
   }
@@ -180,22 +198,46 @@ function buildActivityChart(container, events, range) {
     const key = monthly
       ? `${date.getUTCFullYear()}-${date.getUTCMonth()}`
       : String(date.getUTCFullYear());
-    return bins.get(key) ?? Object.fromEntries(EVENT_SERIES.map(({ type }) => [type, 0]));
+    return (
+      bins.get(key) ??
+      Object.fromEntries(EVENT_SERIES.map(({ type }) => [type, 0]))
+    );
   });
-  const maximum = Math.max(1, ...values.map((bin) =>
-    EVENT_SERIES.reduce((total, series) => total + bin[series.type], 0),
-  ));
+  const maximum = Math.max(
+    1,
+    ...values.map((bin) =>
+      EVENT_SERIES.reduce((total, series) => total + bin[series.type], 0),
+    ),
+  );
   const left = 42;
   const top = 12;
   const plotWidth = 664;
   const plotHeight = 172;
   const groupWidth = plotWidth / Math.max(1, dates.length);
-  const barWidth = Math.max(1, Math.min(18, groupWidth * 0.72 / EVENT_SERIES.length));
+  const barWidth = Math.max(
+    1,
+    Math.min(18, (groupWidth * 0.72) / EVENT_SERIES.length),
+  );
 
   for (let tick = 0; tick <= 4; tick += 1) {
     const y = top + plotHeight - (plotHeight * tick) / 4;
-    svg.append(svgElement("line", { x1: left, x2: left + plotWidth, y1: y, y2: y, class: "career-chart-grid" }));
-    addText(svg, String(Math.round((maximum * tick) / 4)), left - 8, y + 4, "career-chart-axis", { "text-anchor": "end" });
+    svg.append(
+      svgElement("line", {
+        x1: left,
+        x2: left + plotWidth,
+        y1: y,
+        y2: y,
+        class: "career-chart-grid",
+      }),
+    );
+    addText(
+      svg,
+      String(Math.round((maximum * tick) / 4)),
+      left - 8,
+      y + 4,
+      "career-chart-axis",
+      { "text-anchor": "end" },
+    );
   }
 
   dates.forEach((date, index) => {
@@ -222,7 +264,14 @@ function buildActivityChart(container, events, range) {
 
     const labelStep = Math.max(1, Math.ceil(dates.length / 12));
     if (index % labelStep === 0 || index === dates.length - 1) {
-      addText(svg, formatTick(date, monthly), xCenter, 207, "career-chart-axis", { "text-anchor": "middle" });
+      addText(
+        svg,
+        formatTick(date, monthly),
+        xCenter,
+        207,
+        "career-chart-axis",
+        { "text-anchor": "middle" },
+      );
     }
   });
 
@@ -263,25 +312,44 @@ function buildExperienceChart(container, roles, range) {
   });
   const rangeStart = range.start.getTime();
   const rangeDuration = Math.max(1, range.end.getTime() - rangeStart);
-  const xFor = (date) => left + ((date.getTime() - rangeStart) / rangeDuration) * plotWidth;
+  const xFor = (date) =>
+    left + ((date.getTime() - rangeStart) / rangeDuration) * plotWidth;
 
   for (let tick = 0; tick <= 4; tick += 1) {
     const date = new Date(rangeStart + (rangeDuration * tick) / 4);
     const x = left + (plotWidth * tick) / 4;
-    svg.append(svgElement("line", { x1: x, x2: x, y1: 16, y2: height - 20, class: "career-chart-grid" }));
-    addText(svg, formatTick(date, false), x, 12, "career-chart-axis", { "text-anchor": "middle" });
+    svg.append(
+      svgElement("line", {
+        x1: x,
+        x2: x,
+        y1: 16,
+        y2: height - 20,
+        class: "career-chart-grid",
+      }),
+    );
+    addText(svg, formatTick(date, false), x, 12, "career-chart-axis", {
+      "text-anchor": "middle",
+    });
   }
 
   visibleRoles.forEach((role, index) => {
     const y = 30 + index * rowHeight;
     const start = parseDate(role.startDate);
     const end = parseDate(role.endDate) ?? new Date();
-    const clippedStart = new Date(Math.max(start.getTime(), range.start.getTime()));
+    const clippedStart = new Date(
+      Math.max(start.getTime(), range.start.getTime()),
+    );
     const clippedEnd = new Date(Math.min(end.getTime(), range.end.getTime()));
     const company = role.company ?? "Unknown company";
     const position = role.position ?? "Role";
     const label = `${position} · ${company}`;
-    const labelElement = addText(svg, label, 0, y + 13, "career-chart-role-label");
+    const labelElement = addText(
+      svg,
+      label,
+      0,
+      y + 13,
+      "career-chart-role-label",
+    );
     const title = svgElement("title");
     title.textContent = `${label} (${role.startDate} – ${role.endDate ?? "Present"})`;
     labelElement.append(title);
@@ -352,14 +420,19 @@ function buildSkillsChart(container, roles, range) {
 }
 
 function buildStats(container, events, roles, projects, range) {
-  const roleCount = roles.filter((role) => overlapsRange(role.startDate, role.endDate, range)).length;
+  const roleCount = roles.filter((role) =>
+    overlapsRange(role.startDate, role.endDate, range),
+  ).length;
   const projectCount = projects.filter((project) =>
     overlapsRange(project.startDate, project.completedDate, range),
   ).length;
-  const taskCount = events.filter((event) =>
-    event.type === "TASK_COMPLETED" && isWithinRange(eventDate(event), range),
+  const taskCount = events.filter(
+    (event) =>
+      event.type === "TASK_COMPLETED" && isWithinRange(eventDate(event), range),
   ).length;
-  const eventCount = events.filter((event) => isWithinRange(eventDate(event), range)).length;
+  const eventCount = events.filter((event) =>
+    isWithinRange(eventDate(event), range),
+  ).length;
   const values = [
     ["Roles", roleCount],
     ["Projects", projectCount],
@@ -421,17 +494,23 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
       0,
       Math.min(
         bounds.monthCount,
-        (range.end.getUTCFullYear() - bounds.start.getUTCFullYear()) * 12
-          + range.end.getUTCMonth() - bounds.start.getUTCMonth(),
+        (range.end.getUTCFullYear() - bounds.start.getUTCFullYear()) * 12 +
+          range.end.getUTCMonth() -
+          bounds.start.getUTCMonth(),
       ),
     );
-    const selectedEnd = new Date(Date.UTC(
-      bounds.start.getUTCFullYear(),
-      bounds.start.getUTCMonth() + selectedOffset,
-      1,
-    ));
+    const selectedEnd = new Date(
+      Date.UTC(
+        bounds.start.getUTCFullYear(),
+        bounds.start.getUTCMonth() + selectedOffset,
+        1,
+      ),
+    );
     range.start = bounds.start;
-    range.end = selectedOffset === bounds.monthCount ? endOfToday() : endOfMonth(selectedEnd);
+    range.end =
+      selectedOffset === bounds.monthCount
+        ? endOfToday()
+        : endOfMonth(selectedEnd);
     dateRange.min = "0";
     dateRange.max = String(bounds.monthCount);
     dateRange.value = String(selectedOffset);
@@ -449,7 +528,9 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
     buildSkillsChart(skillsChart, roles, range);
 
     const selectedTypes = new Set(
-      [...eventFilter.querySelectorAll('input[name="eventType"]:checked')].map((input) => input.value),
+      [...eventFilter.querySelectorAll('input[name="eventType"]:checked')].map(
+        (input) => input.value,
+      ),
     );
     const visibleEvents = events.filter((event) => {
       const date = eventDate(event);
@@ -467,12 +548,17 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
   dateRange.addEventListener("input", () => {
     const bounds = getDateBounds(events);
     const selectedOffset = Number(dateRange.value);
-    const selectedEnd = new Date(Date.UTC(
-      bounds.start.getUTCFullYear(),
-      bounds.start.getUTCMonth() + selectedOffset,
-      1,
-    ));
-    const end = selectedOffset === bounds.monthCount ? endOfToday() : endOfMonth(selectedEnd);
+    const selectedEnd = new Date(
+      Date.UTC(
+        bounds.start.getUTCFullYear(),
+        bounds.start.getUTCMonth() + selectedOffset,
+        1,
+      ),
+    );
+    const end =
+      selectedOffset === bounds.monthCount
+        ? endOfToday()
+        : endOfMonth(selectedEnd);
     setRange({ start: bounds.start, end, preset: "slider" });
   });
 
@@ -488,7 +574,9 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
     }
     refreshInProgress = true;
     try {
-      const response = await fetch(`/career.json?refresh=${Date.now()}`, { cache: "no-store" });
+      const response = await fetch(`/career.json?refresh=${Date.now()}`, {
+        cache: "no-store",
+      });
       if (!response.ok) {
         throw new Error(`Career feed returned HTTP ${response.status}`);
       }
@@ -496,8 +584,11 @@ document.querySelectorAll("[data-career-dashboard]").forEach((dashboard) => {
       if (!data || !Array.isArray(data.events)) {
         throw new Error("Career feed does not contain an events array");
       }
-      events = data.events.filter((event) =>
-        event && typeof event.type === "string" && typeof event.timestamp === "string",
+      events = data.events.filter(
+        (event) =>
+          event &&
+          typeof event.type === "string" &&
+          typeof event.timestamp === "string",
       );
       if (!range) {
         range = getInitialRange(events);
